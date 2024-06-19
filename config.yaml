@@ -1,0 +1,332 @@
+---
+path_stack_data_fut: /var/data/StackData/futures
+path_tsdb_fut: /var/TSDB/futures
+path_tsdb_futhot: /var/TSDB/FutHot
+path_calendar: /var/HFDB/TradeDates.txt
+path_instru_info: /home/huxo/Research/Projects/Project_CTA_ML_V02/InstrumentInfo.csv
+path_basis_and_fundamental: /home/huxo/Deploy/Data/Futures/by_date
+path_macro_data: /home/huxo/Deploy/Data/Macro/china_cpi_m2.xlsx
+path_forex_data: /home/huxo/Deploy/Data/Forex/exchange_rate.xlsx
+path_spot_data: /home/huxo/Deploy/Data/Spot/spot.xlsx
+path_mkt_idx_data: /home/huxo/Deploy/Data/Market/index.xlsx
+
+project_data_save_dir: /var/data/StackData/futures/team/huxo
+minute_bar_dir: /var/data/StackData/futures/team/huxo/minute_bar
+alternative_dir: /var/data/StackData/futures/team/huxo/alternative
+mbr_pos_dir: /var/data/StackData/futures/team/huxo/mbr_pos
+preprocess_dir: /var/data/StackData/futures/team/huxo/preprocess
+major_dir: /var/data/StackData/futures/team/huxo/major
+available_dir: /var/data/StackData/futures/team/huxo/available
+market_dir: /var/data/StackData/futures/team/huxo/market
+factors_by_instru_dir: /var/data/StackData/futures/team/huxo/factors_by_instru
+neutral_by_instru_dir: /var/data/StackData/futures/team/huxo/neutral_by_instru
+y_dir: /var/data/StackData/futures/team/huxo/Y
+ic_tests_dir: /var/data/StackData/futures/team/huxo/ic_tests
+mclrn_dir: /var/data/StackData/futures/team/huxo/mclrn
+prediction_dir: /var/data/StackData/futures/team/huxo/prediction
+signals_dir: /var/data/StackData/futures/team/huxo/signals
+simulations_dir: /var/data/StackData/futures/team/huxo/simulations
+evaluations_dir: /var/data/StackData/futures/team/huxo/evaluations
+
+---
+account_wds:
+  host: "10.1.201.232"
+  user: "dmgr"
+  passwd: "1qaz@WSX_dmgr_20200708"
+  database: "wind"
+
+mkt_idxes:
+  COM: "NH0100.NHF"
+  EQT: "881001.WI"
+
+universe:
+  au:
+    sectorL0: C
+    sectorL1: GLD
+  ag:
+    sectorL0: C
+    sectorL1: GLD
+
+  cu:
+    sectorL0: C
+    sectorL1: MTL
+  al:
+    sectorL0: C
+    sectorL1: MTL
+  pb:
+    sectorL0: C
+    sectorL1: MTL
+  zn:
+    sectorL0: C
+    sectorL1: MTL
+  sn:
+    sectorL0: C
+    sectorL1: MTL
+  ni:
+    sectorL0: C
+    sectorL1: MTL
+  ss:
+    sectorL0: C
+    sectorL1: MTL
+  # ao:
+  #   sectorL0: C
+  #   sectorL1: MTL
+
+  a:
+    sectorL0: C
+    sectorL1: OIL
+  # b:
+  #   sectorL0: C
+  #   sectorL1: OIL
+  m:
+    sectorL0: C
+    sectorL1: OIL
+  p:
+    sectorL0: C
+    sectorL1: OIL
+  y:
+    sectorL0: C
+    sectorL1: OIL
+  OI:
+    sectorL0: C
+    sectorL1: OIL
+  RM:
+    sectorL0: C
+    sectorL1: OIL
+
+  ru:
+    sectorL0: C
+    sectorL1: CHM
+  br:
+    sectorL0: C
+    sectorL1: CHM
+  bu:
+    sectorL0: C
+    sectorL1: CHM
+  fu:
+    sectorL0: C
+    sectorL1: CHM
+  l:
+    sectorL0: C
+    sectorL1: CHM
+  v:
+    sectorL0: C
+    sectorL1: CHM
+  eb:
+    sectorL0: C
+    sectorL1: CHM
+  eg:
+    sectorL0: C
+    sectorL1: CHM
+  pp:
+    sectorL0: C
+    sectorL1: CHM
+  pg:
+    sectorL0: C
+    sectorL1: CHM
+  MA:
+    sectorL0: C
+    sectorL1: CHM
+  TA:
+    sectorL0: C
+    sectorL1: CHM
+  PF:
+    sectorL0: C
+    sectorL1: CHM
+
+  rb:
+    sectorL0: C
+    sectorL1: BLK
+  hc:
+    sectorL0: C
+    sectorL1: BLK
+  i:
+    sectorL0: C
+    sectorL1: BLK
+  j:
+    sectorL0: C
+    sectorL1: BLK
+  jm:
+    sectorL0: C
+    sectorL1: BLK
+  # UR:
+  #   sectorL0: C
+  #   sectorL1: BLK
+  # FG:
+  #   sectorL0: C
+  #   sectorL1: BLK
+  # SA:
+  #   sectorL0: C
+  #   sectorL1: BLK
+  # SH:
+  #   sectorL0: C
+  #   sectorL1: BLK
+  SF:
+    sectorL0: C
+    sectorL1: BLK
+  SM:
+    sectorL0: C
+    sectorL1: BLK
+  ZC:
+    sectorL0: C
+    sectorL1: BLK
+
+  AP:
+    sectorL0: C
+    sectorL1: AGR
+  SR:
+    sectorL0: C
+    sectorL1: AGR
+  CF:
+    sectorL0: C
+    sectorL1: AGR
+  CY:
+    sectorL0: C
+    sectorL1: AGR
+  CJ:
+    sectorL0: C
+    sectorL1: AGR
+  PK:
+    sectorL0: C
+    sectorL1: AGR
+  jd:
+    sectorL0: C
+    sectorL1: AGR
+  lh:
+    sectorL0: C
+    sectorL1: AGR
+  c:
+    sectorL0: C
+    sectorL1: AGR
+  cs:
+    sectorL0: C
+    sectorL1: AGR
+  # sp:
+  #   sectorL0: C
+  #   sectorL1: AGR
+
+  IC:
+    sectorL0: F
+    sectorL1: EQT
+  IF:
+    sectorL0: F
+    sectorL1: EQT
+  IH:
+    sectorL0: F
+    sectorL1: EQT
+  IM:
+    sectorL0: F
+    sectorL1: EQT
+
+available_universe:
+  win: 5
+  amount_threshold: 50000.00
+
+factors:
+  MTM:
+    wins: [20, 60, 120, 240]
+  SKEW:
+    wins: [20, 60, 120, 240]
+  RS:
+    wins: [20, 60, 120, 240]
+  BASIS:
+    wins: [20, 60, 120, 240]
+  TS:
+    wins: [20, 60, 120, 240]
+  S0BETA: # SectorL0
+    wins: [20, 60, 120, 240]
+  S1BETA: # SectorL1
+    wins: [20, 60, 120, 240]
+  CBETA: # Currency, forex
+    wins: [20, 60, 120, 240]
+  IBETA: # Inflation, CPI
+    wins: [63, 126, 252]
+  PBETA: # PPI
+    wins: [63, 126, 252]
+  CTP:
+    wins: [60, 120, 240]
+    tops: [0.1, 0.2, 0.5, 1]
+  CVP:
+    wins: [60, 120, 240]
+    tops: [0.1, 0.2, 0.5, 1]
+  CSP:
+    wins: [60, 120, 240]
+    tops: [0.1, 0.2, 0.5, 1]
+  NOI:
+    wins: [20, 60, 120, 240]
+    tops: [5]
+  NDOI:
+    wins: [20, 60, 120, 240]
+    tops: [5]
+  WNOI:
+    wins: [20, 60, 120, 240]
+    tops: [5]
+  WNDOI:
+    wins: [20, 60, 120, 240]
+    tops: [5]
+  AMP:
+    wins: [20, 60]
+    lbds: [0.3, 0.6, 0.9]
+  EXR:
+    freq: "m01e"
+    wins: [20, 40, 60]
+    dfts: [3]
+  SMT:
+    freq: "m01e"
+    wins: [5, 10, 20]
+    lbds: [0.2, 0.4, 0.6]
+  RWTC:
+    freq: "m01e"
+    wins: [5, 10, 20]
+
+trn:
+  wins: [30, 60, 120, 240, 480, 720]
+icir:
+  top_ratios: [0.50]
+  init_threshold: 0.005
+mclrns:
+  models:
+    Ridge:
+      alpha: [1.0, 10.0, 100.0] # [1.0, 10.0, 100.0, 200.0, 500.0]
+    LGBM:
+      boosting_type: ["gbdt"]
+      metric: ["l2"]
+      max_depth: [-1, 2]
+      num_leaves: [2, 4]
+      learning_rate: [0.1] # [0.01, 0.1, 1.0]
+      n_estimators: [10] # [50, 100, 200]
+      min_child_samples: [20] # min_data_in_leaf
+      max_bin: [15]
+portfolios:
+  P00:
+    target: CloseRtn010L1-NEU # Be consistent with Wins and Lags in CONST
+    weights:
+      M0285: 3 # AGR Sharpe = 0.702, Calmar = 0.622
+      M0268: 5 # BLK Sharpe = 0.913, Calmar = 0.908
+      M0256: 5 # CHM Sharpe = 1.076, Calmar = 0.963
+      # M0118: 3 # EQT Sharpe = 0.352, Calmar = 0.184
+      # M0224: 1 # GLD Sharpe = 0.058, Calmar = 0.020
+      # M0260: 3 # MTL Sharpe = 0.047, Calmar = 0.018
+      M0108: 3 # OIL Sharpe = 0.914, Calmar = 0.582
+  P01:
+    target: OpenRtn010L1-NEU # Be consistent with Wins and Lags in CONST
+    weights:
+      M0572: 3 # AGR Sharpe = 0.810, Calmar = 0.337
+      M0576: 5 # BLK Sharpe = 0.577, Calmar = 0.570
+      M0543: 5 # CHM Sharpe = 0.851, Calmar = 0.814
+      # M0531: 3 # EQT Sharpe = 0.220, Calmar = 0.100
+      # M0532: 1 # GLD Sharpe = 0.032, Calmar = 0.010
+      # M0554: 3 # MTL Sharpe = 0.194, Calmar = 0.115
+      M0444: 3 # OIL Sharpe = 0.696, Calmar = 0.435
+CONST:
+  COST: 0.0003
+  FREQ: "d01e"
+  PREFIX_USER: ["team", "huxo"]
+  SECTORS: ["GLD", "MTL", "BLK", "OIL", "CHM", "AGR", "EQT"]
+  WIN: 10
+  LAG: 1
+  SHIFT: 11
+  RET_CLASS: "010L1-NEU"
+  RET_NAMES: ["CloseRtn010L1-NEU", "OpenRtn010L1-NEU"]
+  MAW: 10
+
