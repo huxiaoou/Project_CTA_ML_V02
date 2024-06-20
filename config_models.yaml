@@ -334,149 +334,135 @@ M0034:
   trn_win: 30
 M0035:
   model_args: &id006
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
+    alpha: 1.0
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0036:
   model_args: *id006
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0037:
   model_args: *id006
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0038:
   model_args: *id006
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0039:
   model_args: *id006
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0040:
   model_args: *id006
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0041:
   model_args: *id006
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0042:
   model_args: &id007
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
+    alpha: 10.0
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0043:
   model_args: *id007
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0044:
   model_args: *id007
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0045:
   model_args: *id007
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0046:
   model_args: *id007
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0047:
   model_args: *id007
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0048:
   model_args: *id007
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 60
 M0049:
   model_args: &id008
-    alpha: 1.0
+    alpha: 100.0
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -540,8 +526,15 @@ M0055:
   trn_win: 60
 M0056:
   model_args: &id009
-    alpha: 10.0
-  model_type: Ridge
+    boosting_type: gbdt
+    learning_rate: 0.1
+    max_bin: 15
+    max_depth: -1
+    metric: l2
+    min_child_samples: 20
+    n_estimators: 10
+    num_leaves: 2
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: GLD
@@ -550,7 +543,7 @@ M0056:
   trn_win: 60
 M0057:
   model_args: *id009
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: MTL
@@ -559,7 +552,7 @@ M0057:
   trn_win: 60
 M0058:
   model_args: *id009
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: BLK
@@ -568,7 +561,7 @@ M0058:
   trn_win: 60
 M0059:
   model_args: *id009
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: OIL
@@ -577,7 +570,7 @@ M0059:
   trn_win: 60
 M0060:
   model_args: *id009
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: CHM
@@ -586,7 +579,7 @@ M0060:
   trn_win: 60
 M0061:
   model_args: *id009
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: AGR
@@ -595,7 +588,7 @@ M0061:
   trn_win: 60
 M0062:
   model_args: *id009
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: EQT
@@ -604,8 +597,15 @@ M0062:
   trn_win: 60
 M0063:
   model_args: &id010
-    alpha: 100.0
-  model_type: Ridge
+    boosting_type: gbdt
+    learning_rate: 0.1
+    max_bin: 15
+    max_depth: -1
+    metric: l2
+    min_child_samples: 20
+    n_estimators: 10
+    num_leaves: 4
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: GLD
@@ -614,7 +614,7 @@ M0063:
   trn_win: 60
 M0064:
   model_args: *id010
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: MTL
@@ -623,7 +623,7 @@ M0064:
   trn_win: 60
 M0065:
   model_args: *id010
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: BLK
@@ -632,7 +632,7 @@ M0065:
   trn_win: 60
 M0066:
   model_args: *id010
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: OIL
@@ -641,7 +641,7 @@ M0066:
   trn_win: 60
 M0067:
   model_args: *id010
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: CHM
@@ -650,7 +650,7 @@ M0067:
   trn_win: 60
 M0068:
   model_args: *id010
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: AGR
@@ -659,7 +659,7 @@ M0068:
   trn_win: 60
 M0069:
   model_args: *id010
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: EQT
@@ -668,290 +668,6 @@ M0069:
   trn_win: 60
 M0070:
   model_args: &id011
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0071:
-  model_args: *id011
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0072:
-  model_args: *id011
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0073:
-  model_args: *id011
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0074:
-  model_args: *id011
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0075:
-  model_args: *id011
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0076:
-  model_args: *id011
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0077:
-  model_args: &id012
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0078:
-  model_args: *id012
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0079:
-  model_args: *id012
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0080:
-  model_args: *id012
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0081:
-  model_args: *id012
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0082:
-  model_args: *id012
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0083:
-  model_args: *id012
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0084:
-  model_args: &id013
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0085:
-  model_args: *id013
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0086:
-  model_args: *id013
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0087:
-  model_args: *id013
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0088:
-  model_args: *id013
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0089:
-  model_args: *id013
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0090:
-  model_args: *id013
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0091:
-  model_args: &id014
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0092:
-  model_args: *id014
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0093:
-  model_args: *id014
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0094:
-  model_args: *id014
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0095:
-  model_args: *id014
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0096:
-  model_args: *id014
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0097:
-  model_args: *id014
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0098:
-  model_args: &id015
     alpha: 1.0
   model_type: Ridge
   ret_class: 010L1-NEU
@@ -960,8 +676,8 @@ M0098:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0099:
-  model_args: *id015
+M0071:
+  model_args: *id011
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -969,8 +685,8 @@ M0099:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0100:
-  model_args: *id015
+M0072:
+  model_args: *id011
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -978,8 +694,8 @@ M0100:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0101:
-  model_args: *id015
+M0073:
+  model_args: *id011
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -987,8 +703,8 @@ M0101:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0102:
-  model_args: *id015
+M0074:
+  model_args: *id011
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -996,8 +712,8 @@ M0102:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0103:
-  model_args: *id015
+M0075:
+  model_args: *id011
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1005,8 +721,8 @@ M0103:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0104:
-  model_args: *id015
+M0076:
+  model_args: *id011
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1014,8 +730,8 @@ M0104:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0105:
-  model_args: &id016
+M0077:
+  model_args: &id012
     alpha: 10.0
   model_type: Ridge
   ret_class: 010L1-NEU
@@ -1024,8 +740,8 @@ M0105:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0106:
-  model_args: *id016
+M0078:
+  model_args: *id012
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1033,8 +749,8 @@ M0106:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0107:
-  model_args: *id016
+M0079:
+  model_args: *id012
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1042,8 +758,8 @@ M0107:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0108:
-  model_args: *id016
+M0080:
+  model_args: *id012
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1051,8 +767,8 @@ M0108:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0109:
-  model_args: *id016
+M0081:
+  model_args: *id012
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1060,8 +776,8 @@ M0109:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0110:
-  model_args: *id016
+M0082:
+  model_args: *id012
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1069,8 +785,8 @@ M0110:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0111:
-  model_args: *id016
+M0083:
+  model_args: *id012
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1078,8 +794,8 @@ M0111:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0112:
-  model_args: &id017
+M0084:
+  model_args: &id013
     alpha: 100.0
   model_type: Ridge
   ret_class: 010L1-NEU
@@ -1088,8 +804,8 @@ M0112:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0113:
-  model_args: *id017
+M0085:
+  model_args: *id013
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1097,8 +813,8 @@ M0113:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0114:
-  model_args: *id017
+M0086:
+  model_args: *id013
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1106,8 +822,8 @@ M0114:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0115:
-  model_args: *id017
+M0087:
+  model_args: *id013
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1115,8 +831,8 @@ M0115:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0116:
-  model_args: *id017
+M0088:
+  model_args: *id013
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1124,8 +840,8 @@ M0116:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0117:
-  model_args: *id017
+M0089:
+  model_args: *id013
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1133,8 +849,8 @@ M0117:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0118:
-  model_args: *id017
+M0090:
+  model_args: *id013
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1142,8 +858,8 @@ M0118:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0119:
-  model_args: &id018
+M0091:
+  model_args: &id014
     boosting_type: gbdt
     learning_rate: 0.1
     max_bin: 15
@@ -1159,8 +875,8 @@ M0119:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0120:
-  model_args: *id018
+M0092:
+  model_args: *id014
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1168,8 +884,8 @@ M0120:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0121:
-  model_args: *id018
+M0093:
+  model_args: *id014
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1177,8 +893,8 @@ M0121:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0122:
-  model_args: *id018
+M0094:
+  model_args: *id014
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1186,8 +902,8 @@ M0122:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0123:
-  model_args: *id018
+M0095:
+  model_args: *id014
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1195,8 +911,8 @@ M0123:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0124:
-  model_args: *id018
+M0096:
+  model_args: *id014
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1204,8 +920,8 @@ M0124:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
-M0125:
-  model_args: *id018
+M0097:
+  model_args: *id014
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
@@ -1213,6 +929,269 @@ M0125:
   shift: 11
   top_ratio: 0.5
   trn_win: 120
+M0098:
+  model_args: &id015
+    boosting_type: gbdt
+    learning_rate: 0.1
+    max_bin: 15
+    max_depth: -1
+    metric: l2
+    min_child_samples: 20
+    n_estimators: 10
+    num_leaves: 4
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0099:
+  model_args: *id015
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0100:
+  model_args: *id015
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0101:
+  model_args: *id015
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0102:
+  model_args: *id015
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0103:
+  model_args: *id015
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0104:
+  model_args: *id015
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0105:
+  model_args: &id016
+    alpha: 1.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0106:
+  model_args: *id016
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0107:
+  model_args: *id016
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0108:
+  model_args: *id016
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0109:
+  model_args: *id016
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0110:
+  model_args: *id016
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0111:
+  model_args: *id016
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0112:
+  model_args: &id017
+    alpha: 10.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0113:
+  model_args: *id017
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0114:
+  model_args: *id017
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0115:
+  model_args: *id017
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0116:
+  model_args: *id017
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0117:
+  model_args: *id017
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0118:
+  model_args: *id017
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0119:
+  model_args: &id018
+    alpha: 100.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0120:
+  model_args: *id018
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0121:
+  model_args: *id018
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0122:
+  model_args: *id018
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0123:
+  model_args: *id018
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0124:
+  model_args: *id018
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0125:
+  model_args: *id018
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
 M0126:
   model_args: &id019
     boosting_type: gbdt
@@ -1222,14 +1201,14 @@ M0126:
     metric: l2
     min_child_samples: 20
     n_estimators: 10
-    num_leaves: 4
+    num_leaves: 2
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 240
 M0127:
   model_args: *id019
   model_type: LGBM
@@ -1238,7 +1217,7 @@ M0127:
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 240
 M0128:
   model_args: *id019
   model_type: LGBM
@@ -1247,7 +1226,7 @@ M0128:
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 240
 M0129:
   model_args: *id019
   model_type: LGBM
@@ -1256,7 +1235,7 @@ M0129:
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 240
 M0130:
   model_args: *id019
   model_type: LGBM
@@ -1265,7 +1244,7 @@ M0130:
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 240
 M0131:
   model_args: *id019
   model_type: LGBM
@@ -1274,7 +1253,7 @@ M0131:
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 240
 M0132:
   model_args: *id019
   model_type: LGBM
@@ -1283,13 +1262,276 @@ M0132:
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 240
 M0133:
   model_args: &id020
     boosting_type: gbdt
     learning_rate: 0.1
     max_bin: 15
-    max_depth: 2
+    max_depth: -1
+    metric: l2
+    min_child_samples: 20
+    n_estimators: 10
+    num_leaves: 4
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0134:
+  model_args: *id020
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0135:
+  model_args: *id020
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0136:
+  model_args: *id020
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0137:
+  model_args: *id020
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0138:
+  model_args: *id020
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0139:
+  model_args: *id020
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0140:
+  model_args: &id021
+    alpha: 1.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0141:
+  model_args: *id021
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0142:
+  model_args: *id021
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0143:
+  model_args: *id021
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0144:
+  model_args: *id021
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0145:
+  model_args: *id021
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0146:
+  model_args: *id021
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0147:
+  model_args: &id022
+    alpha: 10.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0148:
+  model_args: *id022
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0149:
+  model_args: *id022
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0150:
+  model_args: *id022
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0151:
+  model_args: *id022
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0152:
+  model_args: *id022
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0153:
+  model_args: *id022
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0154:
+  model_args: &id023
+    alpha: 100.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0155:
+  model_args: *id023
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0156:
+  model_args: *id023
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0157:
+  model_args: *id023
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0158:
+  model_args: *id023
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0159:
+  model_args: *id023
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0160:
+  model_args: *id023
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: CloseRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0161:
+  model_args: &id024
+    boosting_type: gbdt
+    learning_rate: 0.1
+    max_bin: 15
+    max_depth: -1
     metric: l2
     min_child_samples: 20
     n_estimators: 10
@@ -1300,324 +1542,61 @@ M0133:
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
-M0134:
-  model_args: *id020
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0135:
-  model_args: *id020
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0136:
-  model_args: *id020
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0137:
-  model_args: *id020
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0138:
-  model_args: *id020
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0139:
-  model_args: *id020
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0140:
-  model_args: &id021
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0141:
-  model_args: *id021
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0142:
-  model_args: *id021
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0143:
-  model_args: *id021
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0144:
-  model_args: *id021
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0145:
-  model_args: *id021
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0146:
-  model_args: *id021
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0147:
-  model_args: &id022
-    alpha: 1.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0148:
-  model_args: *id022
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0149:
-  model_args: *id022
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0150:
-  model_args: *id022
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0151:
-  model_args: *id022
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0152:
-  model_args: *id022
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0153:
-  model_args: *id022
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0154:
-  model_args: &id023
-    alpha: 10.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0155:
-  model_args: *id023
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0156:
-  model_args: *id023
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0157:
-  model_args: *id023
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0158:
-  model_args: *id023
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0159:
-  model_args: *id023
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0160:
-  model_args: *id023
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0161:
-  model_args: &id024
-    alpha: 100.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0162:
   model_args: *id024
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0163:
   model_args: *id024
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0164:
   model_args: *id024
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0165:
   model_args: *id024
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0166:
   model_args: *id024
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0167:
   model_args: *id024
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0168:
   model_args: &id025
     boosting_type: gbdt
@@ -1627,14 +1606,14 @@ M0168:
     metric: l2
     min_child_samples: 20
     n_estimators: 10
-    num_leaves: 2
+    num_leaves: 4
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0169:
   model_args: *id025
   model_type: LGBM
@@ -1643,7 +1622,7 @@ M0169:
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0170:
   model_args: *id025
   model_type: LGBM
@@ -1652,7 +1631,7 @@ M0170:
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0171:
   model_args: *id025
   model_type: LGBM
@@ -1661,7 +1640,7 @@ M0171:
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0172:
   model_args: *id025
   model_type: LGBM
@@ -1670,7 +1649,7 @@ M0172:
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0173:
   model_args: *id025
   model_type: LGBM
@@ -1679,7 +1658,7 @@ M0173:
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0174:
   model_args: *id025
   model_type: LGBM
@@ -1688,222 +1667,9 @@ M0174:
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 240
+  trn_win: 480
 M0175:
   model_args: &id026
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0176:
-  model_args: *id026
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0177:
-  model_args: *id026
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0178:
-  model_args: *id026
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0179:
-  model_args: *id026
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0180:
-  model_args: *id026
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0181:
-  model_args: *id026
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0182:
-  model_args: &id027
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0183:
-  model_args: *id027
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0184:
-  model_args: *id027
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0185:
-  model_args: *id027
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0186:
-  model_args: *id027
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0187:
-  model_args: *id027
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0188:
-  model_args: *id027
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0189:
-  model_args: &id028
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0190:
-  model_args: *id028
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0191:
-  model_args: *id028
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0192:
-  model_args: *id028
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0193:
-  model_args: *id028
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0194:
-  model_args: *id028
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0195:
-  model_args: *id028
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0196:
-  model_args: &id029
     alpha: 1.0
   model_type: Ridge
   ret_class: 010L1-NEU
@@ -1911,63 +1677,63 @@ M0196:
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0197:
-  model_args: *id029
+  trn_win: 720
+M0176:
+  model_args: *id026
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0198:
-  model_args: *id029
+  trn_win: 720
+M0177:
+  model_args: *id026
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0199:
-  model_args: *id029
+  trn_win: 720
+M0178:
+  model_args: *id026
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0200:
-  model_args: *id029
+  trn_win: 720
+M0179:
+  model_args: *id026
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0201:
-  model_args: *id029
+  trn_win: 720
+M0180:
+  model_args: *id026
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0202:
-  model_args: *id029
+  trn_win: 720
+M0181:
+  model_args: *id026
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0203:
-  model_args: &id030
+  trn_win: 720
+M0182:
+  model_args: &id027
     alpha: 10.0
   model_type: Ridge
   ret_class: 010L1-NEU
@@ -1975,63 +1741,63 @@ M0203:
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0204:
-  model_args: *id030
+  trn_win: 720
+M0183:
+  model_args: *id027
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0205:
-  model_args: *id030
+  trn_win: 720
+M0184:
+  model_args: *id027
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0206:
-  model_args: *id030
+  trn_win: 720
+M0185:
+  model_args: *id027
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0207:
-  model_args: *id030
+  trn_win: 720
+M0186:
+  model_args: *id027
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0208:
-  model_args: *id030
+  trn_win: 720
+M0187:
+  model_args: *id027
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0209:
-  model_args: *id030
+  trn_win: 720
+M0188:
+  model_args: *id027
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0210:
-  model_args: &id031
+  trn_win: 720
+M0189:
+  model_args: &id028
     alpha: 100.0
   model_type: Ridge
   ret_class: 010L1-NEU
@@ -2039,63 +1805,63 @@ M0210:
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0211:
-  model_args: *id031
+  trn_win: 720
+M0190:
+  model_args: *id028
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0212:
-  model_args: *id031
+  trn_win: 720
+M0191:
+  model_args: *id028
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0213:
-  model_args: *id031
+  trn_win: 720
+M0192:
+  model_args: *id028
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0214:
-  model_args: *id031
+  trn_win: 720
+M0193:
+  model_args: *id028
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0215:
-  model_args: *id031
+  trn_win: 720
+M0194:
+  model_args: *id028
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0216:
-  model_args: *id031
+  trn_win: 720
+M0195:
+  model_args: *id028
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0217:
-  model_args: &id032
+  trn_win: 720
+M0196:
+  model_args: &id029
     boosting_type: gbdt
     learning_rate: 0.1
     max_bin: 15
@@ -2110,63 +1876,63 @@ M0217:
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0218:
-  model_args: *id032
+  trn_win: 720
+M0197:
+  model_args: *id029
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0219:
-  model_args: *id032
+  trn_win: 720
+M0198:
+  model_args: *id029
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0220:
-  model_args: *id032
+  trn_win: 720
+M0199:
+  model_args: *id029
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0221:
-  model_args: *id032
+  trn_win: 720
+M0200:
+  model_args: *id029
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0222:
-  model_args: *id032
+  trn_win: 720
+M0201:
+  model_args: *id029
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0223:
-  model_args: *id032
+  trn_win: 720
+M0202:
+  model_args: *id029
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0224:
-  model_args: &id033
+  trn_win: 720
+M0203:
+  model_args: &id030
     boosting_type: gbdt
     learning_rate: 0.1
     max_bin: 15
@@ -2181,395 +1947,587 @@ M0224:
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0225:
-  model_args: *id033
+  trn_win: 720
+M0204:
+  model_args: *id030
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0226:
-  model_args: *id033
+  trn_win: 720
+M0205:
+  model_args: *id030
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0227:
-  model_args: *id033
+  trn_win: 720
+M0206:
+  model_args: *id030
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0228:
-  model_args: *id033
+  trn_win: 720
+M0207:
+  model_args: *id030
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0229:
-  model_args: *id033
+  trn_win: 720
+M0208:
+  model_args: *id030
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
-M0230:
-  model_args: *id033
+  trn_win: 720
+M0209:
+  model_args: *id030
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 720
+M0210:
+  model_args: &id031
+    alpha: 1.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0211:
+  model_args: *id031
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0212:
+  model_args: *id031
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0213:
+  model_args: *id031
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0214:
+  model_args: *id031
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0215:
+  model_args: *id031
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0216:
+  model_args: *id031
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0217:
+  model_args: &id032
+    alpha: 10.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0218:
+  model_args: *id032
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0219:
+  model_args: *id032
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0220:
+  model_args: *id032
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0221:
+  model_args: *id032
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0222:
+  model_args: *id032
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0223:
+  model_args: *id032
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0224:
+  model_args: &id033
+    alpha: 100.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0225:
+  model_args: *id033
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0226:
+  model_args: *id033
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0227:
+  model_args: *id033
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0228:
+  model_args: *id033
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0229:
+  model_args: *id033
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
+M0230:
+  model_args: *id033
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 30
 M0231:
   model_args: &id034
     boosting_type: gbdt
     learning_rate: 0.1
     max_bin: 15
-    max_depth: 2
+    max_depth: -1
     metric: l2
     min_child_samples: 20
     n_estimators: 10
     num_leaves: 2
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0232:
   model_args: *id034
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0233:
   model_args: *id034
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0234:
   model_args: *id034
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0235:
   model_args: *id034
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0236:
   model_args: *id034
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0237:
   model_args: *id034
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0238:
   model_args: &id035
     boosting_type: gbdt
     learning_rate: 0.1
     max_bin: 15
-    max_depth: 2
+    max_depth: -1
     metric: l2
     min_child_samples: 20
     n_estimators: 10
     num_leaves: 4
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0239:
   model_args: *id035
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0240:
   model_args: *id035
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0241:
   model_args: *id035
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0242:
   model_args: *id035
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0243:
   model_args: *id035
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0244:
   model_args: *id035
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 480
+  trn_win: 30
 M0245:
   model_args: &id036
     alpha: 1.0
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0246:
   model_args: *id036
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0247:
   model_args: *id036
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0248:
   model_args: *id036
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0249:
   model_args: *id036
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0250:
   model_args: *id036
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0251:
   model_args: *id036
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0252:
   model_args: &id037
     alpha: 10.0
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0253:
   model_args: *id037
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0254:
   model_args: *id037
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0255:
   model_args: *id037
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0256:
   model_args: *id037
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0257:
   model_args: *id037
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0258:
   model_args: *id037
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0259:
   model_args: &id038
     alpha: 100.0
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0260:
   model_args: *id038
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0261:
   model_args: *id038
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0262:
   model_args: *id038
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0263:
   model_args: *id038
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0264:
   model_args: *id038
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0265:
   model_args: *id038
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0266:
   model_args: &id039
     boosting_type: gbdt
@@ -2582,65 +2540,65 @@ M0266:
     num_leaves: 2
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0267:
   model_args: *id039
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0268:
   model_args: *id039
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0269:
   model_args: *id039
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0270:
   model_args: *id039
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0271:
   model_args: *id039
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0272:
   model_args: *id039
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0273:
   model_args: &id040
     boosting_type: gbdt
@@ -2653,209 +2611,67 @@ M0273:
     num_leaves: 4
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0274:
   model_args: *id040
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0275:
   model_args: *id040
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0276:
   model_args: *id040
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0277:
   model_args: *id040
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0278:
   model_args: *id040
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0279:
   model_args: *id040
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 720
+  trn_win: 60
 M0280:
   model_args: &id041
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0281:
-  model_args: *id041
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0282:
-  model_args: *id041
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0283:
-  model_args: *id041
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0284:
-  model_args: *id041
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0285:
-  model_args: *id041
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0286:
-  model_args: *id041
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0287:
-  model_args: &id042
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0288:
-  model_args: *id042
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0289:
-  model_args: *id042
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0290:
-  model_args: *id042
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0291:
-  model_args: *id042
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0292:
-  model_args: *id042
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0293:
-  model_args: *id042
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0294:
-  model_args: &id043
     alpha: 1.0
   model_type: Ridge
   ret_class: 010L1-NEU
@@ -2863,7 +2679,135 @@ M0294:
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 120
+M0281:
+  model_args: *id041
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0282:
+  model_args: *id041
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0283:
+  model_args: *id041
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0284:
+  model_args: *id041
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0285:
+  model_args: *id041
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0286:
+  model_args: *id041
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0287:
+  model_args: &id042
+    alpha: 10.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0288:
+  model_args: *id042
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0289:
+  model_args: *id042
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0290:
+  model_args: *id042
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0291:
+  model_args: *id042
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0292:
+  model_args: *id042
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0293:
+  model_args: *id042
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0294:
+  model_args: &id043
+    alpha: 100.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
 M0295:
   model_args: *id043
   model_type: Ridge
@@ -2872,7 +2816,7 @@ M0295:
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 120
 M0296:
   model_args: *id043
   model_type: Ridge
@@ -2881,7 +2825,7 @@ M0296:
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 120
 M0297:
   model_args: *id043
   model_type: Ridge
@@ -2890,7 +2834,7 @@ M0297:
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 120
 M0298:
   model_args: *id043
   model_type: Ridge
@@ -2899,7 +2843,7 @@ M0298:
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 120
 M0299:
   model_args: *id043
   model_type: Ridge
@@ -2908,7 +2852,7 @@ M0299:
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 120
 M0300:
   model_args: *id043
   model_type: Ridge
@@ -2917,9 +2861,215 @@ M0300:
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 120
 M0301:
   model_args: &id044
+    boosting_type: gbdt
+    learning_rate: 0.1
+    max_bin: 15
+    max_depth: -1
+    metric: l2
+    min_child_samples: 20
+    n_estimators: 10
+    num_leaves: 2
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0302:
+  model_args: *id044
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0303:
+  model_args: *id044
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0304:
+  model_args: *id044
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0305:
+  model_args: *id044
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0306:
+  model_args: *id044
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0307:
+  model_args: *id044
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0308:
+  model_args: &id045
+    boosting_type: gbdt
+    learning_rate: 0.1
+    max_bin: 15
+    max_depth: -1
+    metric: l2
+    min_child_samples: 20
+    n_estimators: 10
+    num_leaves: 4
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0309:
+  model_args: *id045
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0310:
+  model_args: *id045
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0311:
+  model_args: *id045
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0312:
+  model_args: *id045
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0313:
+  model_args: *id045
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0314:
+  model_args: *id045
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 120
+M0315:
+  model_args: &id046
+    alpha: 1.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0316:
+  model_args: *id046
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0317:
+  model_args: *id046
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0318:
+  model_args: *id046
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0319:
+  model_args: *id046
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0320:
+  model_args: *id046
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0321:
+  model_args: *id046
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0322:
+  model_args: &id047
     alpha: 10.0
   model_type: Ridge
   ret_class: 010L1-NEU
@@ -2927,63 +3077,63 @@ M0301:
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
-M0302:
-  model_args: *id044
+  trn_win: 240
+M0323:
+  model_args: *id047
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
-M0303:
-  model_args: *id044
+  trn_win: 240
+M0324:
+  model_args: *id047
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
-M0304:
-  model_args: *id044
+  trn_win: 240
+M0325:
+  model_args: *id047
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
-M0305:
-  model_args: *id044
+  trn_win: 240
+M0326:
+  model_args: *id047
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
-M0306:
-  model_args: *id044
+  trn_win: 240
+M0327:
+  model_args: *id047
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
-M0307:
-  model_args: *id044
+  trn_win: 240
+M0328:
+  model_args: *id047
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
-M0308:
-  model_args: &id045
+  trn_win: 240
+M0329:
+  model_args: &id048
     alpha: 100.0
   model_type: Ridge
   ret_class: 010L1-NEU
@@ -2991,291 +3141,78 @@ M0308:
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
-M0309:
-  model_args: *id045
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0310:
-  model_args: *id045
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0311:
-  model_args: *id045
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0312:
-  model_args: *id045
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0313:
-  model_args: *id045
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0314:
-  model_args: *id045
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0315:
-  model_args: &id046
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0316:
-  model_args: *id046
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0317:
-  model_args: *id046
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0318:
-  model_args: *id046
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0319:
-  model_args: *id046
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0320:
-  model_args: *id046
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0321:
-  model_args: *id046
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0322:
-  model_args: &id047
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0323:
-  model_args: *id047
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0324:
-  model_args: *id047
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0325:
-  model_args: *id047
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0326:
-  model_args: *id047
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0327:
-  model_args: *id047
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0328:
-  model_args: *id047
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
-M0329:
-  model_args: &id048
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0330:
   model_args: *id048
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0331:
   model_args: *id048
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0332:
   model_args: *id048
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0333:
   model_args: *id048
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0334:
   model_args: *id048
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0335:
   model_args: *id048
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0336:
   model_args: &id049
     boosting_type: gbdt
     learning_rate: 0.1
     max_bin: 15
-    max_depth: 2
+    max_depth: -1
     metric: l2
     min_child_samples: 20
     n_estimators: 10
-    num_leaves: 4
+    num_leaves: 2
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0337:
   model_args: *id049
   model_type: LGBM
@@ -3284,7 +3221,7 @@ M0337:
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0338:
   model_args: *id049
   model_type: LGBM
@@ -3293,7 +3230,7 @@ M0338:
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0339:
   model_args: *id049
   model_type: LGBM
@@ -3302,7 +3239,7 @@ M0339:
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0340:
   model_args: *id049
   model_type: LGBM
@@ -3311,7 +3248,7 @@ M0340:
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0341:
   model_args: *id049
   model_type: LGBM
@@ -3320,7 +3257,7 @@ M0341:
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0342:
   model_args: *id049
   model_type: LGBM
@@ -3329,9 +3266,80 @@ M0342:
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 30
+  trn_win: 240
 M0343:
   model_args: &id050
+    boosting_type: gbdt
+    learning_rate: 0.1
+    max_bin: 15
+    max_depth: -1
+    metric: l2
+    min_child_samples: 20
+    n_estimators: 10
+    num_leaves: 4
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0344:
+  model_args: *id050
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0345:
+  model_args: *id050
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0346:
+  model_args: *id050
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0347:
+  model_args: *id050
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0348:
+  model_args: *id050
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0349:
+  model_args: *id050
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 240
+M0350:
+  model_args: &id051
     alpha: 1.0
   model_type: Ridge
   ret_class: 010L1-NEU
@@ -3339,71 +3347,7 @@ M0343:
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
-M0344:
-  model_args: *id050
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0345:
-  model_args: *id050
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0346:
-  model_args: *id050
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0347:
-  model_args: *id050
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0348:
-  model_args: *id050
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0349:
-  model_args: *id050
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0350:
-  model_args: &id051
-    alpha: 10.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0351:
   model_args: *id051
   model_type: Ridge
@@ -3412,7 +3356,7 @@ M0351:
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0352:
   model_args: *id051
   model_type: Ridge
@@ -3421,7 +3365,7 @@ M0352:
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0353:
   model_args: *id051
   model_type: Ridge
@@ -3430,7 +3374,7 @@ M0353:
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0354:
   model_args: *id051
   model_type: Ridge
@@ -3439,7 +3383,7 @@ M0354:
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0355:
   model_args: *id051
   model_type: Ridge
@@ -3448,7 +3392,7 @@ M0355:
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0356:
   model_args: *id051
   model_type: Ridge
@@ -3457,17 +3401,17 @@ M0356:
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0357:
   model_args: &id052
-    alpha: 100.0
+    alpha: 10.0
   model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0358:
   model_args: *id052
   model_type: Ridge
@@ -3476,7 +3420,7 @@ M0358:
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0359:
   model_args: *id052
   model_type: Ridge
@@ -3485,7 +3429,7 @@ M0359:
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0360:
   model_args: *id052
   model_type: Ridge
@@ -3494,7 +3438,7 @@ M0360:
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0361:
   model_args: *id052
   model_type: Ridge
@@ -3503,7 +3447,7 @@ M0361:
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0362:
   model_args: *id052
   model_type: Ridge
@@ -3512,7 +3456,7 @@ M0362:
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0363:
   model_args: *id052
   model_type: Ridge
@@ -3521,78 +3465,71 @@ M0363:
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0364:
   model_args: &id053
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
+    alpha: 100.0
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0365:
   model_args: *id053
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0366:
   model_args: *id053
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0367:
   model_args: *id053
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0368:
   model_args: *id053
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0369:
   model_args: *id053
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0370:
   model_args: *id053
-  model_type: LGBM
+  model_type: Ridge
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0371:
   model_args: &id054
     boosting_type: gbdt
@@ -3602,14 +3539,14 @@ M0371:
     metric: l2
     min_child_samples: 20
     n_estimators: 10
-    num_leaves: 4
+    num_leaves: 2
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0372:
   model_args: *id054
   model_type: LGBM
@@ -3618,7 +3555,7 @@ M0372:
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0373:
   model_args: *id054
   model_type: LGBM
@@ -3627,7 +3564,7 @@ M0373:
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0374:
   model_args: *id054
   model_type: LGBM
@@ -3636,7 +3573,7 @@ M0374:
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0375:
   model_args: *id054
   model_type: LGBM
@@ -3645,7 +3582,7 @@ M0375:
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0376:
   model_args: *id054
   model_type: LGBM
@@ -3654,7 +3591,7 @@ M0376:
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0377:
   model_args: *id054
   model_type: LGBM
@@ -3663,13 +3600,276 @@ M0377:
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
+  trn_win: 480
 M0378:
   model_args: &id055
     boosting_type: gbdt
     learning_rate: 0.1
     max_bin: 15
-    max_depth: 2
+    max_depth: -1
+    metric: l2
+    min_child_samples: 20
+    n_estimators: 10
+    num_leaves: 4
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0379:
+  model_args: *id055
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0380:
+  model_args: *id055
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0381:
+  model_args: *id055
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0382:
+  model_args: *id055
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0383:
+  model_args: *id055
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0384:
+  model_args: *id055
+  model_type: LGBM
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 480
+M0385:
+  model_args: &id056
+    alpha: 1.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0386:
+  model_args: *id056
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0387:
+  model_args: *id056
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0388:
+  model_args: *id056
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0389:
+  model_args: *id056
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0390:
+  model_args: *id056
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0391:
+  model_args: *id056
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0392:
+  model_args: &id057
+    alpha: 10.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0393:
+  model_args: *id057
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0394:
+  model_args: *id057
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0395:
+  model_args: *id057
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0396:
+  model_args: *id057
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0397:
+  model_args: *id057
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0398:
+  model_args: *id057
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0399:
+  model_args: &id058
+    alpha: 100.0
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: GLD
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0400:
+  model_args: *id058
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: MTL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0401:
+  model_args: *id058
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: BLK
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0402:
+  model_args: *id058
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: OIL
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0403:
+  model_args: *id058
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: CHM
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0404:
+  model_args: *id058
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: AGR
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0405:
+  model_args: *id058
+  model_type: Ridge
+  ret_class: 010L1-NEU
+  ret_name: OpenRtn010L1-NEU
+  sector: EQT
+  shift: 11
+  top_ratio: 0.5
+  trn_win: 720
+M0406:
+  model_args: &id059
+    boosting_type: gbdt
+    learning_rate: 0.1
+    max_bin: 15
+    max_depth: -1
     metric: l2
     min_child_samples: 20
     n_estimators: 10
@@ -3680,324 +3880,61 @@ M0378:
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 60
-M0379:
-  model_args: *id055
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0380:
-  model_args: *id055
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0381:
-  model_args: *id055
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0382:
-  model_args: *id055
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0383:
-  model_args: *id055
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0384:
-  model_args: *id055
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0385:
-  model_args: &id056
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0386:
-  model_args: *id056
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0387:
-  model_args: *id056
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0388:
-  model_args: *id056
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0389:
-  model_args: *id056
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0390:
-  model_args: *id056
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0391:
-  model_args: *id056
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 60
-M0392:
-  model_args: &id057
-    alpha: 1.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0393:
-  model_args: *id057
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0394:
-  model_args: *id057
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0395:
-  model_args: *id057
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0396:
-  model_args: *id057
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0397:
-  model_args: *id057
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0398:
-  model_args: *id057
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0399:
-  model_args: &id058
-    alpha: 10.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0400:
-  model_args: *id058
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0401:
-  model_args: *id058
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0402:
-  model_args: *id058
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0403:
-  model_args: *id058
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0404:
-  model_args: *id058
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0405:
-  model_args: *id058
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0406:
-  model_args: &id059
-    alpha: 100.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
+  trn_win: 720
 M0407:
   model_args: *id059
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 720
 M0408:
   model_args: *id059
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 720
 M0409:
   model_args: *id059
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 720
 M0410:
   model_args: *id059
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 720
 M0411:
   model_args: *id059
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 720
 M0412:
   model_args: *id059
-  model_type: Ridge
+  model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 720
 M0413:
   model_args: &id060
     boosting_type: gbdt
@@ -4007,14 +3944,14 @@ M0413:
     metric: l2
     min_child_samples: 20
     n_estimators: 10
-    num_leaves: 2
+    num_leaves: 4
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 720
 M0414:
   model_args: *id060
   model_type: LGBM
@@ -4023,7 +3960,7 @@ M0414:
   sector: MTL
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 720
 M0415:
   model_args: *id060
   model_type: LGBM
@@ -4032,7 +3969,7 @@ M0415:
   sector: BLK
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 720
 M0416:
   model_args: *id060
   model_type: LGBM
@@ -4041,7 +3978,7 @@ M0416:
   sector: OIL
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 720
 M0417:
   model_args: *id060
   model_type: LGBM
@@ -4050,7 +3987,7 @@ M0417:
   sector: CHM
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 720
 M0418:
   model_args: *id060
   model_type: LGBM
@@ -4059,1650 +3996,9 @@ M0418:
   sector: AGR
   shift: 11
   top_ratio: 0.5
-  trn_win: 120
+  trn_win: 720
 M0419:
   model_args: *id060
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0420:
-  model_args: &id061
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0421:
-  model_args: *id061
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0422:
-  model_args: *id061
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0423:
-  model_args: *id061
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0424:
-  model_args: *id061
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0425:
-  model_args: *id061
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0426:
-  model_args: *id061
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0427:
-  model_args: &id062
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0428:
-  model_args: *id062
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0429:
-  model_args: *id062
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0430:
-  model_args: *id062
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0431:
-  model_args: *id062
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0432:
-  model_args: *id062
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0433:
-  model_args: *id062
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0434:
-  model_args: &id063
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0435:
-  model_args: *id063
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0436:
-  model_args: *id063
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0437:
-  model_args: *id063
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0438:
-  model_args: *id063
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0439:
-  model_args: *id063
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0440:
-  model_args: *id063
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 120
-M0441:
-  model_args: &id064
-    alpha: 1.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0442:
-  model_args: *id064
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0443:
-  model_args: *id064
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0444:
-  model_args: *id064
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0445:
-  model_args: *id064
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0446:
-  model_args: *id064
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0447:
-  model_args: *id064
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0448:
-  model_args: &id065
-    alpha: 10.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0449:
-  model_args: *id065
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0450:
-  model_args: *id065
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0451:
-  model_args: *id065
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0452:
-  model_args: *id065
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0453:
-  model_args: *id065
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0454:
-  model_args: *id065
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0455:
-  model_args: &id066
-    alpha: 100.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0456:
-  model_args: *id066
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0457:
-  model_args: *id066
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0458:
-  model_args: *id066
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0459:
-  model_args: *id066
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0460:
-  model_args: *id066
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0461:
-  model_args: *id066
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0462:
-  model_args: &id067
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0463:
-  model_args: *id067
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0464:
-  model_args: *id067
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0465:
-  model_args: *id067
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0466:
-  model_args: *id067
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0467:
-  model_args: *id067
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0468:
-  model_args: *id067
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0469:
-  model_args: &id068
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0470:
-  model_args: *id068
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0471:
-  model_args: *id068
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0472:
-  model_args: *id068
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0473:
-  model_args: *id068
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0474:
-  model_args: *id068
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0475:
-  model_args: *id068
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0476:
-  model_args: &id069
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0477:
-  model_args: *id069
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0478:
-  model_args: *id069
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0479:
-  model_args: *id069
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0480:
-  model_args: *id069
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0481:
-  model_args: *id069
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0482:
-  model_args: *id069
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0483:
-  model_args: &id070
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0484:
-  model_args: *id070
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0485:
-  model_args: *id070
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0486:
-  model_args: *id070
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0487:
-  model_args: *id070
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0488:
-  model_args: *id070
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0489:
-  model_args: *id070
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 240
-M0490:
-  model_args: &id071
-    alpha: 1.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0491:
-  model_args: *id071
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0492:
-  model_args: *id071
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0493:
-  model_args: *id071
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0494:
-  model_args: *id071
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0495:
-  model_args: *id071
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0496:
-  model_args: *id071
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0497:
-  model_args: &id072
-    alpha: 10.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0498:
-  model_args: *id072
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0499:
-  model_args: *id072
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0500:
-  model_args: *id072
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0501:
-  model_args: *id072
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0502:
-  model_args: *id072
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0503:
-  model_args: *id072
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0504:
-  model_args: &id073
-    alpha: 100.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0505:
-  model_args: *id073
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0506:
-  model_args: *id073
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0507:
-  model_args: *id073
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0508:
-  model_args: *id073
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0509:
-  model_args: *id073
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0510:
-  model_args: *id073
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0511:
-  model_args: &id074
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0512:
-  model_args: *id074
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0513:
-  model_args: *id074
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0514:
-  model_args: *id074
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0515:
-  model_args: *id074
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0516:
-  model_args: *id074
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0517:
-  model_args: *id074
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0518:
-  model_args: &id075
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0519:
-  model_args: *id075
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0520:
-  model_args: *id075
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0521:
-  model_args: *id075
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0522:
-  model_args: *id075
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0523:
-  model_args: *id075
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0524:
-  model_args: *id075
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0525:
-  model_args: &id076
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0526:
-  model_args: *id076
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0527:
-  model_args: *id076
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0528:
-  model_args: *id076
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0529:
-  model_args: *id076
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0530:
-  model_args: *id076
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0531:
-  model_args: *id076
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0532:
-  model_args: &id077
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0533:
-  model_args: *id077
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0534:
-  model_args: *id077
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0535:
-  model_args: *id077
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0536:
-  model_args: *id077
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0537:
-  model_args: *id077
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0538:
-  model_args: *id077
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 480
-M0539:
-  model_args: &id078
-    alpha: 1.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0540:
-  model_args: *id078
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0541:
-  model_args: *id078
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0542:
-  model_args: *id078
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0543:
-  model_args: *id078
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0544:
-  model_args: *id078
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0545:
-  model_args: *id078
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0546:
-  model_args: &id079
-    alpha: 10.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0547:
-  model_args: *id079
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0548:
-  model_args: *id079
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0549:
-  model_args: *id079
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0550:
-  model_args: *id079
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0551:
-  model_args: *id079
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0552:
-  model_args: *id079
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0553:
-  model_args: &id080
-    alpha: 100.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0554:
-  model_args: *id080
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0555:
-  model_args: *id080
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0556:
-  model_args: *id080
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0557:
-  model_args: *id080
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0558:
-  model_args: *id080
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0559:
-  model_args: *id080
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0560:
-  model_args: &id081
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0561:
-  model_args: *id081
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0562:
-  model_args: *id081
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0563:
-  model_args: *id081
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0564:
-  model_args: *id081
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0565:
-  model_args: *id081
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0566:
-  model_args: *id081
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0567:
-  model_args: &id082
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0568:
-  model_args: *id082
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0569:
-  model_args: *id082
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0570:
-  model_args: *id082
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0571:
-  model_args: *id082
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0572:
-  model_args: *id082
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0573:
-  model_args: *id082
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0574:
-  model_args: &id083
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0575:
-  model_args: *id083
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0576:
-  model_args: *id083
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0577:
-  model_args: *id083
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0578:
-  model_args: *id083
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0579:
-  model_args: *id083
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0580:
-  model_args: *id083
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0581:
-  model_args: &id084
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: 2
-    metric: l2
-    min_child_samples: 20
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: GLD
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0582:
-  model_args: *id084
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0583:
-  model_args: *id084
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0584:
-  model_args: *id084
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0585:
-  model_args: *id084
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0586:
-  model_args: *id084
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  top_ratio: 0.5
-  trn_win: 720
-M0587:
-  model_args: *id084
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU

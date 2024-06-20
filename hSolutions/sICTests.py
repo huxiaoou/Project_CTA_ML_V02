@@ -878,7 +878,8 @@ class CSlcFacFromICIRRank(CSlcFacFromICIR):
                 if not selected_data.empty:
                     print(f"[INF] {len(selected_data):>2d} factors are selected for {SFG(sector)} @ {SFG(trading_day)}")
         else:
-            print(f"[INF] All ic data is 0, no factors are selected for {SFG(sector)} @ {SFG(trading_day)}")
+            if trading_day >= 20160101:
+                print(f"[INF] All ic data is 0, no factors are selected for {SFG(sector)} @ {SFG(trading_day)}")
             selected_data = pd.DataFrame()
         return selected_data
 
