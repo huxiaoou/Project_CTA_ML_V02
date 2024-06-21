@@ -11,6 +11,9 @@ python main.ic_tests.py --switch plt --bgn $bgn_date_ic --end $end_date
 python main.ic_tests.py --switch rol --bgn $bgn_date_ic --end $end_date
 python main.ic_tests.py --switch slc --bgn $bgn_date_ic --end $end_date
 
+# feature selection
+python main.feature_selection.py --bgn $bgn_date_ml --end $end_date
+
 # model and prediciton
 rm -r /var/data/StackData/futures/team/huxo/mclrn/*
 rm -r /var/data/StackData/futures/team/huxo/prediction/*

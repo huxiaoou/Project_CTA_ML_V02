@@ -22,6 +22,7 @@ factors_by_instru_dir: /var/data/StackData/futures/team/huxo/factors_by_instru
 neutral_by_instru_dir: /var/data/StackData/futures/team/huxo/neutral_by_instru
 y_dir: /var/data/StackData/futures/team/huxo/Y
 ic_tests_dir: /var/data/StackData/futures/team/huxo/ic_tests
+feature_selection_dir: /var/data/StackData/futures/team/huxo/feature_selection
 mclrn_dir: /var/data/StackData/futures/team/huxo/mclrn
 prediction_dir: /var/data/StackData/futures/team/huxo/prediction
 signals_dir: /var/data/StackData/futures/team/huxo/signals

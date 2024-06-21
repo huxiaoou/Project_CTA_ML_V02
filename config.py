@@ -32,6 +32,7 @@ class ConfigPath:
 
     y_dir: str
     ic_tests_dir: str
+    feature_selection_dir: str
     mclrn_dir: str
     prediction_dir: str
     signals_dir: str
@@ -104,6 +105,13 @@ with open(PATH_CONFIG, "r") as f:
         "RWTC": CCfgFactorRWTC(**cfg_strategy.factors["RWTC"]),
     }
 
+    factors_pool_raw, factors_pool_neu = [], []
+    for cfg_factor in cfg_factors.values():
+        for factor_class, factor_names, _ in cfg_factor.get_combs_raw():
+            factors_pool_raw.extend([(factor_class, n) for n in factor_names])
+        for factor_class, factor_names, _ in cfg_factor.get_combs_neu():
+            factors_pool_neu.extend([(factor_class, n) for n in factor_names])
+
 if __name__ == "__main__":
     import pandas as pd
     from hUtils.tools import check_and_mkdir
@@ -130,11 +138,5 @@ if __name__ == "__main__":
         print(f"[INF] Sector {sector_l1}: size = {len(sector_data):>2d}, contains: {sector_data.index.tolist()}")
     print(f"[INF] Size of universe = {len(cfg_strategy.universe)}")
 
-    factors_raw, factors_neu = [], []
-    for cfg_factor in cfg_factors.values():
-        for _, factor_names, _ in cfg_factor.get_combs_raw():
-            factors_raw.extend(factor_names)
-        for _, factor_names, _ in cfg_factor.get_combs_neu():
-            factors_neu.extend(factor_names)
-    print(f"[INF] Quantity of factors before neutralization = {len(factors_raw)}")       
-    print(f"[INF] Quantity of factors after  neutralization = {len(factors_neu)}")
+    print(f"[INF] Quantity of factors before neutralization = {len(factors_pool_raw)}")
+    print(f"[INF] Quantity of factors after  neutralization = {len(factors_pool_neu)}")

@@ -14,25 +14,36 @@ def parse_args():
 
 if __name__ == "__main__":
     import os
+    from hUtils.typeDef import CRet
     from hUtils.calendar import CCalendar
-    from hSolutions.sMclrnManage import load_config_models, get_tests
-    from hSolutions.sMclrn import main_train_and_predict
-    from config import cfg_path, cfg_strategy, PATH_CONFIG_MODELS
+    from hSolutions.sFeatureSelection import main_feature_selection, get_feature_selection_tests
+    from config import cfg_path, cfg_strategy, factors_pool_neu
 
     calendar = CCalendar(cfg_path.path_calendar)
     args = parse_args()
 
-    config_models = load_config_models(PATH_CONFIG_MODELS)
-    tests = get_tests(config_models=config_models)
-    main_train_and_predict(
+    rets = [
+        CRet(
+            ret_class=cfg_strategy.CONST["RET_CLASS"],
+            ret_name=n,
+            shift=cfg_strategy.CONST["SHIFT"],
+        )
+        for n in cfg_strategy.CONST["RET_NAMES"]
+    ]
+    tests = get_feature_selection_tests(
+        trn_wins=cfg_strategy.trn["wins"],
+        sectors=cfg_strategy.CONST["SECTORS"],
+        rets=rets,
+        factors_pool=factors_pool_neu,
+    )
+    breakpoint()
+    main_feature_selection(
         tests=tests,
         tsdb_root_dir=cfg_path.path_tsdb_futhot,
         tsdb_user_prefix=cfg_strategy.CONST["PREFIX_USER"],
         freq=cfg_strategy.CONST["FREQ"],
         avlb_path=os.path.join(cfg_path.available_dir, "available.ss"),
-        mclrn_dir=cfg_path.mclrn_dir,
-        prediction_dir=cfg_path.prediction_dir,
-        ic_save_dir=cfg_path.ic_tests_dir,
+        feature_selection_dir=cfg_path.feature_selection_dir,
         universe=cfg_strategy.universe,
         bgn_date=args.bgn,
         end_date=args.end or args.bgn,

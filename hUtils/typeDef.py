@@ -9,6 +9,7 @@ TFactorName = NewType("TFactorName", str)
 TFactorNames = NewType("TFactorNames", list[TFactorName])
 TFactorClassAndNames = NewType("TFactorClassAndNames", tuple[TFactorClass, TFactorNames])
 TFactorComb = NewType("TFactorComb", tuple[TFactorClass, TFactorNames, str])
+TFactor = NewType("TFactor", tuple[TFactorClass, TFactorName])
 TPrefix = NewType("TPrefix", list[str])
 TReturnClass = NewType("TReturnClass", str)
 TReturnName = NewType("TReturnName", str)
@@ -45,6 +46,14 @@ class CModel:
     @property
     def desc(self) -> str:
         return f"{self.model_type}"
+
+
+@dataclass(frozen=True)
+class CTestFtSlc:
+    trn_win: int  # one of [60, 120, 240]
+    sector: str
+    ret: CRet
+    facs_pool: list[TFactor]
 
 
 @dataclass(frozen=True)
