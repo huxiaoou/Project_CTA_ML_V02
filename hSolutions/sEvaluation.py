@@ -57,11 +57,10 @@ class CEvlTest(CEvl):
         super().__init__(nav_path)
 
     def add_arguments(self, d: dict):
-        ret_class, trn_win, top_ratio, model_desc, sector, unique_id, ret_name = self.sim_arg.sim_id.split(".")
+        ret_class, trn_win, model_desc, sector, unique_id, ret_name = self.sim_arg.sim_id.split(".")
         other_arguments = {
             "ret_class": ret_class,
             "trn_win": trn_win,
-            "top_ratio": top_ratio,
             "model_desc": model_desc,
             "sector": sector,
             "unique_id": unique_id,

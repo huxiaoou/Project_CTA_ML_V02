@@ -66,22 +66,22 @@ def get_sim_args_from_tests(tests: list[CTest], prefix_user: list[str], cost: fl
     return res
 
 
-def group_sim_args(sim_args: list[CSimArg]) -> dict[tuple[str, str, str, str, str], dict[tuple[str, str], CSimArg]]:
-    grouped_sim_args: dict[tuple[str, str, str, str, str], dict[tuple[str, str], CSimArg]] = {}
+def group_sim_args(sim_args: list[CSimArg]) -> dict[tuple[str, str, str, str], dict[tuple[str, str], CSimArg]]:
+    grouped_sim_args: dict[tuple[str, str, str, str], dict[tuple[str, str], CSimArg]] = {}
     for sim_arg in sim_args:
-        ret_class, trn_win, top_ratio, model_desc, sector, unique_id, ret_name = sim_arg.sim_id.split(".")
-        key0, key1 = (ret_class, trn_win, top_ratio, model_desc, ret_name), (sector, unique_id)
+        ret_class, trn_win, model_desc, sector, unique_id, ret_name = sim_arg.sim_id.split(".")
+        key0, key1 = (ret_class, trn_win, model_desc, ret_name), (sector, unique_id)
         if key0 not in grouped_sim_args:
             grouped_sim_args[key0] = {}
         grouped_sim_args[key0][key1] = sim_arg
     return grouped_sim_args
 
 
-def group_sim_args_by_sector(sim_args: list[CSimArg]) -> dict[str, dict[tuple[str, str, str, str, str, str], CSimArg]]:
-    grouped_sim_args: dict[str, dict[tuple[str, str, str, str, str, str], CSimArg]] = {}
+def group_sim_args_by_sector(sim_args: list[CSimArg]) -> dict[str, dict[tuple[str, str, str, str, str], CSimArg]]:
+    grouped_sim_args: dict[str, dict[tuple[str, str, str, str, str], CSimArg]] = {}
     for sim_arg in sim_args:
-        ret_class, trn_win, top_ratio, model_desc, sector, unique_id, ret_name = sim_arg.sim_id.split(".")
-        key0, key1 = sector, (ret_class, trn_win, top_ratio, model_desc, ret_name, unique_id)
+        ret_class, trn_win, model_desc, sector, unique_id, ret_name = sim_arg.sim_id.split(".")
+        key0, key1 = sector, (ret_class, trn_win, model_desc, ret_name, unique_id)
         if key0 not in grouped_sim_args:
             grouped_sim_args[key0] = {}
         grouped_sim_args[key0][key1] = sim_arg

@@ -314,7 +314,7 @@ if __name__ == "__main__":
         )
     elif args.type == "sig":
         from config import PATH_CONFIG_MODELS
-        from hSolutions.sMclrn import load_config_models, get_tests, get_signal_args_tsdb
+        from hSolutions.sMclrnManage import load_config_models, get_tests, get_signal_args_tsdb
 
         config_models = load_config_models(PATH_CONFIG_MODELS)
         tests = get_tests(config_models=config_models)

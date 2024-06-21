@@ -16,7 +16,7 @@ def parse_args():
 if __name__ == "__main__":
     from hUtils.calendar import CCalendar
     from hSolutions.sSimulation import get_sim_args_from_tests
-    from hSolutions.sMclrn import load_config_models, get_tests
+    from hSolutions.sMclrnManage import load_config_models, get_tests
     from config import cfg_path, cfg_strategy, PATH_CONFIG_MODELS
 
     calendar = CCalendar(cfg_path.path_calendar)

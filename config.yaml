@@ -301,23 +301,23 @@ portfolios:
   P00:
     target: CloseRtn010L1-NEU # Be consistent with Wins and Lags in CONST
     weights:
-      M0208: 3 # AGR Sharpe = 0.843, Calmar = 0.511, W720, LGBM
-      M0198: 5 # BLK Sharpe = 0.783, Calmar = 0.474, W720, LGBM
-      M0179: 5 # CHM Sharpe = 1.139, Calmar = 1.257, W720, Ridge
-      # M0202: 3 # EQT Sharpe = 0.068, Calmar = 0.025, W720, LGBM
-      M0168: 1 # GLD Sharpe = 0.577, Calmar = 0.452, W480, LGBM
-      # M0197: 3 # MTL Sharpe = 0.078, Calmar = 0.041, W720, LGBM
-      M0087: 3 # OIL Sharpe = 1.035, Calmar = 0.624, W120, Ridge
+      M0201: 3 # AGR Sharpe = 0.746, Calmar = 0.710, W720, LGBM
+      M0198: 5 # BLK Sharpe = 0.955, Calmar = 0.789, W720, LGBM
+      M0158: 5 # CHM Sharpe = 1.333, Calmar = 1.206, W480, Ridge
+      # M0181: 3 # EQT Sharpe = 0.057, Calmar = 0.020, W720, Ridge
+      M0196: 1 # GLD Sharpe = 0.409, Calmar = 0.270, W720, LGBM
+      # M0036: 3 # MTL Sharpe = -0.061, Calmar = -0.021, W060, Ridge
+      M0087: 3 # OIL Sharpe = 0.309, Calmar = 0.166, W120, Ridge
   P01:
     target: OpenRtn010L1-NEU # Be consistent with Wins and Lags in CONST
     weights:
-      M0418: 3 # AGR Sharpe = 0.900, Calmar = 0.382, W720, LGBM
-      # M0408: 5 # BLK Sharpe = 0.369, Calmar = 0.254, W720, LGBM
-      M0403: 5 # CHM Sharpe = 0.963, Calmar = 0.981, W720, Ridge
-      # M0300: 3 # EQT Sharpe = 0.172, Calmar = 0.062, W120, Ridge
-      # M0378: 1 # GLD Sharpe = 0.306, Calmar = 0.110, W480, LGBM
-      # M0400: 3 # MTL Sharpe = 0.138, Calmar = 0.062, W720, Ridge
-      M0297: 3 # OIL Sharpe = 0.359, Calmar = 0.138, W120, Ridge
+      M0411: 3 # AGR Sharpe = 0.634, Calmar = 0.478, W720, LGBM
+      M0408: 5 # BLK Sharpe = 0.650, Calmar = 0.628, W720, LGBM
+      M0368: 5 # CHM Sharpe = 1.003, Calmar = 0.678, W480, Ridge
+      # M0412: 3 # EQT Sharpe = 0.380, Calmar = 0.179, W720, LGBM
+      # M0364: 1 # GLD Sharpe = 0.080, Calmar = 0.028, W480, Ridge
+      M0330: 3 # MTL Sharpe = 0.644, Calmar = 0.398, W240, Ridge
+      # M0381: 3 # OIL Sharpe = 0.163, Calmar = 0.117, W480, LGBM
 CONST:
   COST: 0.0003
   FREQ: "d01e"

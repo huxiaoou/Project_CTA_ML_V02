@@ -15,7 +15,7 @@ def parse_args():
 
 if __name__ == "__main__":
     from hUtils.calendar import CCalendar
-    from hSolutions.sMclrn import load_config_models, get_tests, get_signal_args_ss
+    from hSolutions.sMclrnManage import load_config_models, get_tests, get_signal_args_ss
     from hSolutions.sSignals import main_translate_signals, main_translate_signals_portfolio
     from hSolutions.sSimulation import get_sim_args_from_tests, get_portfolio_args
     from config import cfg_path, PATH_CONFIG_MODELS, cfg_strategy

@@ -15,7 +15,7 @@ def parse_args():
 
 if __name__ == "__main__":
     from hUtils.calendar import CCalendar
-    from hSolutions.sMclrn import load_config_models, get_tests
+    from hSolutions.sMclrnManage import load_config_models, get_tests
     from hSolutions.sSimulation import main_simulations
     from config import cfg_path, cfg_strategy, PATH_CONFIG_MODELS
 
