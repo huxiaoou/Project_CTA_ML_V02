@@ -6,7 +6,6 @@ M0000:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0001:
   model_args: *id001
@@ -15,7 +14,6 @@ M0001:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0002:
   model_args: *id001
@@ -24,7 +22,6 @@ M0002:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0003:
   model_args: *id001
@@ -33,7 +30,6 @@ M0003:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0004:
   model_args: *id001
@@ -42,7 +38,6 @@ M0004:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0005:
   model_args: *id001
@@ -51,7 +46,6 @@ M0005:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0006:
   model_args: *id001
@@ -60,7 +54,6 @@ M0006:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0007:
   model_args: &id002
@@ -70,7 +63,6 @@ M0007:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0008:
   model_args: *id002
@@ -79,7 +71,6 @@ M0008:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0009:
   model_args: *id002
@@ -88,7 +79,6 @@ M0009:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0010:
   model_args: *id002
@@ -97,7 +87,6 @@ M0010:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0011:
   model_args: *id002
@@ -106,7 +95,6 @@ M0011:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0012:
   model_args: *id002
@@ -115,7 +103,6 @@ M0012:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0013:
   model_args: *id002
@@ -124,7 +111,6 @@ M0013:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0014:
   model_args: &id003
@@ -134,7 +120,6 @@ M0014:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0015:
   model_args: *id003
@@ -143,7 +128,6 @@ M0015:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0016:
   model_args: *id003
@@ -152,7 +136,6 @@ M0016:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0017:
   model_args: *id003
@@ -161,7 +144,6 @@ M0017:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0018:
   model_args: *id003
@@ -170,7 +152,6 @@ M0018:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0019:
   model_args: *id003
@@ -179,7 +160,6 @@ M0019:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0020:
   model_args: *id003
@@ -188,7 +168,6 @@ M0020:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0021:
   model_args: &id004
@@ -205,7 +184,6 @@ M0021:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0022:
   model_args: *id004
@@ -214,7 +192,6 @@ M0022:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0023:
   model_args: *id004
@@ -223,7 +200,6 @@ M0023:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0024:
   model_args: *id004
@@ -232,7 +208,6 @@ M0024:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0025:
   model_args: *id004
@@ -241,7 +216,6 @@ M0025:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0026:
   model_args: *id004
@@ -250,7 +224,6 @@ M0026:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0027:
   model_args: *id004
@@ -259,7 +232,6 @@ M0027:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0028:
   model_args: &id005
@@ -276,7 +248,6 @@ M0028:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0029:
   model_args: *id005
@@ -285,7 +256,6 @@ M0029:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0030:
   model_args: *id005
@@ -294,7 +264,6 @@ M0030:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0031:
   model_args: *id005
@@ -303,7 +272,6 @@ M0031:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0032:
   model_args: *id005
@@ -312,7 +280,6 @@ M0032:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0033:
   model_args: *id005
@@ -321,7 +288,6 @@ M0033:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0034:
   model_args: *id005
@@ -330,7 +296,6 @@ M0034:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0035:
   model_args: &id006
@@ -340,7 +305,6 @@ M0035:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0036:
   model_args: *id006
@@ -349,7 +313,6 @@ M0036:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0037:
   model_args: *id006
@@ -358,7 +321,6 @@ M0037:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0038:
   model_args: *id006
@@ -367,7 +329,6 @@ M0038:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0039:
   model_args: *id006
@@ -376,7 +337,6 @@ M0039:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0040:
   model_args: *id006
@@ -385,7 +345,6 @@ M0040:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0041:
   model_args: *id006
@@ -394,7 +353,6 @@ M0041:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0042:
   model_args: &id007
@@ -404,7 +362,6 @@ M0042:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0043:
   model_args: *id007
@@ -413,7 +370,6 @@ M0043:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0044:
   model_args: *id007
@@ -422,7 +378,6 @@ M0044:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0045:
   model_args: *id007
@@ -431,7 +386,6 @@ M0045:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0046:
   model_args: *id007
@@ -440,7 +394,6 @@ M0046:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0047:
   model_args: *id007
@@ -449,7 +402,6 @@ M0047:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0048:
   model_args: *id007
@@ -458,7 +410,6 @@ M0048:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0049:
   model_args: &id008
@@ -468,7 +419,6 @@ M0049:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0050:
   model_args: *id008
@@ -477,7 +427,6 @@ M0050:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0051:
   model_args: *id008
@@ -486,7 +435,6 @@ M0051:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0052:
   model_args: *id008
@@ -495,7 +443,6 @@ M0052:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0053:
   model_args: *id008
@@ -504,7 +451,6 @@ M0053:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0054:
   model_args: *id008
@@ -513,7 +459,6 @@ M0054:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0055:
   model_args: *id008
@@ -522,7 +467,6 @@ M0055:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0056:
   model_args: &id009
@@ -539,7 +483,6 @@ M0056:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0057:
   model_args: *id009
@@ -548,7 +491,6 @@ M0057:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0058:
   model_args: *id009
@@ -557,7 +499,6 @@ M0058:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0059:
   model_args: *id009
@@ -566,7 +507,6 @@ M0059:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0060:
   model_args: *id009
@@ -575,7 +515,6 @@ M0060:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0061:
   model_args: *id009
@@ -584,7 +523,6 @@ M0061:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0062:
   model_args: *id009
@@ -593,7 +531,6 @@ M0062:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0063:
   model_args: &id010
@@ -610,7 +547,6 @@ M0063:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0064:
   model_args: *id010
@@ -619,7 +555,6 @@ M0064:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0065:
   model_args: *id010
@@ -628,7 +563,6 @@ M0065:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0066:
   model_args: *id010
@@ -637,7 +571,6 @@ M0066:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0067:
   model_args: *id010
@@ -646,7 +579,6 @@ M0067:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0068:
   model_args: *id010
@@ -655,7 +587,6 @@ M0068:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0069:
   model_args: *id010
@@ -664,7 +595,6 @@ M0069:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0070:
   model_args: &id011
@@ -674,7 +604,6 @@ M0070:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0071:
   model_args: *id011
@@ -683,7 +612,6 @@ M0071:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0072:
   model_args: *id011
@@ -692,7 +620,6 @@ M0072:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0073:
   model_args: *id011
@@ -701,7 +628,6 @@ M0073:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0074:
   model_args: *id011
@@ -710,7 +636,6 @@ M0074:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0075:
   model_args: *id011
@@ -719,7 +644,6 @@ M0075:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0076:
   model_args: *id011
@@ -728,7 +652,6 @@ M0076:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0077:
   model_args: &id012
@@ -738,7 +661,6 @@ M0077:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0078:
   model_args: *id012
@@ -747,7 +669,6 @@ M0078:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0079:
   model_args: *id012
@@ -756,7 +677,6 @@ M0079:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0080:
   model_args: *id012
@@ -765,7 +685,6 @@ M0080:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0081:
   model_args: *id012
@@ -774,7 +693,6 @@ M0081:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0082:
   model_args: *id012
@@ -783,7 +701,6 @@ M0082:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0083:
   model_args: *id012
@@ -792,7 +709,6 @@ M0083:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0084:
   model_args: &id013
@@ -802,7 +718,6 @@ M0084:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0085:
   model_args: *id013
@@ -811,7 +726,6 @@ M0085:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0086:
   model_args: *id013
@@ -820,7 +734,6 @@ M0086:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0087:
   model_args: *id013
@@ -829,7 +742,6 @@ M0087:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0088:
   model_args: *id013
@@ -838,7 +750,6 @@ M0088:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0089:
   model_args: *id013
@@ -847,7 +758,6 @@ M0089:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0090:
   model_args: *id013
@@ -856,7 +766,6 @@ M0090:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0091:
   model_args: &id014
@@ -873,7 +782,6 @@ M0091:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0092:
   model_args: *id014
@@ -882,7 +790,6 @@ M0092:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0093:
   model_args: *id014
@@ -891,7 +798,6 @@ M0093:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0094:
   model_args: *id014
@@ -900,7 +806,6 @@ M0094:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0095:
   model_args: *id014
@@ -909,7 +814,6 @@ M0095:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0096:
   model_args: *id014
@@ -918,7 +822,6 @@ M0096:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0097:
   model_args: *id014
@@ -927,7 +830,6 @@ M0097:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0098:
   model_args: &id015
@@ -944,7 +846,6 @@ M0098:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0099:
   model_args: *id015
@@ -953,7 +854,6 @@ M0099:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0100:
   model_args: *id015
@@ -962,7 +862,6 @@ M0100:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0101:
   model_args: *id015
@@ -971,7 +870,6 @@ M0101:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0102:
   model_args: *id015
@@ -980,7 +878,6 @@ M0102:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0103:
   model_args: *id015
@@ -989,7 +886,6 @@ M0103:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0104:
   model_args: *id015
@@ -998,7 +894,6 @@ M0104:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0105:
   model_args: &id016
@@ -1008,7 +903,6 @@ M0105:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0106:
   model_args: *id016
@@ -1017,7 +911,6 @@ M0106:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0107:
   model_args: *id016
@@ -1026,7 +919,6 @@ M0107:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0108:
   model_args: *id016
@@ -1035,7 +927,6 @@ M0108:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0109:
   model_args: *id016
@@ -1044,7 +935,6 @@ M0109:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0110:
   model_args: *id016
@@ -1053,7 +943,6 @@ M0110:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0111:
   model_args: *id016
@@ -1062,7 +951,6 @@ M0111:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0112:
   model_args: &id017
@@ -1072,7 +960,6 @@ M0112:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0113:
   model_args: *id017
@@ -1081,7 +968,6 @@ M0113:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0114:
   model_args: *id017
@@ -1090,7 +976,6 @@ M0114:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0115:
   model_args: *id017
@@ -1099,7 +984,6 @@ M0115:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0116:
   model_args: *id017
@@ -1108,7 +992,6 @@ M0116:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0117:
   model_args: *id017
@@ -1117,7 +1000,6 @@ M0117:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0118:
   model_args: *id017
@@ -1126,7 +1008,6 @@ M0118:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0119:
   model_args: &id018
@@ -1136,7 +1017,6 @@ M0119:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0120:
   model_args: *id018
@@ -1145,7 +1025,6 @@ M0120:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0121:
   model_args: *id018
@@ -1154,7 +1033,6 @@ M0121:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0122:
   model_args: *id018
@@ -1163,7 +1041,6 @@ M0122:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0123:
   model_args: *id018
@@ -1172,7 +1049,6 @@ M0123:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0124:
   model_args: *id018
@@ -1181,7 +1057,6 @@ M0124:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0125:
   model_args: *id018
@@ -1190,7 +1065,6 @@ M0125:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0126:
   model_args: &id019
@@ -1207,7 +1081,6 @@ M0126:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0127:
   model_args: *id019
@@ -1216,7 +1089,6 @@ M0127:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0128:
   model_args: *id019
@@ -1225,7 +1097,6 @@ M0128:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0129:
   model_args: *id019
@@ -1234,7 +1105,6 @@ M0129:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0130:
   model_args: *id019
@@ -1243,7 +1113,6 @@ M0130:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0131:
   model_args: *id019
@@ -1252,7 +1121,6 @@ M0131:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0132:
   model_args: *id019
@@ -1261,7 +1129,6 @@ M0132:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0133:
   model_args: &id020
@@ -1278,7 +1145,6 @@ M0133:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0134:
   model_args: *id020
@@ -1287,7 +1153,6 @@ M0134:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0135:
   model_args: *id020
@@ -1296,7 +1161,6 @@ M0135:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0136:
   model_args: *id020
@@ -1305,7 +1169,6 @@ M0136:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0137:
   model_args: *id020
@@ -1314,7 +1177,6 @@ M0137:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0138:
   model_args: *id020
@@ -1323,7 +1185,6 @@ M0138:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0139:
   model_args: *id020
@@ -1332,7 +1193,6 @@ M0139:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0140:
   model_args: &id021
@@ -1342,7 +1202,6 @@ M0140:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0141:
   model_args: *id021
@@ -1351,7 +1210,6 @@ M0141:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0142:
   model_args: *id021
@@ -1360,7 +1218,6 @@ M0142:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0143:
   model_args: *id021
@@ -1369,7 +1226,6 @@ M0143:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0144:
   model_args: *id021
@@ -1378,7 +1234,6 @@ M0144:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0145:
   model_args: *id021
@@ -1387,7 +1242,6 @@ M0145:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0146:
   model_args: *id021
@@ -1396,7 +1250,6 @@ M0146:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0147:
   model_args: &id022
@@ -1406,7 +1259,6 @@ M0147:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0148:
   model_args: *id022
@@ -1415,7 +1267,6 @@ M0148:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0149:
   model_args: *id022
@@ -1424,7 +1275,6 @@ M0149:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0150:
   model_args: *id022
@@ -1433,7 +1283,6 @@ M0150:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0151:
   model_args: *id022
@@ -1442,7 +1291,6 @@ M0151:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0152:
   model_args: *id022
@@ -1451,7 +1299,6 @@ M0152:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0153:
   model_args: *id022
@@ -1460,7 +1307,6 @@ M0153:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0154:
   model_args: &id023
@@ -1470,7 +1316,6 @@ M0154:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0155:
   model_args: *id023
@@ -1479,7 +1324,6 @@ M0155:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0156:
   model_args: *id023
@@ -1488,7 +1332,6 @@ M0156:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0157:
   model_args: *id023
@@ -1497,7 +1340,6 @@ M0157:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0158:
   model_args: *id023
@@ -1506,7 +1348,6 @@ M0158:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0159:
   model_args: *id023
@@ -1515,7 +1356,6 @@ M0159:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0160:
   model_args: *id023
@@ -1524,7 +1364,6 @@ M0160:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0161:
   model_args: &id024
@@ -1541,7 +1380,6 @@ M0161:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0162:
   model_args: *id024
@@ -1550,7 +1388,6 @@ M0162:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0163:
   model_args: *id024
@@ -1559,7 +1396,6 @@ M0163:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0164:
   model_args: *id024
@@ -1568,7 +1404,6 @@ M0164:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0165:
   model_args: *id024
@@ -1577,7 +1412,6 @@ M0165:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0166:
   model_args: *id024
@@ -1586,7 +1420,6 @@ M0166:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0167:
   model_args: *id024
@@ -1595,7 +1428,6 @@ M0167:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0168:
   model_args: &id025
@@ -1612,7 +1444,6 @@ M0168:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0169:
   model_args: *id025
@@ -1621,7 +1452,6 @@ M0169:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0170:
   model_args: *id025
@@ -1630,7 +1460,6 @@ M0170:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0171:
   model_args: *id025
@@ -1639,7 +1468,6 @@ M0171:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0172:
   model_args: *id025
@@ -1648,7 +1476,6 @@ M0172:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0173:
   model_args: *id025
@@ -1657,7 +1484,6 @@ M0173:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0174:
   model_args: *id025
@@ -1666,7 +1492,6 @@ M0174:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0175:
   model_args: &id026
@@ -1676,7 +1501,6 @@ M0175:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0176:
   model_args: *id026
@@ -1685,7 +1509,6 @@ M0176:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0177:
   model_args: *id026
@@ -1694,7 +1517,6 @@ M0177:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0178:
   model_args: *id026
@@ -1703,7 +1525,6 @@ M0178:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0179:
   model_args: *id026
@@ -1712,7 +1533,6 @@ M0179:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0180:
   model_args: *id026
@@ -1721,7 +1541,6 @@ M0180:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0181:
   model_args: *id026
@@ -1730,7 +1549,6 @@ M0181:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0182:
   model_args: &id027
@@ -1740,7 +1558,6 @@ M0182:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0183:
   model_args: *id027
@@ -1749,7 +1566,6 @@ M0183:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0184:
   model_args: *id027
@@ -1758,7 +1574,6 @@ M0184:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0185:
   model_args: *id027
@@ -1767,7 +1582,6 @@ M0185:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0186:
   model_args: *id027
@@ -1776,7 +1590,6 @@ M0186:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0187:
   model_args: *id027
@@ -1785,7 +1598,6 @@ M0187:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0188:
   model_args: *id027
@@ -1794,7 +1606,6 @@ M0188:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0189:
   model_args: &id028
@@ -1804,7 +1615,6 @@ M0189:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0190:
   model_args: *id028
@@ -1813,7 +1623,6 @@ M0190:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0191:
   model_args: *id028
@@ -1822,7 +1631,6 @@ M0191:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0192:
   model_args: *id028
@@ -1831,7 +1639,6 @@ M0192:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0193:
   model_args: *id028
@@ -1840,7 +1647,6 @@ M0193:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0194:
   model_args: *id028
@@ -1849,7 +1655,6 @@ M0194:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0195:
   model_args: *id028
@@ -1858,7 +1663,6 @@ M0195:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0196:
   model_args: &id029
@@ -1875,7 +1679,6 @@ M0196:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0197:
   model_args: *id029
@@ -1884,7 +1687,6 @@ M0197:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0198:
   model_args: *id029
@@ -1893,7 +1695,6 @@ M0198:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0199:
   model_args: *id029
@@ -1902,7 +1703,6 @@ M0199:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0200:
   model_args: *id029
@@ -1911,7 +1711,6 @@ M0200:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0201:
   model_args: *id029
@@ -1920,7 +1719,6 @@ M0201:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0202:
   model_args: *id029
@@ -1929,7 +1727,6 @@ M0202:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0203:
   model_args: &id030
@@ -1946,7 +1743,6 @@ M0203:
   ret_name: CloseRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0204:
   model_args: *id030
@@ -1955,7 +1751,6 @@ M0204:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0205:
   model_args: *id030
@@ -1964,7 +1759,6 @@ M0205:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0206:
   model_args: *id030
@@ -1973,7 +1767,6 @@ M0206:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0207:
   model_args: *id030
@@ -1982,7 +1775,6 @@ M0207:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0208:
   model_args: *id030
@@ -1991,7 +1783,6 @@ M0208:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0209:
   model_args: *id030
@@ -2000,7 +1791,6 @@ M0209:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0210:
   model_args: &id031
@@ -2010,7 +1800,6 @@ M0210:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0211:
   model_args: *id031
@@ -2019,7 +1808,6 @@ M0211:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0212:
   model_args: *id031
@@ -2028,7 +1816,6 @@ M0212:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0213:
   model_args: *id031
@@ -2037,7 +1824,6 @@ M0213:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0214:
   model_args: *id031
@@ -2046,7 +1832,6 @@ M0214:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0215:
   model_args: *id031
@@ -2055,7 +1840,6 @@ M0215:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0216:
   model_args: *id031
@@ -2064,7 +1848,6 @@ M0216:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0217:
   model_args: &id032
@@ -2074,7 +1857,6 @@ M0217:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0218:
   model_args: *id032
@@ -2083,7 +1865,6 @@ M0218:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0219:
   model_args: *id032
@@ -2092,7 +1873,6 @@ M0219:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0220:
   model_args: *id032
@@ -2101,7 +1881,6 @@ M0220:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0221:
   model_args: *id032
@@ -2110,7 +1889,6 @@ M0221:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0222:
   model_args: *id032
@@ -2119,7 +1897,6 @@ M0222:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0223:
   model_args: *id032
@@ -2128,7 +1905,6 @@ M0223:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0224:
   model_args: &id033
@@ -2138,7 +1914,6 @@ M0224:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0225:
   model_args: *id033
@@ -2147,7 +1922,6 @@ M0225:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0226:
   model_args: *id033
@@ -2156,7 +1930,6 @@ M0226:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0227:
   model_args: *id033
@@ -2165,7 +1938,6 @@ M0227:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0228:
   model_args: *id033
@@ -2174,7 +1946,6 @@ M0228:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0229:
   model_args: *id033
@@ -2183,7 +1954,6 @@ M0229:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0230:
   model_args: *id033
@@ -2192,7 +1962,6 @@ M0230:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0231:
   model_args: &id034
@@ -2209,7 +1978,6 @@ M0231:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0232:
   model_args: *id034
@@ -2218,7 +1986,6 @@ M0232:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0233:
   model_args: *id034
@@ -2227,7 +1994,6 @@ M0233:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0234:
   model_args: *id034
@@ -2236,7 +2002,6 @@ M0234:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0235:
   model_args: *id034
@@ -2245,7 +2010,6 @@ M0235:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0236:
   model_args: *id034
@@ -2254,7 +2018,6 @@ M0236:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0237:
   model_args: *id034
@@ -2263,7 +2026,6 @@ M0237:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0238:
   model_args: &id035
@@ -2280,7 +2042,6 @@ M0238:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0239:
   model_args: *id035
@@ -2289,7 +2050,6 @@ M0239:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0240:
   model_args: *id035
@@ -2298,7 +2058,6 @@ M0240:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0241:
   model_args: *id035
@@ -2307,7 +2066,6 @@ M0241:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0242:
   model_args: *id035
@@ -2316,7 +2074,6 @@ M0242:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0243:
   model_args: *id035
@@ -2325,7 +2082,6 @@ M0243:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0244:
   model_args: *id035
@@ -2334,7 +2090,6 @@ M0244:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 30
 M0245:
   model_args: &id036
@@ -2344,7 +2099,6 @@ M0245:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0246:
   model_args: *id036
@@ -2353,7 +2107,6 @@ M0246:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0247:
   model_args: *id036
@@ -2362,7 +2115,6 @@ M0247:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0248:
   model_args: *id036
@@ -2371,7 +2123,6 @@ M0248:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0249:
   model_args: *id036
@@ -2380,7 +2131,6 @@ M0249:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0250:
   model_args: *id036
@@ -2389,7 +2139,6 @@ M0250:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0251:
   model_args: *id036
@@ -2398,7 +2147,6 @@ M0251:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0252:
   model_args: &id037
@@ -2408,7 +2156,6 @@ M0252:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0253:
   model_args: *id037
@@ -2417,7 +2164,6 @@ M0253:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0254:
   model_args: *id037
@@ -2426,7 +2172,6 @@ M0254:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0255:
   model_args: *id037
@@ -2435,7 +2180,6 @@ M0255:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0256:
   model_args: *id037
@@ -2444,7 +2188,6 @@ M0256:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0257:
   model_args: *id037
@@ -2453,7 +2196,6 @@ M0257:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0258:
   model_args: *id037
@@ -2462,7 +2204,6 @@ M0258:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0259:
   model_args: &id038
@@ -2472,7 +2213,6 @@ M0259:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0260:
   model_args: *id038
@@ -2481,7 +2221,6 @@ M0260:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0261:
   model_args: *id038
@@ -2490,7 +2229,6 @@ M0261:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0262:
   model_args: *id038
@@ -2499,7 +2237,6 @@ M0262:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0263:
   model_args: *id038
@@ -2508,7 +2245,6 @@ M0263:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0264:
   model_args: *id038
@@ -2517,7 +2253,6 @@ M0264:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0265:
   model_args: *id038
@@ -2526,7 +2261,6 @@ M0265:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0266:
   model_args: &id039
@@ -2543,7 +2277,6 @@ M0266:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0267:
   model_args: *id039
@@ -2552,7 +2285,6 @@ M0267:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0268:
   model_args: *id039
@@ -2561,7 +2293,6 @@ M0268:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0269:
   model_args: *id039
@@ -2570,7 +2301,6 @@ M0269:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0270:
   model_args: *id039
@@ -2579,7 +2309,6 @@ M0270:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0271:
   model_args: *id039
@@ -2588,7 +2317,6 @@ M0271:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0272:
   model_args: *id039
@@ -2597,7 +2325,6 @@ M0272:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0273:
   model_args: &id040
@@ -2614,7 +2341,6 @@ M0273:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0274:
   model_args: *id040
@@ -2623,7 +2349,6 @@ M0274:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0275:
   model_args: *id040
@@ -2632,7 +2357,6 @@ M0275:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0276:
   model_args: *id040
@@ -2641,7 +2365,6 @@ M0276:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0277:
   model_args: *id040
@@ -2650,7 +2373,6 @@ M0277:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0278:
   model_args: *id040
@@ -2659,7 +2381,6 @@ M0278:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0279:
   model_args: *id040
@@ -2668,7 +2389,6 @@ M0279:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 60
 M0280:
   model_args: &id041
@@ -2678,7 +2398,6 @@ M0280:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0281:
   model_args: *id041
@@ -2687,7 +2406,6 @@ M0281:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0282:
   model_args: *id041
@@ -2696,7 +2414,6 @@ M0282:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0283:
   model_args: *id041
@@ -2705,7 +2422,6 @@ M0283:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0284:
   model_args: *id041
@@ -2714,7 +2430,6 @@ M0284:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0285:
   model_args: *id041
@@ -2723,7 +2438,6 @@ M0285:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0286:
   model_args: *id041
@@ -2732,7 +2446,6 @@ M0286:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0287:
   model_args: &id042
@@ -2742,7 +2455,6 @@ M0287:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0288:
   model_args: *id042
@@ -2751,7 +2463,6 @@ M0288:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0289:
   model_args: *id042
@@ -2760,7 +2471,6 @@ M0289:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0290:
   model_args: *id042
@@ -2769,7 +2479,6 @@ M0290:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0291:
   model_args: *id042
@@ -2778,7 +2487,6 @@ M0291:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0292:
   model_args: *id042
@@ -2787,7 +2495,6 @@ M0292:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0293:
   model_args: *id042
@@ -2796,7 +2503,6 @@ M0293:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0294:
   model_args: &id043
@@ -2806,7 +2512,6 @@ M0294:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0295:
   model_args: *id043
@@ -2815,7 +2520,6 @@ M0295:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0296:
   model_args: *id043
@@ -2824,7 +2528,6 @@ M0296:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0297:
   model_args: *id043
@@ -2833,7 +2536,6 @@ M0297:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0298:
   model_args: *id043
@@ -2842,7 +2544,6 @@ M0298:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0299:
   model_args: *id043
@@ -2851,7 +2552,6 @@ M0299:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0300:
   model_args: *id043
@@ -2860,7 +2560,6 @@ M0300:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0301:
   model_args: &id044
@@ -2877,7 +2576,6 @@ M0301:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0302:
   model_args: *id044
@@ -2886,7 +2584,6 @@ M0302:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0303:
   model_args: *id044
@@ -2895,7 +2592,6 @@ M0303:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0304:
   model_args: *id044
@@ -2904,7 +2600,6 @@ M0304:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0305:
   model_args: *id044
@@ -2913,7 +2608,6 @@ M0305:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0306:
   model_args: *id044
@@ -2922,7 +2616,6 @@ M0306:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0307:
   model_args: *id044
@@ -2931,7 +2624,6 @@ M0307:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0308:
   model_args: &id045
@@ -2948,7 +2640,6 @@ M0308:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0309:
   model_args: *id045
@@ -2957,7 +2648,6 @@ M0309:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0310:
   model_args: *id045
@@ -2966,7 +2656,6 @@ M0310:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0311:
   model_args: *id045
@@ -2975,7 +2664,6 @@ M0311:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0312:
   model_args: *id045
@@ -2984,7 +2672,6 @@ M0312:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0313:
   model_args: *id045
@@ -2993,7 +2680,6 @@ M0313:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0314:
   model_args: *id045
@@ -3002,7 +2688,6 @@ M0314:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 120
 M0315:
   model_args: &id046
@@ -3012,7 +2697,6 @@ M0315:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0316:
   model_args: *id046
@@ -3021,7 +2705,6 @@ M0316:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0317:
   model_args: *id046
@@ -3030,7 +2713,6 @@ M0317:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0318:
   model_args: *id046
@@ -3039,7 +2721,6 @@ M0318:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0319:
   model_args: *id046
@@ -3048,7 +2729,6 @@ M0319:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0320:
   model_args: *id046
@@ -3057,7 +2737,6 @@ M0320:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0321:
   model_args: *id046
@@ -3066,7 +2745,6 @@ M0321:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0322:
   model_args: &id047
@@ -3076,7 +2754,6 @@ M0322:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0323:
   model_args: *id047
@@ -3085,7 +2762,6 @@ M0323:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0324:
   model_args: *id047
@@ -3094,7 +2770,6 @@ M0324:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0325:
   model_args: *id047
@@ -3103,7 +2778,6 @@ M0325:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0326:
   model_args: *id047
@@ -3112,7 +2786,6 @@ M0326:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0327:
   model_args: *id047
@@ -3121,7 +2794,6 @@ M0327:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0328:
   model_args: *id047
@@ -3130,7 +2802,6 @@ M0328:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0329:
   model_args: &id048
@@ -3140,7 +2811,6 @@ M0329:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0330:
   model_args: *id048
@@ -3149,7 +2819,6 @@ M0330:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0331:
   model_args: *id048
@@ -3158,7 +2827,6 @@ M0331:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0332:
   model_args: *id048
@@ -3167,7 +2835,6 @@ M0332:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0333:
   model_args: *id048
@@ -3176,7 +2843,6 @@ M0333:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0334:
   model_args: *id048
@@ -3185,7 +2851,6 @@ M0334:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0335:
   model_args: *id048
@@ -3194,7 +2859,6 @@ M0335:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0336:
   model_args: &id049
@@ -3211,7 +2875,6 @@ M0336:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0337:
   model_args: *id049
@@ -3220,7 +2883,6 @@ M0337:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0338:
   model_args: *id049
@@ -3229,7 +2891,6 @@ M0338:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0339:
   model_args: *id049
@@ -3238,7 +2899,6 @@ M0339:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0340:
   model_args: *id049
@@ -3247,7 +2907,6 @@ M0340:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0341:
   model_args: *id049
@@ -3256,7 +2915,6 @@ M0341:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0342:
   model_args: *id049
@@ -3265,7 +2923,6 @@ M0342:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0343:
   model_args: &id050
@@ -3282,7 +2939,6 @@ M0343:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0344:
   model_args: *id050
@@ -3291,7 +2947,6 @@ M0344:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0345:
   model_args: *id050
@@ -3300,7 +2955,6 @@ M0345:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0346:
   model_args: *id050
@@ -3309,7 +2963,6 @@ M0346:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0347:
   model_args: *id050
@@ -3318,7 +2971,6 @@ M0347:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0348:
   model_args: *id050
@@ -3327,7 +2979,6 @@ M0348:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0349:
   model_args: *id050
@@ -3336,7 +2987,6 @@ M0349:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 240
 M0350:
   model_args: &id051
@@ -3346,7 +2996,6 @@ M0350:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0351:
   model_args: *id051
@@ -3355,7 +3004,6 @@ M0351:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0352:
   model_args: *id051
@@ -3364,7 +3012,6 @@ M0352:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0353:
   model_args: *id051
@@ -3373,7 +3020,6 @@ M0353:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0354:
   model_args: *id051
@@ -3382,7 +3028,6 @@ M0354:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0355:
   model_args: *id051
@@ -3391,7 +3036,6 @@ M0355:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0356:
   model_args: *id051
@@ -3400,7 +3044,6 @@ M0356:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0357:
   model_args: &id052
@@ -3410,7 +3053,6 @@ M0357:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0358:
   model_args: *id052
@@ -3419,7 +3061,6 @@ M0358:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0359:
   model_args: *id052
@@ -3428,7 +3069,6 @@ M0359:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0360:
   model_args: *id052
@@ -3437,7 +3077,6 @@ M0360:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0361:
   model_args: *id052
@@ -3446,7 +3085,6 @@ M0361:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0362:
   model_args: *id052
@@ -3455,7 +3093,6 @@ M0362:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0363:
   model_args: *id052
@@ -3464,7 +3101,6 @@ M0363:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0364:
   model_args: &id053
@@ -3474,7 +3110,6 @@ M0364:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0365:
   model_args: *id053
@@ -3483,7 +3118,6 @@ M0365:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0366:
   model_args: *id053
@@ -3492,7 +3126,6 @@ M0366:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0367:
   model_args: *id053
@@ -3501,7 +3134,6 @@ M0367:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0368:
   model_args: *id053
@@ -3510,7 +3142,6 @@ M0368:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0369:
   model_args: *id053
@@ -3519,7 +3150,6 @@ M0369:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0370:
   model_args: *id053
@@ -3528,7 +3158,6 @@ M0370:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0371:
   model_args: &id054
@@ -3545,7 +3174,6 @@ M0371:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0372:
   model_args: *id054
@@ -3554,7 +3182,6 @@ M0372:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0373:
   model_args: *id054
@@ -3563,7 +3190,6 @@ M0373:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0374:
   model_args: *id054
@@ -3572,7 +3198,6 @@ M0374:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0375:
   model_args: *id054
@@ -3581,7 +3206,6 @@ M0375:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0376:
   model_args: *id054
@@ -3590,7 +3214,6 @@ M0376:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0377:
   model_args: *id054
@@ -3599,7 +3222,6 @@ M0377:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0378:
   model_args: &id055
@@ -3616,7 +3238,6 @@ M0378:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0379:
   model_args: *id055
@@ -3625,7 +3246,6 @@ M0379:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0380:
   model_args: *id055
@@ -3634,7 +3254,6 @@ M0380:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0381:
   model_args: *id055
@@ -3643,7 +3262,6 @@ M0381:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0382:
   model_args: *id055
@@ -3652,7 +3270,6 @@ M0382:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0383:
   model_args: *id055
@@ -3661,7 +3278,6 @@ M0383:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0384:
   model_args: *id055
@@ -3670,7 +3286,6 @@ M0384:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 480
 M0385:
   model_args: &id056
@@ -3680,7 +3295,6 @@ M0385:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0386:
   model_args: *id056
@@ -3689,7 +3303,6 @@ M0386:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0387:
   model_args: *id056
@@ -3698,7 +3311,6 @@ M0387:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0388:
   model_args: *id056
@@ -3707,7 +3319,6 @@ M0388:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0389:
   model_args: *id056
@@ -3716,7 +3327,6 @@ M0389:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0390:
   model_args: *id056
@@ -3725,7 +3335,6 @@ M0390:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0391:
   model_args: *id056
@@ -3734,7 +3343,6 @@ M0391:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0392:
   model_args: &id057
@@ -3744,7 +3352,6 @@ M0392:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0393:
   model_args: *id057
@@ -3753,7 +3360,6 @@ M0393:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0394:
   model_args: *id057
@@ -3762,7 +3368,6 @@ M0394:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0395:
   model_args: *id057
@@ -3771,7 +3376,6 @@ M0395:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0396:
   model_args: *id057
@@ -3780,7 +3384,6 @@ M0396:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0397:
   model_args: *id057
@@ -3789,7 +3392,6 @@ M0397:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0398:
   model_args: *id057
@@ -3798,7 +3400,6 @@ M0398:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0399:
   model_args: &id058
@@ -3808,7 +3409,6 @@ M0399:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0400:
   model_args: *id058
@@ -3817,7 +3417,6 @@ M0400:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0401:
   model_args: *id058
@@ -3826,7 +3425,6 @@ M0401:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0402:
   model_args: *id058
@@ -3835,7 +3433,6 @@ M0402:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0403:
   model_args: *id058
@@ -3844,7 +3441,6 @@ M0403:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0404:
   model_args: *id058
@@ -3853,7 +3449,6 @@ M0404:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0405:
   model_args: *id058
@@ -3862,7 +3457,6 @@ M0405:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0406:
   model_args: &id059
@@ -3879,7 +3473,6 @@ M0406:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0407:
   model_args: *id059
@@ -3888,7 +3481,6 @@ M0407:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0408:
   model_args: *id059
@@ -3897,7 +3489,6 @@ M0408:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0409:
   model_args: *id059
@@ -3906,7 +3497,6 @@ M0409:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0410:
   model_args: *id059
@@ -3915,7 +3505,6 @@ M0410:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0411:
   model_args: *id059
@@ -3924,7 +3513,6 @@ M0411:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0412:
   model_args: *id059
@@ -3933,7 +3521,6 @@ M0412:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0413:
   model_args: &id060
@@ -3950,7 +3537,6 @@ M0413:
   ret_name: OpenRtn010L1-NEU
   sector: GLD
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0414:
   model_args: *id060
@@ -3959,7 +3545,6 @@ M0414:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0415:
   model_args: *id060
@@ -3968,7 +3553,6 @@ M0415:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0416:
   model_args: *id060
@@ -3977,7 +3561,6 @@ M0416:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0417:
   model_args: *id060
@@ -3986,7 +3569,6 @@ M0417:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0418:
   model_args: *id060
@@ -3995,7 +3577,6 @@ M0418:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  top_ratio: 0.5
   trn_win: 720
 M0419:
   model_args: *id060
@@ -4004,5 +3585,4 @@ M0419:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  top_ratio: 0.5
   trn_win: 720

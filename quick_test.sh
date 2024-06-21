@@ -1,15 +1,7 @@
-bgn_date_ic="20140303"  # some factor need a window to calculate
 bgn_date_ml="20170203"  # machine learning bgn date
 bgn_date_sig="20170703" # signal bgn date
 bgn_date_sim="20180102" # simulation bgn date
 end_date="20240131"     # TSDB Futhot may wrong after this date
-
-# IC
-rm -r /var/data/StackData/futures/team/huxo/ic_tests/*
-python main.ic_tests.py --switch cal --bgn $bgn_date_ic --end $end_date
-python main.ic_tests.py --switch plt --bgn $bgn_date_ic --end $end_date
-python main.ic_tests.py --switch rol --bgn $bgn_date_ic --end $end_date
-python main.ic_tests.py --switch slc --bgn $bgn_date_ic --end $end_date
 
 # feature selection
 python main.feature_selection.py --bgn $bgn_date_ml --end $end_date

@@ -32,7 +32,7 @@ if __name__ == "__main__":
         avlb_path=os.path.join(cfg_path.available_dir, "available.ss"),
         mclrn_dir=cfg_path.mclrn_dir,
         prediction_dir=cfg_path.prediction_dir,
-        ic_save_dir=cfg_path.ic_tests_dir,
+        feature_selection_dir=cfg_path.feature_selection_dir,
         universe=cfg_strategy.universe,
         bgn_date=args.bgn,
         end_date=args.end or args.bgn,

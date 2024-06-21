@@ -4,7 +4,6 @@ from hUtils.tools import qtimer
 from hUtils.typeDef import (
     CTest,
     CRet,
-    CSlcFacs,
     CModel,
     TSigArgsSS,
     TSigArgsTSDB,
@@ -27,18 +26,15 @@ def parse_model_configs(
     shift: int,
     sectors: list[str],
     trn_wins: list[int],
-    cfg_strategy_icir: dict,
     path_config_models: str,
 ):
-    top_ratios = cfg_strategy_icir["top_ratios"]
     m, iter_args = 0, {}
-    for ret_name, top_ratio, trn_win in product(ret_names, top_ratios, trn_wins):
+    for ret_name, trn_win in product(ret_names, trn_wins):
         shared_args = {
             "ret_class": ret_class,
             "ret_name": ret_name,
             "shift": shift,
             "trn_win": trn_win,
-            "top_ratio": top_ratio,
         }
         for model_type, model_args in models.items():
             arg_val_combs = list(product(*model_args.values()))
@@ -67,9 +63,8 @@ def get_tests(config_models: dict[str, dict]) -> list[CTest]:
     tests: list[CTest] = []
     for unique_id, m in config_models.items():
         ret = CRet(ret_class=m["ret_class"], ret_name=m["ret_name"], shift=m["shift"])
-        facs = CSlcFacs(top_ratio=m["top_ratio"])
         model = CModel(model_type=m["model_type"], model_args=m["model_args"])
-        test = CTest(unique_Id=unique_id, trn_win=m["trn_win"], sector=m["sector"], ret=ret, facs=facs, model=model)
+        test = CTest(unique_Id=unique_id, trn_win=m["trn_win"], sector=m["sector"], ret=ret, model=model)
         tests.append(test)
     return tests
 

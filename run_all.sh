@@ -4,7 +4,6 @@ rm /var/TSDB/FutHot/d01/e/team/huxo/* -rf
 python config.py
 
 bgn_date="20120104"
-bgn_date_ic="20140303"  # some factor need a window to calculate
 bgn_date_ml="20170203"  # machine learning bgn date
 bgn_date_sig="20170703" # signal bgn date
 bgn_date_sim="20180102" # simulation bgn date
@@ -48,12 +47,6 @@ python main.factors.py --bgn $bgn_date --end $end_date --factor RWTC
 # TO TSDB
 python main.to_tsdb.py --type ret --end $end_date
 python main.to_tsdb.py --type fac --end $end_date
-
-# IC
-python main.ic_tests.py --switch cal --bgn $bgn_date_ic --end $end_date
-python main.ic_tests.py --switch plt --bgn $bgn_date_ic --end $end_date
-python main.ic_tests.py --switch rol --bgn $bgn_date_ic --end $end_date
-python main.ic_tests.py --switch slc --bgn $bgn_date_ic --end $end_date
 
 # feature selection
 python main.feature_selection.py --bgn $bgn_date_ml --end $end_date

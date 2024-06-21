@@ -10,8 +10,8 @@ from hUtils.tools import qtimer, SFG, SFY, SFR, check_and_mkdir, error_handler
 from hUtils.instruments import parse_instrument_from_contract
 from hUtils.calendar import CCalendar
 from hUtils.ioPlus import PySharedStackPlus, load_tsdb
-from hUtils.typeDef import CTest
-from hSolutions.sICTests import CSlcFacReader
+from hUtils.typeDef import CTest, CTestFtSlc, TFactor
+from hSolutions.sFeatureSelection import CFeatSlcReaderAndWriter
 
 
 """
@@ -80,13 +80,13 @@ class CMclrn:
         self.fitted_estimator = None
         return 0
 
-    def get_slc_facs(self, trading_day: np.int32) -> list[tuple[str, str]]:
+    def get_slc_facs(self, trading_day: np.int32) -> list[TFactor]:
         raise NotImplementedError
 
-    def set_x_cols(self, slc_facs: list[tuple[str, str]]):
+    def set_x_cols(self, slc_facs: list[TFactor]):
         self.__x_cols = [n for _, n in slc_facs]
 
-    def load_x(self, bgn_date: np.int32, end_date: np.int32, slc_facs: list[tuple[str, str]]) -> pd.DataFrame:
+    def load_x(self, bgn_date: np.int32, end_date: np.int32, slc_facs: list[TFactor]) -> pd.DataFrame:
         usr_prefix = ".".join(self.tsdb_user_prefix)
         value_columns, rename_mapper = [], {}
         for factor_class, factor_name in slc_facs:
@@ -291,7 +291,7 @@ class CMclrn:
         return 0
 
 
-class CMclrnSlcFacsFromRollingICIR(CMclrn):
+class CMclrnFromFeatureSelection(CMclrn):
     def __init__(
         self,
         using_instru: bool,
@@ -302,7 +302,7 @@ class CMclrnSlcFacsFromRollingICIR(CMclrn):
         avlb_path: str,
         mclrn_dir: str,
         prediction_dir: str,
-        ic_save_dir: str,
+        feature_selection_dir: str,
         universe: dict[str, dict[str, str]],
     ):
         super().__init__(
@@ -316,27 +316,21 @@ class CMclrnSlcFacsFromRollingICIR(CMclrn):
             prediction_dir=prediction_dir,
             universe=universe,
         )
-        self.slc_fac_reader = CSlcFacReader(
-            sector=test.sector,
-            ret_class=test.ret.ret_class,
-            ret_name=test.ret.ret_name,
-            shift=test.ret.shift,
-            top_ratio=test.facs.top_ratio,
-            rolling_win=test.trn_win,
-            ic_save_dir=ic_save_dir,
-        )
+        test_slcFac = CTestFtSlc(trn_win=test.trn_win, sector=test.sector, ret=test.ret)
+        self.slc_fac_reader = CFeatSlcReaderAndWriter(test=test_slcFac, feature_selection_dir=feature_selection_dir)
+        self.slc_fac_reader.load()
 
-    def get_slc_facs(self, trading_day: np.int32) -> list[tuple[str, str]]:
+    def get_slc_facs(self, trading_day: np.int32) -> list[TFactor]:
         return self.slc_fac_reader.get_slc_facs(trading_day=trading_day)
 
 
-class CMclrnRidge(CMclrnSlcFacsFromRollingICIR):
+class CMclrnRidge(CMclrnFromFeatureSelection):
     def __init__(self, alpha: float, **kwargs):
         super().__init__(using_instru=False, **kwargs)
         self.prototype = Ridge(alpha=alpha, fit_intercept=False)
 
 
-class CMclrnLGBM(CMclrnSlcFacsFromRollingICIR):
+class CMclrnLGBM(CMclrnFromFeatureSelection):
     def __init__(
         self,
         boosting_type: str,
@@ -380,7 +374,7 @@ def process_for_cMclrn(
     avlb_path: str,
     mclrn_dir: str,
     prediction_dir: str,
-    ic_save_dir: str,
+    feature_selection_dir: str,
     universe: dict[str, dict[str, str]],
     bgn_date: np.int32,
     end_date: np.int32,
@@ -402,7 +396,7 @@ def process_for_cMclrn(
         avlb_path=avlb_path,
         mclrn_dir=mclrn_dir,
         prediction_dir=prediction_dir,
-        ic_save_dir=ic_save_dir,
+        feature_selection_dir=feature_selection_dir,
         universe=universe,
         **test.model.model_args,
     )
@@ -419,7 +413,7 @@ def main_train_and_predict(
     avlb_path: str,
     mclrn_dir: str,
     prediction_dir: str,
-    ic_save_dir: str,
+    feature_selection_dir: str,
     universe: dict[str, dict[str, str]],
     bgn_date: np.int32,
     end_date: np.int32,
@@ -443,7 +437,7 @@ def main_train_and_predict(
                             "avlb_path": avlb_path,
                             "mclrn_dir": mclrn_dir,
                             "prediction_dir": prediction_dir,
-                            "ic_save_dir": ic_save_dir,
+                            "feature_selection_dir": feature_selection_dir,
                             "universe": universe,
                             "bgn_date": bgn_date,
                             "end_date": end_date,
@@ -457,6 +451,7 @@ def main_train_and_predict(
                 pool.join()
     else:
         for test in track(tests, description="[INF] Training and prediction for machine learning"):
+            # for test in tests:
             process_for_cMclrn(
                 test=test,
                 tsdb_root_dir=tsdb_root_dir,
@@ -465,7 +460,7 @@ def main_train_and_predict(
                 avlb_path=avlb_path,
                 mclrn_dir=mclrn_dir,
                 prediction_dir=prediction_dir,
-                ic_save_dir=ic_save_dir,
+                feature_selection_dir=feature_selection_dir,
                 universe=universe,
                 bgn_date=bgn_date,
                 end_date=end_date,

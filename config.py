@@ -48,7 +48,7 @@ class ConfigStrategy:
     available_universe: dict
     factors: dict[str, dict]
     trn: dict
-    icir: dict
+    feature_selection: dict
     mclrns: dict
     portfolios: dict[str, dict]
     CONST: dict

@@ -30,15 +30,6 @@ class CRet:
 
 
 @dataclass(frozen=True)
-class CSlcFacs:
-    top_ratio: float
-
-    @property
-    def desc(self) -> str:
-        return f"TR{int(self.top_ratio*100):02d}"
-
-
-@dataclass(frozen=True)
 class CModel:
     model_type: str
     model_args: dict
@@ -50,19 +41,17 @@ class CModel:
 
 @dataclass(frozen=True)
 class CTestFtSlc:
-    trn_win: int  # one of [60, 120, 240]
+    trn_win: int
     sector: str
     ret: CRet
-    facs_pool: list[TFactor]
 
 
 @dataclass(frozen=True)
 class CTest:
     unique_Id: str
-    trn_win: int  # one of [60, 120, 240]
+    trn_win: int
     sector: str
     ret: CRet
-    facs: CSlcFacs
     model: CModel
 
     @property
@@ -74,7 +63,6 @@ class CTest:
         return [
             self.ret.ret_class,  # 001L1-NEU
             self.tw,  # W060
-            self.facs.desc,  # TR01
             self.model.desc,  # Ridge
             self.sector,  # AGR
             self.unique_Id,  # M0005

@@ -2,7 +2,6 @@ import os
 import multiprocessing as mp
 import numpy as np
 import pandas as pd
-from numpy.typing import ArrayLike
 from dataclasses import dataclass
 from itertools import product
 from rich.progress import track, Progress

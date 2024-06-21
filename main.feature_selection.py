@@ -34,11 +34,11 @@ if __name__ == "__main__":
         trn_wins=cfg_strategy.trn["wins"],
         sectors=cfg_strategy.CONST["SECTORS"],
         rets=rets,
-        factors_pool=factors_pool_neu,
     )
-    breakpoint()
     main_feature_selection(
+        threshold=cfg_strategy.feature_selection["mut_info_threshold"],
         tests=tests,
+        facs_pool=factors_pool_neu,
         tsdb_root_dir=cfg_path.path_tsdb_futhot,
         tsdb_user_prefix=cfg_strategy.CONST["PREFIX_USER"],
         freq=cfg_strategy.CONST["FREQ"],

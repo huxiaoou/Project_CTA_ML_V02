@@ -282,9 +282,8 @@ factors:
 
 trn:
   wins: [30, 60, 120, 240, 480, 720]
-icir:
-  top_ratios: [0.50]
-  init_threshold: 0.005
+feature_selection:
+  mut_info_threshold: 0.05
 mclrns:
   models:
     Ridge:
@@ -330,4 +329,3 @@ CONST:
   RET_CLASS: "010L1-NEU"
   RET_NAMES: ["CloseRtn010L1-NEU", "OpenRtn010L1-NEU"]
   MAW: 10
-
