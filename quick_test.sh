@@ -4,6 +4,7 @@ bgn_date_sim="20180102" # simulation bgn date
 end_date="20240131"     # TSDB Futhot may wrong after this date
 
 # feature selection
+rm -r /var/data/StackData/futures/team/huxo/feature_selection/*
 python main.feature_selection.py --bgn $bgn_date_ml --end $end_date
 
 # model and prediciton

@@ -292,32 +292,32 @@ mclrns:
       boosting_type: ["gbdt"]
       metric: ["l2"]
       max_depth: [-1]
-      num_leaves: [2, 4]
+      num_leaves: [2, 4, 8]
       learning_rate: [0.1] # [0.01, 0.1, 1.0]
-      n_estimators: [10] # [50, 100, 200]
-      min_child_samples: [20] # min_data_in_leaf
+      n_estimators: [5, 10, 20] # [50, 100, 200]
+      min_child_samples: [10, 20] # min_data_in_leaf
       max_bin: [15]
 portfolios:
   P00:
     target: CloseRtn010L1-NEU # Be consistent with Wins and Lags in CONST
     weights:
-      M0201: 3 # AGR Sharpe = 0.746, Calmar = 0.710, W720, LGBM
-      M0198: 5 # BLK Sharpe = 0.955, Calmar = 0.789, W720, LGBM
-      M0158: 5 # CHM Sharpe = 1.333, Calmar = 1.206, W480, Ridge
-      # M0181: 3 # EQT Sharpe = 0.057, Calmar = 0.020, W720, Ridge
-      M0196: 1 # GLD Sharpe = 0.409, Calmar = 0.270, W720, LGBM
-      # M0036: 3 # MTL Sharpe = -0.061, Calmar = -0.021, W060, Ridge
-      M0087: 3 # OIL Sharpe = 0.309, Calmar = 0.166, W120, Ridge
+      M0621: 3 # AGR Sharpe = 0.874, Calmar = 0.826, W480, LGBM
+      M0828: 5 # BLK Sharpe = 1.018, Calmar = 0.588, W720, LGBM
+      M0606: 5 # CHM Sharpe = 1.308, Calmar = 1.172, W480, Ridge
+      # M0307: 3 # EQT Sharpe = 0.371, Calmar = 0.195, W120, Ridge
+      # M0448: 1 # GLD Sharpe = 0.157, Calmar = 0.075, W240, Ridge
+      # M0505: 3 # MTL Sharpe = 0.269, Calmar = 0.139, W240, LGBM
+      M0311: 3 # OIL Sharpe = 0.601, Calmar = 0.389, W120, Ridge
   P01:
     target: OpenRtn010L1-NEU # Be consistent with Wins and Lags in CONST
     weights:
-      M0411: 3 # AGR Sharpe = 0.634, Calmar = 0.478, W720, LGBM
-      M0408: 5 # BLK Sharpe = 0.650, Calmar = 0.628, W720, LGBM
-      M0368: 5 # CHM Sharpe = 1.003, Calmar = 0.678, W480, Ridge
-      # M0412: 3 # EQT Sharpe = 0.380, Calmar = 0.179, W720, LGBM
-      # M0364: 1 # GLD Sharpe = 0.080, Calmar = 0.028, W480, Ridge
-      M0330: 3 # MTL Sharpe = 0.644, Calmar = 0.398, W240, Ridge
-      # M0381: 3 # OIL Sharpe = 0.163, Calmar = 0.117, W480, LGBM
+      M1664: 3 # AGR Sharpe = 0.757, Calmar = 0.573, W720, LGBM
+      M1703: 5 # BLK Sharpe = 0.833, Calmar = 0.752, W720, LGBM
+      M1488: 5 # CHM Sharpe = 1.074, Calmar = 0.859, W480, Ridge
+      # M1644: 3 # EQT Sharpe = 0.299, Calmar = 0.121, W720, LGBM
+      M1582: 1 # GLD Sharpe = 0.744, Calmar = 0.504, W480, LGBM
+      # M0904: 3 # MTL Sharpe = 0.199, Calmar = 0.139, W030, LGBM
+      M1186: 3 # OIL Sharpe = 0.553, Calmar = 0.327, W120, Ridge
 CONST:
   COST: 0.0003
   FREQ: "d01e"

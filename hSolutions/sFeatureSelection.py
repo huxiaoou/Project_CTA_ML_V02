@@ -262,7 +262,7 @@ class CFeatSlcMutInf(CFeatSlc):
         )
 
     def core(self, x_data: pd.DataFrame, y_data: pd.Series) -> list[TFactorName]:
-        importance = mutual_info_regression(X=x_data, y=y_data)
+        importance = mutual_info_regression(X=x_data, y=y_data, random_state=self.RANDOM_STATE)
         feat_importance = pd.Series(data=importance, index=x_data.columns).sort_values(ascending=False)
         # if False:
         #     corr = [np.corrcoef(x_data[col], y_data)[0, 1] for col in x_data.columns]
