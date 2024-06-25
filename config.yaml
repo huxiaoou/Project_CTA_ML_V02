@@ -21,7 +21,6 @@ market_dir: /var/data/StackData/futures/team/huxo/market
 factors_by_instru_dir: /var/data/StackData/futures/team/huxo/factors_by_instru
 neutral_by_instru_dir: /var/data/StackData/futures/team/huxo/neutral_by_instru
 y_dir: /var/data/StackData/futures/team/huxo/Y
-ic_tests_dir: /var/data/StackData/futures/team/huxo/ic_tests
 feature_selection_dir: /var/data/StackData/futures/team/huxo/feature_selection
 mclrn_dir: /var/data/StackData/futures/team/huxo/mclrn
 prediction_dir: /var/data/StackData/futures/team/huxo/prediction
@@ -43,10 +42,10 @@ mkt_idxes:
 universe:
   au:
     sectorL0: C
-    sectorL1: GLD
+    sectorL1: MTL
   ag:
     sectorL0: C
-    sectorL1: GLD
+    sectorL1: MTL
 
   cu:
     sectorL0: C
@@ -215,9 +214,9 @@ universe:
   IH:
     sectorL0: F
     sectorL1: EQT
-  IM:
-    sectorL0: F
-    sectorL1: EQT
+  # IM:
+  #   sectorL0: F
+  #   sectorL1: EQT
 
 available_universe:
   win: 5
@@ -284,6 +283,7 @@ trn:
   wins: [30, 60, 120, 240, 480, 720]
 feature_selection:
   mut_info_threshold: 0.05
+  min_feats: 5
 mclrns:
   models:
     Ridge:
@@ -301,28 +301,26 @@ portfolios:
   P00:
     target: CloseRtn010L1-NEU # Be consistent with Wins and Lags in CONST
     weights:
-      M0621: 3 # AGR Sharpe = 0.874, Calmar = 0.826, W480, LGBM
-      M0828: 5 # BLK Sharpe = 1.018, Calmar = 0.588, W720, LGBM
-      M0606: 5 # CHM Sharpe = 1.308, Calmar = 1.172, W480, Ridge
-      # M0307: 3 # EQT Sharpe = 0.371, Calmar = 0.195, W120, Ridge
-      # M0448: 1 # GLD Sharpe = 0.157, Calmar = 0.075, W240, Ridge
-      # M0505: 3 # MTL Sharpe = 0.269, Calmar = 0.139, W240, LGBM
-      M0311: 3 # OIL Sharpe = 0.601, Calmar = 0.389, W120, Ridge
+      M0532: 3 # AGR Sharpe = 0.874, Calmar = 0.826, W480, LGBM
+      M0709: 5 # BLK Sharpe = 1.018, Calmar = 0.588, W720, LGBM
+      M0519: 5 # CHM Sharpe = 1.308, Calmar = 1.172, W480, Ridge
+      # M0521: 3 # EQT Sharpe = 0.379, Calmar = 0.188, W480, Ridge
+      # M0660: 3 # MTL Sharpe = 0.315, Calmar = 0.190, W720, LGBM
+      M0266: 3 # OIL Sharpe = 0.601, Calmar = 0.389, W120, Ridge
   P01:
     target: OpenRtn010L1-NEU # Be consistent with Wins and Lags in CONST
     weights:
-      M1664: 3 # AGR Sharpe = 0.757, Calmar = 0.573, W720, LGBM
-      M1703: 5 # BLK Sharpe = 0.833, Calmar = 0.752, W720, LGBM
-      M1488: 5 # CHM Sharpe = 1.074, Calmar = 0.859, W480, Ridge
-      # M1644: 3 # EQT Sharpe = 0.299, Calmar = 0.121, W720, LGBM
-      M1582: 1 # GLD Sharpe = 0.744, Calmar = 0.504, W480, LGBM
-      # M0904: 3 # MTL Sharpe = 0.199, Calmar = 0.139, W030, LGBM
-      M1186: 3 # OIL Sharpe = 0.553, Calmar = 0.327, W120, Ridge
+      M1420: 3 # AGR Sharpe = 0.757, Calmar = 0.573, W720, LGBM
+      M1453: 5 # BLK Sharpe = 0.833, Calmar = 0.752, W720, LGBM
+      M1275: 5 # CHM Sharpe = 1.074, Calmar = 0.859, W480, Ridge
+      # M1421: 3 # EQT Sharpe = 0.419, Calmar = 0.199, W720, LGBM
+      # M1410: 3 # MTL Sharpe = 0.476, Calmar = 0.267, W720, LGBM
+      M1016: 3 # OIL Sharpe = 0.553, Calmar = 0.327, W120, Ridge
 CONST:
   COST: 0.0003
   FREQ: "d01e"
   PREFIX_USER: ["team", "huxo"]
-  SECTORS: ["GLD", "MTL", "BLK", "OIL", "CHM", "AGR", "EQT"]
+  SECTORS: ["MTL", "BLK", "OIL", "CHM", "AGR", "EQT"]
   WIN: 10
   LAG: 1
   SHIFT: 11

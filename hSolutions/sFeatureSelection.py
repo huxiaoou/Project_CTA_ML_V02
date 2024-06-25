@@ -172,7 +172,7 @@ class CFeatSlc(CFeatSlcReaderAndWriter):
     def get_X_y(self, aligned_data: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:
         return aligned_data[self.x_cols], aligned_data[self.y_col]
 
-    def core(self, x_data: pd.DataFrame, y_data: pd.Series) -> list[TFactorName]:
+    def core(self, x_data: pd.DataFrame, y_data: pd.Series, trading_day: np.int32) -> list[TFactorName]:
         raise NotImplementedError
 
     def get_factor_class(self, factor_names: list[TFactorName]) -> list[TFactorClass]:
@@ -211,7 +211,7 @@ class CFeatSlc(CFeatSlcReaderAndWriter):
         aligned_data = self.aligned_xy(x_data, y_data)
         aligned_data = self.drop_and_fill_nan(aligned_data)
         X, y = self.get_X_y(aligned_data=aligned_data)
-        factor_names = self.core(x_data=X, y_data=y)
+        factor_names = self.core(x_data=X, y_data=y, trading_day=trn_e_date)
         factor_class = self.get_factor_class(factor_names=factor_names)
         selected_feats = self.get_selected_feats(trn_e_date, factor_class=factor_class, factor_names=factor_names)
         if verbose:
@@ -240,6 +240,7 @@ class CFeatSlcMutInf(CFeatSlc):
     def __init__(
         self,
         threshold: float,
+        min_feats: int,
         test: CTestFtSlc,
         tsdb_root_dir: str,
         tsdb_user_prefix: list[str],
@@ -250,6 +251,7 @@ class CFeatSlcMutInf(CFeatSlc):
         facs_pool: list[TFactor],
     ):
         self.threshold = threshold
+        self.min_feats = min_feats
         super().__init__(
             test=test,
             tsdb_root_dir=tsdb_root_dir,
@@ -261,7 +263,8 @@ class CFeatSlcMutInf(CFeatSlc):
             facs_pool=facs_pool,
         )
 
-    def core(self, x_data: pd.DataFrame, y_data: pd.Series) -> list[TFactorName]:
+    def core(self, x_data: pd.DataFrame, y_data: pd.Series, trading_day: np.int32) -> list[TFactorName]:
+        __minimum_score = 1e-4
         importance = mutual_info_regression(X=x_data, y=y_data, random_state=self.RANDOM_STATE)
         feat_importance = pd.Series(data=importance, index=x_data.columns).sort_values(ascending=False)
         # if False:
@@ -270,23 +273,24 @@ class CFeatSlcMutInf(CFeatSlc):
         #     df = pd.DataFrame({"mutual_info": feat_importance, "corr": feat_corr}).sort_values(
         #         by=["mutual_info", "corr"], ascending=False
         #     )
-        t = self.threshold
-        selected_feats = feat_importance[feat_importance >= t]
 
-        i = 0
-        while selected_feats.empty:
-            t = t * 0.8
-            selected_feats = feat_importance[feat_importance >= t]
-            i += 1
+        if len(available_feats := feat_importance[feat_importance >= __minimum_score]) < self.min_feats:
+            return [TFactorName(z) for z in available_feats.index]
+
+        t, i = self.threshold, 0
+        while len(selected_feats := feat_importance[feat_importance >= t]) < self.min_feats:
+            t, i = t * 0.8, i + 1
         if i > 0:
             print(
-                f"[INF] After {i} iteration {len(selected_feats)} features are selected, {self.test.sector}-{self.test.trn_win}"
+                f"[INF] After {SFY(i)} times iteration {SFY(f'{len(selected_feats):>2d}')} features are selected, "
+                f"{SFY(self.test.sector)}-{SFY(self.test.trn_win)}-{SFY(trading_day)}"
             )
         return [TFactorName(z) for z in selected_feats.index]
 
 
 def process_for_feature_selection(
     threshold: float,
+    min_feats: int,
     test: CTestFtSlc,
     facs_pool: list[TFactor],
     tsdb_root_dir: str,
@@ -302,6 +306,7 @@ def process_for_feature_selection(
 ):
     selector = CFeatSlcMutInf(
         threshold=threshold,
+        min_feats=min_feats,
         test=test,
         tsdb_root_dir=tsdb_root_dir,
         tsdb_user_prefix=tsdb_user_prefix,
@@ -318,6 +323,7 @@ def process_for_feature_selection(
 @qtimer
 def main_feature_selection(
     threshold: float,
+    min_feats: int,
     tests: list[CTestFtSlc],
     facs_pool: list[TFactor],
     tsdb_root_dir: str,
@@ -335,13 +341,14 @@ def main_feature_selection(
 ):
     if call_multiprocess:
         with Progress() as pb:
-            main_task = pb.add_task(description="[INF] Training and prediction for machine learning", total=len(tests))
+            main_task = pb.add_task(description="[INF] Selecting features ...", total=len(tests))
             with mp.get_context("spawn").Pool(processes=processes) as pool:
                 for test in tests:
                     pool.apply_async(
                         process_for_feature_selection,
                         kwds={
                             "threshold": threshold,
+                            "min_feats": min_feats,
                             "test": test,
                             "facs_pool": facs_pool,
                             "tsdb_root_dir": tsdb_root_dir,
@@ -361,10 +368,11 @@ def main_feature_selection(
                 pool.close()
                 pool.join()
     else:
-        for test in track(tests, description="[INF] Training and prediction for machine learning"):
+        for test in track(tests, description="[INF] Selecting features ..."):
             # for test in tests:
             process_for_feature_selection(
                 threshold=threshold,
+                min_feats=min_feats,
                 test=test,
                 facs_pool=facs_pool,
                 tsdb_root_dir=tsdb_root_dir,

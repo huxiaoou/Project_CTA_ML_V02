@@ -31,7 +31,6 @@ class ConfigPath:
     neutral_by_instru_dir: str
 
     y_dir: str
-    ic_tests_dir: str
     feature_selection_dir: str
     mclrn_dir: str
     prediction_dir: str
@@ -126,13 +125,14 @@ if __name__ == "__main__":
     check_and_mkdir(cfg_path.factors_by_instru_dir, True)
     check_and_mkdir(cfg_path.neutral_by_instru_dir, True)
     check_and_mkdir(cfg_path.y_dir, True)
-    check_and_mkdir(cfg_path.ic_tests_dir, True)
+    check_and_mkdir(cfg_path.feature_selection_dir, True)
     check_and_mkdir(cfg_path.mclrn_dir, True)
     check_and_mkdir(cfg_path.prediction_dir, True)
     check_and_mkdir(cfg_path.signals_dir, True)
     check_and_mkdir(cfg_path.simulations_dir, True)
     check_and_mkdir(cfg_path.evaluations_dir, True)
 
+    print(f"[INF] There {len(cfg_strategy.CONST['SECTORS'])} sectors, they are: {cfg_strategy.CONST['SECTORS']}")
     sector = pd.DataFrame.from_dict(cfg_strategy.universe, orient="index")
     for sector_l1, sector_data in sector.groupby(by="sectorL1"):
         print(f"[INF] Sector {sector_l1}: size = {len(sector_data):>2d}, contains: {sector_data.index.tolist()}")

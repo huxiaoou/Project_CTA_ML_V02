@@ -37,6 +37,7 @@ if __name__ == "__main__":
     )
     main_feature_selection(
         threshold=cfg_strategy.feature_selection["mut_info_threshold"],
+        min_feats=cfg_strategy.feature_selection["min_feats"],
         tests=tests,
         facs_pool=factors_pool_neu,
         tsdb_root_dir=cfg_path.path_tsdb_futhot,

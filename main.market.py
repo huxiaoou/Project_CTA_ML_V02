@@ -40,5 +40,6 @@ if __name__ == "__main__":
         available_dir=cfg_path.available_dir,
         market_dir=cfg_path.market_dir,
         path_mkt_idx_data=cfg_path.path_mkt_idx_data,
-        mkt_idxes=list(cfg_strategy.mkt_idxes.values())
+        mkt_idxes=list(cfg_strategy.mkt_idxes.values()),
+        sectors=cfg_strategy.CONST["SECTORS"],
     )
