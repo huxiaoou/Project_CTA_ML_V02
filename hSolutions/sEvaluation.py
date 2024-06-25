@@ -146,7 +146,7 @@ Part II: Plot-Single
 
 
 def process_for_plot(
-    group_key: tuple[str, str, str, str, str],
+    group_key: tuple[str, str, str, str],
     sub_grouped_sim_args: dict[tuple[str, str], CSimArg],
     simulations_dir: str,
     fig_save_dir: str,
@@ -205,7 +205,7 @@ def main_plot_sims(
 
 def process_for_plot_by_sector(
     sector: str,
-    sector_sim_args: dict[tuple[str, str, str, str, str, str], CSimArg],
+    sector_sim_args: dict[tuple[str, str, str, str, str], CSimArg],
     simulations_dir: str,
     fig_save_dir: str,
     bgn_date: np.int32,
@@ -347,12 +347,22 @@ def main_plot_portfolios(
     nav_df = (ret_df + 1).cumprod()
 
     plot_lines(
-        data=nav_df,
+        data=nav_df[["P00", "P01"]],
         figsize=(16, 9),
         line_width=2,
-        colormap="jet",
+        line_color=["#0000CD", "#DC143C"],
+        fig_name="portfolios_2",
+        fig_save_type="pdf",
+        fig_save_dir=fig_save_dir,
+    )
+
+    plot_lines(
+        data=nav_df[["P00"]],
+        figsize=(16, 9),
+        line_width=2,
+        line_color=["#0000CD", "#DC143C"],
         fig_name="portfolios",
-        fig_save_type="jpg",
+        fig_save_type="pdf",
         fig_save_dir=fig_save_dir,
     )
     return 0

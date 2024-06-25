@@ -31,7 +31,10 @@ def plot_lines(
     xticks = np.arange(0, len(data), len(data) / 10)
     ax0.set_xticks(xticks)
     xticklabels = data.index[xticks.astype(int)]
-    ax0.set_xticklabels(xticklabels)
+    ax0.set_xticklabels(xticklabels, fontsize=16)
+    ax0.set_xlabel("")
+    ax0.tick_params(axis="y", labelsize=16)
+    ax0.legend(loc="upper left")
 
     fig0_name = f"{fig_name}.{fig_save_type}"
     fig0_path = os.path.join(fig_save_dir, fig0_name)

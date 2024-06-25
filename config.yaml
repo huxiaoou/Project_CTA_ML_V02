@@ -295,27 +295,27 @@ mclrns:
       num_leaves: [2, 4, 8]
       learning_rate: [0.1] # [0.01, 0.1, 1.0]
       n_estimators: [5, 10, 20] # [50, 100, 200]
-      min_child_samples: [10, 20] # min_data_in_leaf
+      min_child_samples: [15] # min_data_in_leaf
       max_bin: [15]
 portfolios:
   P00:
     target: CloseRtn010L1-NEU # Be consistent with Wins and Lags in CONST
     weights:
-      M0532: 3 # AGR Sharpe = 0.874, Calmar = 0.826, W480, LGBM
-      M0709: 5 # BLK Sharpe = 1.018, Calmar = 0.588, W720, LGBM
-      M0519: 5 # CHM Sharpe = 1.308, Calmar = 1.172, W480, Ridge
-      # M0521: 3 # EQT Sharpe = 0.379, Calmar = 0.188, W480, Ridge
-      # M0660: 3 # MTL Sharpe = 0.315, Calmar = 0.190, W720, LGBM
-      M0266: 3 # OIL Sharpe = 0.601, Calmar = 0.389, W120, Ridge
+      M0388: 3 # AGR Sharpe = 0.911, Calmar = 0.680, W720, LGBM
+      M0385: 5 # BLK Sharpe = 1.007, Calmar = 0.717, W720, LGBM
+      M0303: 5 # CHM Sharpe = 1.326, Calmar = 1.383, W480, Ridge
+      # M0245: 3 # EQT Sharpe = 0.206, Calmar = 0.108, W240, LGBM
+      # M0378: 3 # MTL Sharpe = 0.345, Calmar = 0.262, W720, LGBM
+      M0152: 3 # OIL Sharpe = 0.690, Calmar = 0.434, W120, Ridge
   P01:
     target: OpenRtn010L1-NEU # Be consistent with Wins and Lags in CONST
     weights:
-      M1420: 3 # AGR Sharpe = 0.757, Calmar = 0.573, W720, LGBM
-      M1453: 5 # BLK Sharpe = 0.833, Calmar = 0.752, W720, LGBM
-      M1275: 5 # CHM Sharpe = 1.074, Calmar = 0.859, W480, Ridge
-      # M1421: 3 # EQT Sharpe = 0.419, Calmar = 0.199, W720, LGBM
-      # M1410: 3 # MTL Sharpe = 0.476, Calmar = 0.267, W720, LGBM
-      M1016: 3 # OIL Sharpe = 0.553, Calmar = 0.327, W120, Ridge
+      M0742: 3 # AGR Sharpe = 1.070, Calmar = 0.905, W480, LGBM
+      M0841: 5 # BLK Sharpe = 0.846, Calmar = 0.793, W720, LGBM
+      M0735: 5 # CHM Sharpe = 1.393, Calmar = 1.557, W480, Ridge
+      M0815: 3 # EQT Sharpe = 0.449, Calmar = 0.241, W720, LGBM
+      M0810: 3 # MTL Sharpe = 0.437, Calmar = 0.232, W720, LGBM
+      # M0488: 3 # OIL Sharpe = 0.284, Calmar = 0.149, W030, LGBM
 CONST:
   COST: 0.0003
   FREQ: "d01e"
