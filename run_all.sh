@@ -33,8 +33,11 @@ python main.factors.py --bgn $bgn_date --end $end_date --factor CBETA
 python main.factors.py --bgn $bgn_date --end $end_date --factor IBETA
 python main.factors.py --bgn $bgn_date --end $end_date --factor PBETA
 python main.factors.py --bgn $bgn_date --end $end_date --factor CTP
+python main.factors.py --bgn $bgn_date --end $end_date --factor CTR
 python main.factors.py --bgn $bgn_date --end $end_date --factor CVP
+python main.factors.py --bgn $bgn_date --end $end_date --factor CVR
 python main.factors.py --bgn $bgn_date --end $end_date --factor CSP
+python main.factors.py --bgn $bgn_date --end $end_date --factor CSR
 python main.factors.py --bgn $bgn_date --end $end_date --factor NOI
 python main.factors.py --bgn $bgn_date --end $end_date --factor NDOI
 python main.factors.py --bgn $bgn_date --end $end_date --factor WNOI

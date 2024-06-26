@@ -286,7 +286,7 @@ if __name__ == "__main__":
 
     if args.type == "fac":
         main_factor(
-            cfg_factors=list(cfg_factors.values()),
+            cfg_factors=cfg_factors.values(),
             src_stack_data_dir=cfg_path.path_stack_data_fut,
             dst_tsdb_dir=cfg_path.path_tsdb_futhot,
             freq=FREQ,

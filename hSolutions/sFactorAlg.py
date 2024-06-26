@@ -259,6 +259,21 @@ class CCfgFactorCTP(CCfgFactor):
 
 
 @dataclasses.dataclass(frozen=True)
+class CCfgFactorCTR(CCfgFactor):
+    wins: list[int]
+    tops: list[float]
+
+    @property
+    def factor_class(self) -> TFactorClass:
+        return TFactorClass("CTR")
+
+    @property
+    def factor_names(self) -> TFactorNames:
+        n0 = [TFactorName(f"{self.factor_class}{w:03d}T{int(t*10):02d}") for w, t in ittl.product(self.wins, self.tops)]
+        return TFactorNames(n0)
+
+
+@dataclasses.dataclass(frozen=True)
 class CCfgFactorCVP(CCfgFactor):
     wins: list[int]
     tops: list[float]
@@ -274,6 +289,21 @@ class CCfgFactorCVP(CCfgFactor):
 
 
 @dataclasses.dataclass(frozen=True)
+class CCfgFactorCVR(CCfgFactor):
+    wins: list[int]
+    tops: list[float]
+
+    @property
+    def factor_class(self) -> TFactorClass:
+        return TFactorClass("CVR")
+
+    @property
+    def factor_names(self) -> TFactorNames:
+        n0 = [TFactorName(f"{self.factor_class}{w:03d}T{int(t*10):02d}") for w, t in ittl.product(self.wins, self.tops)]
+        return TFactorNames(n0)
+
+
+@dataclasses.dataclass(frozen=True)
 class CCfgFactorCSP(CCfgFactor):
     wins: list[int]
     tops: list[float]
@@ -281,6 +311,21 @@ class CCfgFactorCSP(CCfgFactor):
     @property
     def factor_class(self) -> TFactorClass:
         return TFactorClass("CSP")
+
+    @property
+    def factor_names(self) -> TFactorNames:
+        n0 = [TFactorName(f"{self.factor_class}{w:03d}T{int(t*10):02d}") for w, t in ittl.product(self.wins, self.tops)]
+        return TFactorNames(n0)
+
+
+@dataclasses.dataclass(frozen=True)
+class CCfgFactorCSR(CCfgFactor):
+    wins: list[int]
+    tops: list[float]
+
+    @property
+    def factor_class(self) -> TFactorClass:
+        return TFactorClass("CSR")
 
     @property
     def factor_names(self) -> TFactorNames:
@@ -359,9 +404,15 @@ class CCfgFactorAMP(CCfgFactor):
 
     @property
     def factor_names(self) -> TFactorNames:
-        nh = [TFactorName(f"{self.factor_class}{w:03d}T{int(l*10):02d}H") for w, l in ittl.product(self.wins, self.lbds)]
-        nl = [TFactorName(f"{self.factor_class}{w:03d}T{int(l*10):02d}L") for w, l in ittl.product(self.wins, self.lbds)]
-        nd = [TFactorName(f"{self.factor_class}{w:03d}T{int(l*10):02d}D") for w, l in ittl.product(self.wins, self.lbds)]
+        nh = [
+            TFactorName(f"{self.factor_class}{w:03d}T{int(l*10):02d}H") for w, l in ittl.product(self.wins, self.lbds)
+        ]
+        nl = [
+            TFactorName(f"{self.factor_class}{w:03d}T{int(l*10):02d}L") for w, l in ittl.product(self.wins, self.lbds)
+        ]
+        nd = [
+            TFactorName(f"{self.factor_class}{w:03d}T{int(l*10):02d}D") for w, l in ittl.product(self.wins, self.lbds)
+        ]
         return TFactorNames(nh + nl + nd)
 
 
@@ -395,8 +446,12 @@ class CCfgFactorSMT(CCfgFactor):
 
     @property
     def factor_names(self) -> TFactorNames:
-        n_prc = [TFactorName(f"{self.factor_class}{w:03d}T{int(l*10):02d}P") for w, l in ittl.product(self.wins, self.lbds)]
-        n_ret = [TFactorName(f"{self.factor_class}{w:03d}T{int(l*10):02d}R") for w, l in ittl.product(self.wins, self.lbds)]
+        n_prc = [
+            TFactorName(f"{self.factor_class}{w:03d}T{int(l*10):02d}P") for w, l in ittl.product(self.wins, self.lbds)
+        ]
+        n_ret = [
+            TFactorName(f"{self.factor_class}{w:03d}T{int(l*10):02d}R") for w, l in ittl.product(self.wins, self.lbds)
+        ]
         return TFactorNames(n_prc + n_ret)
 
 
@@ -416,6 +471,42 @@ class CCfgFactorRWTC(CCfgFactor):
         nt = [TFactorName(f"{self.factor_class}{w:03d}T") for w in self.wins]
         nv = [TFactorName(f"{self.factor_class}{w:03d}V") for w in self.wins]
         return TFactorNames(nu + nd + nt + nv)
+
+
+# ---------------------------------
+@dataclasses.dataclass(frozen=True)
+class CCfgFactors:
+    MTM: CCfgFactorMTM | None
+    SKEW: CCfgFactorSKEW | None
+    RS: CCfgFactorRS | None
+    BASIS: CCfgFactorBASIS | None
+    TS: CCfgFactorTS | None
+    S0BETA: CCfgFactorS0BETA | None
+    S1BETA: CCfgFactorS1BETA | None
+    CBETA: CCfgFactorCBETA | None
+    IBETA: CCfgFactorIBETA | None
+    PBETA: CCfgFactorPBETA | None
+    CTP: CCfgFactorCTP | None
+    CTR: CCfgFactorCTR | None
+    CVP: CCfgFactorCVP | None
+    CVR: CCfgFactorCVR | None
+    CSP: CCfgFactorCSP | None
+    CSR: CCfgFactorCSR | None
+    NOI: CCfgFactorNOI | None
+    NDOI: CCfgFactorNDOI | None
+    WNOI: CCfgFactorWNOI | None
+    WNDOI: CCfgFactorWNDOI | None
+    AMP: CCfgFactorAMP | None
+    EXR: CCfgFactorEXR | None
+    SMT: CCfgFactorSMT | None
+    RWTC: CCfgFactorRWTC | None
+
+    def values(self) -> list[CCfgFactor]:
+        res = []
+        for _, v in vars(self).items():
+            if v is not None:
+                res.append(v)
+        return res
 
 
 """
@@ -679,7 +770,7 @@ class CFactorPBETA(__CFactorBETA):
         return factor_data
 
 
-class __CFactorCXP(CFactor):
+class __CFactorCXY(CFactor):
     def cal_rolling_top_corr(
         self,
         raw_data: pd.DataFrame,
@@ -706,7 +797,7 @@ class __CFactorCXP(CFactor):
         return 0
 
 
-class CFactorCTP(__CFactorCXP):
+class CFactorCTP(__CFactorCXY):
     def __init__(self, cfg: CCfgFactorCTP, **kwargs):
         self.cfg = cfg
         super().__init__(factor_class=cfg.factor_class, factor_names=cfg.factor_names, **kwargs)
@@ -733,7 +824,34 @@ class CFactorCTP(__CFactorCXP):
         return factor_data
 
 
-class CFactorCVP(__CFactorCXP):
+class CFactorCTR(__CFactorCXY):
+    def __init__(self, cfg: CCfgFactorCTR, **kwargs):
+        self.cfg = cfg
+        super().__init__(factor_class=cfg.factor_class, factor_names=cfg.factor_names, **kwargs)
+
+    def cal_factor_by_instru(
+        self, instru: str, bgn_date: np.int32, end_date: np.int32, calendar: CCalendar
+    ) -> pd.DataFrame:
+        win_start_date = calendar.get_start_date(bgn_date, max(self.cfg.wins), -5)
+        adj_major_data = self.get_adj_major_data(instru, win_start_date, end_date)
+        adj_major_data["aver_oi"] = adj_major_data["oi"].rolling(window=2).mean()
+        adj_major_data["turnover"] = adj_major_data["vol"] / adj_major_data["aver_oi"]
+        x, y = "turnover", "major_return"
+        self.cal_rolling_top_corr(
+            adj_major_data,
+            bgn_date=bgn_date,
+            end_date=end_date,
+            x=x,
+            y=y,
+            wins=self.cfg.wins,
+            tops=self.cfg.tops,
+            sort_var="vol",
+        )
+        factor_data = self.get_factor_data(adj_major_data, bgn_date=bgn_date)
+        return factor_data
+
+
+class CFactorCVP(__CFactorCXY):
     def __init__(self, cfg: CCfgFactorCVP, **kwargs):
         self.cfg = cfg
         super().__init__(factor_class=cfg.factor_class, factor_names=cfg.factor_names, **kwargs)
@@ -758,7 +876,32 @@ class CFactorCVP(__CFactorCXP):
         return factor_data
 
 
-class CFactorCSP(__CFactorCXP):
+class CFactorCVR(__CFactorCXY):
+    def __init__(self, cfg: CCfgFactorCVR, **kwargs):
+        self.cfg = cfg
+        super().__init__(factor_class=cfg.factor_class, factor_names=cfg.factor_names, **kwargs)
+
+    def cal_factor_by_instru(
+        self, instru: str, bgn_date: np.int32, end_date: np.int32, calendar: CCalendar
+    ) -> pd.DataFrame:
+        win_start_date = calendar.get_start_date(bgn_date, max(self.cfg.wins), -5)
+        adj_major_data = self.get_adj_major_data(instru, win_start_date, end_date)
+        x, y = "vol", "major_return"
+        self.cal_rolling_top_corr(
+            adj_major_data,
+            bgn_date=bgn_date,
+            end_date=end_date,
+            x=x,
+            y=y,
+            wins=self.cfg.wins,
+            tops=self.cfg.tops,
+            sort_var="vol",
+        )
+        factor_data = self.get_factor_data(adj_major_data, bgn_date=bgn_date)
+        return factor_data
+
+
+class CFactorCSP(__CFactorCXY):
     def __init__(self, cfg: CCfgFactorCSP, **kwargs):
         self.cfg = cfg
         super().__init__(factor_class=cfg.factor_class, factor_names=cfg.factor_names, **kwargs)
@@ -772,6 +915,34 @@ class CFactorCSP(__CFactorCXP):
         adj_major_data = self.truncate(major_data, index="trading_day", before=win_start_date, after=end_date)
         adj_major_data["sigma"] = adj_major_data["major_return"].fillna(0).rolling(window=__near_short_term).std()
         x, y = "sigma", "closeM"
+        self.cal_rolling_top_corr(
+            adj_major_data,
+            bgn_date=bgn_date,
+            end_date=end_date,
+            x=x,
+            y=y,
+            wins=self.cfg.wins,
+            tops=self.cfg.tops,
+            sort_var="vol",
+        )
+        factor_data = self.get_factor_data(adj_major_data, bgn_date=bgn_date)
+        return factor_data
+
+
+class CFactorCSR(__CFactorCXY):
+    def __init__(self, cfg: CCfgFactorCSR, **kwargs):
+        self.cfg = cfg
+        super().__init__(factor_class=cfg.factor_class, factor_names=cfg.factor_names, **kwargs)
+
+    def cal_factor_by_instru(
+        self, instru: str, bgn_date: np.int32, end_date: np.int32, calendar: CCalendar
+    ) -> pd.DataFrame:
+        major_data = self.load_major(instru)
+        __near_short_term = 20
+        win_start_date = calendar.get_start_date(bgn_date, max(self.cfg.wins), -5)
+        adj_major_data = self.truncate(major_data, index="trading_day", before=win_start_date, after=end_date)
+        adj_major_data["sigma"] = adj_major_data["major_return"].fillna(0).rolling(window=__near_short_term).std()
+        x, y = "sigma", "major_return"
         self.cal_rolling_top_corr(
             adj_major_data,
             bgn_date=bgn_date,

@@ -36,7 +36,7 @@ def parse_args():
         choices=("MTM", "SKEW")
         + ("RS", "BASIS", "TS")
         + ("S0BETA", "S1BETA", "CBETA", "IBETA", "PBETA")
-        + ("CTP", "CVP", "CSP")
+        + ("CTP", "CTR", "CVP", "CVR", "CSP", "CSR")
         + ("NOI", "NDOI", "WNOI", "WNDOI")
         + ("AMP", "EXR", "SMT", "RWTC"),
     )
@@ -53,239 +53,292 @@ if __name__ == "__main__":
     args = parse_args()
     calendar = CCalendar(cfg_path.path_calendar)
     instru_info_tab = CInstrumentInfoTable(cfg_path.path_instru_info)
+    fac = None
 
     if args.factor == "MTM":
         from hSolutions.sFactorAlg import CFactorMTM
 
-        fac = CFactorMTM(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-        )
+        if (cfg := cfg_factors.MTM) is not None:
+            fac = CFactorMTM(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+            )
     elif args.factor == "SKEW":
         from hSolutions.sFactorAlg import CFactorSKEW
 
-        fac = CFactorSKEW(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-        )
+        if (cfg := cfg_factors.SKEW) is not None:
+            fac = CFactorSKEW(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+            )
     elif args.factor == "RS":
         from hSolutions.sFactorAlg import CFactorRS
 
-        fac = CFactorRS(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            preprocess_dir=cfg_path.preprocess_dir,
-        )
+        if (cfg := cfg_factors.RS) is not None:
+            fac = CFactorRS(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                preprocess_dir=cfg_path.preprocess_dir,
+            )
     elif args.factor == "BASIS":
         from hSolutions.sFactorAlg import CFactorBASIS
 
-        fac = CFactorBASIS(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            preprocess_dir=cfg_path.preprocess_dir,
-        )
+        if (cfg := cfg_factors.BASIS) is not None:
+            fac = CFactorBASIS(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                preprocess_dir=cfg_path.preprocess_dir,
+            )
     elif args.factor == "TS":
         from hSolutions.sFactorAlg import CFactorTS
 
-        fac = CFactorTS(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            preprocess_dir=cfg_path.preprocess_dir,
-        )
+        if (cfg := cfg_factors.TS) is not None:
+            fac = CFactorTS(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                preprocess_dir=cfg_path.preprocess_dir,
+            )
     elif args.factor == "S0BETA":
         from hSolutions.sFactorAlg import CFactorS0BETA
 
-        fac = CFactorS0BETA(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            market_dir=cfg_path.market_dir,
-        )
+        if (cfg := cfg_factors.S0BETA) is not None:
+            fac = CFactorS0BETA(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                market_dir=cfg_path.market_dir,
+            )
     elif args.factor == "S1BETA":
         from hSolutions.sFactorAlg import CFactorS1BETA
 
-        fac = CFactorS1BETA(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            market_dir=cfg_path.market_dir,
-        )
+        if (cfg := cfg_factors.S1BETA) is not None:
+            fac = CFactorS1BETA(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                market_dir=cfg_path.market_dir,
+            )
     elif args.factor == "CBETA":
         from hSolutions.sFactorAlg import CFactorCBETA
 
-        fac = CFactorCBETA(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            alternative_dir=cfg_path.alternative_dir,
-        )
+        if (cfg := cfg_factors.CBETA) is not None:
+            fac = CFactorCBETA(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                alternative_dir=cfg_path.alternative_dir,
+            )
     elif args.factor == "IBETA":
         from hSolutions.sFactorAlg import CFactorIBETA
 
-        fac = CFactorIBETA(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            alternative_dir=cfg_path.alternative_dir,
-        )
+        if (cfg := cfg_factors.IBETA) is not None:
+            fac = CFactorIBETA(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                alternative_dir=cfg_path.alternative_dir,
+            )
     elif args.factor == "PBETA":
         from hSolutions.sFactorAlg import CFactorPBETA
 
-        fac = CFactorPBETA(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            alternative_dir=cfg_path.alternative_dir,
-        )
+        if (cfg := cfg_factors.PBETA) is not None:
+            fac = CFactorPBETA(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                alternative_dir=cfg_path.alternative_dir,
+            )
     elif args.factor == "CTP":
         from hSolutions.sFactorAlg import CFactorCTP
 
-        fac = CFactorCTP(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-        )
+        if (cfg := cfg_factors.CTP) is not None:
+            fac = CFactorCTP(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+            )
+    elif args.factor == "CTR":
+        from hSolutions.sFactorAlg import CFactorCTR
+
+        if (cfg := cfg_factors.CTR) is not None:
+            fac = CFactorCTR(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+            )
     elif args.factor == "CVP":
         from hSolutions.sFactorAlg import CFactorCVP
 
-        fac = CFactorCVP(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-        )
+        if (cfg := cfg_factors.CVP) is not None:
+            fac = CFactorCVP(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+            )
+    elif args.factor == "CVR":
+        from hSolutions.sFactorAlg import CFactorCVR
+
+        if (cfg := cfg_factors.CVR) is not None:
+            fac = CFactorCVR(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+            )
     elif args.factor == "CSP":
         from hSolutions.sFactorAlg import CFactorCSP
 
-        fac = CFactorCSP(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-        )
+        if (cfg := cfg_factors.CSP) is not None:
+            fac = CFactorCSP(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+            )
+    elif args.factor == "CSR":
+        from hSolutions.sFactorAlg import CFactorCSR
+
+        if (cfg := cfg_factors.CSR) is not None:
+            fac = CFactorCSR(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+            )
     elif args.factor == "NOI":
         from hSolutions.sFactorAlg import CFactorNOI
 
-        fac = CFactorNOI(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            preprocess_dir=cfg_path.preprocess_dir,
-            mbr_pos_dir=cfg_path.mbr_pos_dir,
-        )
+        if (cfg := cfg_factors.NOI) is not None:
+            fac = CFactorNOI(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                preprocess_dir=cfg_path.preprocess_dir,
+                mbr_pos_dir=cfg_path.mbr_pos_dir,
+            )
     elif args.factor == "NDOI":
         from hSolutions.sFactorAlg import CFactorNDOI
 
-        fac = CFactorNDOI(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            preprocess_dir=cfg_path.preprocess_dir,
-            mbr_pos_dir=cfg_path.mbr_pos_dir,
-        )
+        if (cfg := cfg_factors.NDOI) is not None:
+            fac = CFactorNDOI(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                preprocess_dir=cfg_path.preprocess_dir,
+                mbr_pos_dir=cfg_path.mbr_pos_dir,
+            )
     elif args.factor == "WNOI":
         from hSolutions.sFactorAlg import CFactorWNOI
 
-        fac = CFactorWNOI(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            preprocess_dir=cfg_path.preprocess_dir,
-            mbr_pos_dir=cfg_path.mbr_pos_dir,
-        )
+        if (cfg := cfg_factors.WNOI) is not None:
+            fac = CFactorWNOI(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                preprocess_dir=cfg_path.preprocess_dir,
+                mbr_pos_dir=cfg_path.mbr_pos_dir,
+            )
     elif args.factor == "WNDOI":
         from hSolutions.sFactorAlg import CFactorWNDOI
 
-        fac = CFactorWNDOI(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            preprocess_dir=cfg_path.preprocess_dir,
-            mbr_pos_dir=cfg_path.mbr_pos_dir,
-        )
+        if (cfg := cfg_factors.WNDOI) is not None:
+            fac = CFactorWNDOI(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                preprocess_dir=cfg_path.preprocess_dir,
+                mbr_pos_dir=cfg_path.mbr_pos_dir,
+            )
     elif args.factor == "AMP":
         from hSolutions.sFactorAlg import CFactorAMP
 
-        fac = CFactorAMP(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-        )
+        if (cfg := cfg_factors.AMP) is not None:
+            fac = CFactorAMP(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+            )
     elif args.factor == "EXR":
         from hSolutions.sFactorAlg import CFactorEXR
 
-        fac = CFactorEXR(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            minute_bar_dir=cfg_path.minute_bar_dir,
-        )
+        if (cfg := cfg_factors.EXR) is not None:
+            fac = CFactorEXR(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                minute_bar_dir=cfg_path.minute_bar_dir,
+            )
     elif args.factor == "SMT":
         from hSolutions.sFactorAlg import CFactorSMT
 
-        fac = CFactorSMT(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            minute_bar_dir=cfg_path.minute_bar_dir,
-        )
+        if (cfg := cfg_factors.SMT) is not None:
+            fac = CFactorSMT(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                minute_bar_dir=cfg_path.minute_bar_dir,
+            )
     elif args.factor == "RWTC":
         from hSolutions.sFactorAlg import CFactorRWTC
 
-        fac = CFactorRWTC(
-            cfg=cfg_factors[args.factor],
-            universe=cfg_strategy.universe,
-            factors_by_instru_dir=cfg_path.factors_by_instru_dir,
-            major_dir=cfg_path.major_dir,
-            minute_bar_dir=cfg_path.minute_bar_dir,
-        )
+        if (cfg := cfg_factors.RWTC) is not None:
+            fac = CFactorRWTC(
+                cfg=cfg,
+                universe=cfg_strategy.universe,
+                factors_by_instru_dir=cfg_path.factors_by_instru_dir,
+                major_dir=cfg_path.major_dir,
+                minute_bar_dir=cfg_path.minute_bar_dir,
+            )
     else:
         raise ValueError(f"factor = {args.factor} is illegal")
 
-    PROCESSES = 12
-    fac.main(
-        bgn_date=args.bgn,
-        end_date=args.end or args.bgn,
-        calendar=calendar,
-        call_multiprocess=not args.nomp,
-        processes=PROCESSES,
-    )
+    if fac is not None:
+        PROCESSES = 12
+        fac.main(
+            bgn_date=args.bgn,
+            end_date=args.end or args.bgn,
+            calendar=calendar,
+            call_multiprocess=not args.nomp,
+            processes=PROCESSES,
+        )
 
-    # Neutralization
-    neutralizer = CFactorNeu(
-        ref_factor=fac,
-        universe=cfg_strategy.universe,
-        major_dir=cfg_path.major_dir,
-        available_dir=cfg_path.available_dir,
-        neutral_by_instru_dir=cfg_path.neutral_by_instru_dir,
-    )
-    neutralizer.main_neutralize(
-        bgn_date=args.bgn,
-        end_date=args.end or args.bgn,
-        calendar=calendar,
-        call_multiprocess=not args.nomp,
-        processes=PROCESSES,
-    )
+        # Neutralization
+        neutralizer = CFactorNeu(
+            ref_factor=fac,
+            universe=cfg_strategy.universe,
+            major_dir=cfg_path.major_dir,
+            available_dir=cfg_path.available_dir,
+            neutral_by_instru_dir=cfg_path.neutral_by_instru_dir,
+        )
+        neutralizer.main_neutralize(
+            bgn_date=args.bgn,
+            end_date=args.end or args.bgn,
+            calendar=calendar,
+            call_multiprocess=not args.nomp,
+            processes=PROCESSES,
+        )

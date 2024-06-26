@@ -2,15 +2,24 @@
 
 ## 摘要
 
+### 模块说明
+
++ 按品种计算主力合约复权数据, 由`main.major.py`完成
 + 另类数据, 由`main.alternative.py`完成
 + 按品种生成会员持仓数据, 由`main.mbr_pos.py`完成
 + 按品种生成辅助数据, 由`main.preprocess.py`完成
-+ 按品种计算主力合约复权数据, 由`main.major.py`完成
 + 生成活跃品种池, 由`main.available.py`完成
 + 生成市场与行业收益, 由`main.market.py`完成
 + 计算各类基本因子, 由`main.factors.py`完成
 + 自定义未来收益/预测目标, 由`main.test_return.py`完成
-+ 基本因子计算流程:
++ 因子选择, 由`main.feature_selection.py`完成
++ 模型配置, 由`main.mclrn.manage_models.py`完成
++ 模型训练, 由`main.mclrn.py`完成
++ 信号生成, 由`main.signals.py`完成
++ 模拟回测, 由`main.simulations.py`完成
++ 评估定型, 由`main.evaluations.py`完成
+
+### 框架流程
 
 ```mermaid
 graph TB
@@ -30,9 +39,9 @@ graph TB
     K[main.major.py] --> L(major/品种名.ss)
 
     L --> Y
-    Y[main.factors.py] --> Y1
+    Y[main.factors.py] -- 生成因子 --> Y1
     Y1(factors_by_instru/因子名/品种.ss) --> Y2
-    Y2[main.factors.py] --> Y3
+    Y2[main.factors.py] -- 因子中性化 --> Y3
     Y3(neutral_instru/因子名/品种.ss)
 
     L --> Z
@@ -47,6 +56,17 @@ graph TB
     O[main.market.py]-->P
     P(market/market.ss)-->Y
 
+    Y3 --> Y4
+    Y4[main.feature_selection.py] -- 因子选择 --> Y5
+    Y5(feature_selection/*TRN*/行业.ss) --> Y6
+    Y6[python main.mclrn.manage_models.py] -- 模型工厂 --> Y7
+    Y7(config_models.yaml) --> Y8
+    Y8[main.mclrn.py] -- 机器学习: Ridge, LightGBM, ... --> Y9
+    Y9[main.signals.py] -- 信号生成 --> YX
+    YX[main.simulations.py] -- 模拟回测 --> YA
+    YA[main.evaluations.py] -- 评估定型 --> YB
+    YB(结束)
+
 
 ```
 
@@ -54,15 +74,15 @@ graph TB
 
 ### 生成另类数据: **`main.alternative.py`**
 
-0. 生成人民币兑美元汇率数据, CPI数据和M2数据
+0. 生成人民币兑美元汇率数据, CPI数据, PPI数据和M2数据
 1. 核心输入
     + Wind金融终端, 提供由Wind整理的相关数据, 主要包含以下两个文件
-        + **`/home/huxo/Deploy/Data/Macro/china_cpi_m2.xlsx`**
+        + **`/home/huxo/Deploy/Data/Macro/china_cpi_ppi_m2.xlsx`**
         + **`/home/huxo/Deploy/Data/Forex/exchange_rate.xlsx`**
     + `/var/HFDB/TradeDates.txt` 用于查询交易日期, 并在增量更新时确保数据连续性
 2. 核心计算
     + 人民币兑美元汇率是日频数据, 提供该汇率的日K线级别的数据.
-    + CPI数据和M2数据按月公布, 通常在T月中旬公布T-1月数据, 为避免未来函数效应, 已将该数据**按照延迟2月对齐**, 然后以日频形式保存. 即在T月使用的均是T-2月的数据.
+    + CPI, PPI和M2数据按月公布, 通常在T月中旬公布T-1月数据, 为避免未来函数效应, 已将该数据**按照延迟2月对齐**, 然后以日频形式保存. 即在T月使用的均是T-2月的数据.
 3. 核心输出
     + 人民币兑美元汇率数据 `/var/data/StackData/futures/team/huxo/alternative/forex.ss`
 
@@ -86,6 +106,7 @@ graph TB
             ("tp", np.int64),
             ("trading_day", np.int32),
             ("cpi_rate", np.float32),  # CPI数据, 已自动延迟2个自然月
+            ("ppi_rate", np.float32),  # PPI数据, 已自动延迟2个自然月
             ("m2_rate", np.float32),  # M2数据, 已自动延迟2个自然月
         ]
         ```

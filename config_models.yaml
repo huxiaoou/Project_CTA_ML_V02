@@ -6,7 +6,7 @@ M0000:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0001:
   model_args: *id001
   model_type: Ridge
@@ -14,7 +14,7 @@ M0001:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0002:
   model_args: *id001
   model_type: Ridge
@@ -22,7 +22,7 @@ M0002:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0003:
   model_args: *id001
   model_type: Ridge
@@ -30,7 +30,7 @@ M0003:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0004:
   model_args: *id001
   model_type: Ridge
@@ -38,7 +38,7 @@ M0004:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0005:
   model_args: *id001
   model_type: Ridge
@@ -46,7 +46,7 @@ M0005:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0006:
   model_args: &id002
     alpha: 10.0
@@ -55,7 +55,7 @@ M0006:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0007:
   model_args: *id002
   model_type: Ridge
@@ -63,7 +63,7 @@ M0007:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0008:
   model_args: *id002
   model_type: Ridge
@@ -71,7 +71,7 @@ M0008:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0009:
   model_args: *id002
   model_type: Ridge
@@ -79,7 +79,7 @@ M0009:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0010:
   model_args: *id002
   model_type: Ridge
@@ -87,7 +87,7 @@ M0010:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0011:
   model_args: *id002
   model_type: Ridge
@@ -95,7 +95,7 @@ M0011:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0012:
   model_args: &id003
     alpha: 100.0
@@ -104,7 +104,7 @@ M0012:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0013:
   model_args: *id003
   model_type: Ridge
@@ -112,7 +112,7 @@ M0013:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0014:
   model_args: *id003
   model_type: Ridge
@@ -120,7 +120,7 @@ M0014:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0015:
   model_args: *id003
   model_type: Ridge
@@ -128,7 +128,7 @@ M0015:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0016:
   model_args: *id003
   model_type: Ridge
@@ -136,7 +136,7 @@ M0016:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0017:
   model_args: *id003
   model_type: Ridge
@@ -144,7 +144,7 @@ M0017:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0018:
   model_args: &id004
     boosting_type: gbdt
@@ -160,7 +160,7 @@ M0018:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0019:
   model_args: *id004
   model_type: LGBM
@@ -168,7 +168,7 @@ M0019:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0020:
   model_args: *id004
   model_type: LGBM
@@ -176,7 +176,7 @@ M0020:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0021:
   model_args: *id004
   model_type: LGBM
@@ -184,7 +184,7 @@ M0021:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0022:
   model_args: *id004
   model_type: LGBM
@@ -192,7 +192,7 @@ M0022:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0023:
   model_args: *id004
   model_type: LGBM
@@ -200,7 +200,7 @@ M0023:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0024:
   model_args: &id005
     boosting_type: gbdt
@@ -216,7 +216,7 @@ M0024:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0025:
   model_args: *id005
   model_type: LGBM
@@ -224,7 +224,7 @@ M0025:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0026:
   model_args: *id005
   model_type: LGBM
@@ -232,7 +232,7 @@ M0026:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0027:
   model_args: *id005
   model_type: LGBM
@@ -240,7 +240,7 @@ M0027:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0028:
   model_args: *id005
   model_type: LGBM
@@ -248,7 +248,7 @@ M0028:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0029:
   model_args: *id005
   model_type: LGBM
@@ -256,7 +256,7 @@ M0029:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0030:
   model_args: &id006
     boosting_type: gbdt
@@ -272,7 +272,7 @@ M0030:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0031:
   model_args: *id006
   model_type: LGBM
@@ -280,7 +280,7 @@ M0031:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0032:
   model_args: *id006
   model_type: LGBM
@@ -288,7 +288,7 @@ M0032:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0033:
   model_args: *id006
   model_type: LGBM
@@ -296,7 +296,7 @@ M0033:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0034:
   model_args: *id006
   model_type: LGBM
@@ -304,7 +304,7 @@ M0034:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0035:
   model_args: *id006
   model_type: LGBM
@@ -312,7 +312,7 @@ M0035:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0036:
   model_args: &id007
     boosting_type: gbdt
@@ -328,7 +328,7 @@ M0036:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0037:
   model_args: *id007
   model_type: LGBM
@@ -336,7 +336,7 @@ M0037:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0038:
   model_args: *id007
   model_type: LGBM
@@ -344,7 +344,7 @@ M0038:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0039:
   model_args: *id007
   model_type: LGBM
@@ -352,7 +352,7 @@ M0039:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0040:
   model_args: *id007
   model_type: LGBM
@@ -360,7 +360,7 @@ M0040:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0041:
   model_args: *id007
   model_type: LGBM
@@ -368,7 +368,7 @@ M0041:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0042:
   model_args: &id008
     boosting_type: gbdt
@@ -384,7 +384,7 @@ M0042:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0043:
   model_args: *id008
   model_type: LGBM
@@ -392,7 +392,7 @@ M0043:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0044:
   model_args: *id008
   model_type: LGBM
@@ -400,7 +400,7 @@ M0044:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0045:
   model_args: *id008
   model_type: LGBM
@@ -408,7 +408,7 @@ M0045:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0046:
   model_args: *id008
   model_type: LGBM
@@ -416,7 +416,7 @@ M0046:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0047:
   model_args: *id008
   model_type: LGBM
@@ -424,7 +424,7 @@ M0047:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0048:
   model_args: &id009
     boosting_type: gbdt
@@ -440,7 +440,7 @@ M0048:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0049:
   model_args: *id009
   model_type: LGBM
@@ -448,7 +448,7 @@ M0049:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0050:
   model_args: *id009
   model_type: LGBM
@@ -456,7 +456,7 @@ M0050:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0051:
   model_args: *id009
   model_type: LGBM
@@ -464,7 +464,7 @@ M0051:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0052:
   model_args: *id009
   model_type: LGBM
@@ -472,7 +472,7 @@ M0052:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0053:
   model_args: *id009
   model_type: LGBM
@@ -480,7 +480,7 @@ M0053:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0054:
   model_args: &id010
     boosting_type: gbdt
@@ -496,7 +496,7 @@ M0054:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0055:
   model_args: *id010
   model_type: LGBM
@@ -504,7 +504,7 @@ M0055:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0056:
   model_args: *id010
   model_type: LGBM
@@ -512,7 +512,7 @@ M0056:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0057:
   model_args: *id010
   model_type: LGBM
@@ -520,7 +520,7 @@ M0057:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0058:
   model_args: *id010
   model_type: LGBM
@@ -528,7 +528,7 @@ M0058:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0059:
   model_args: *id010
   model_type: LGBM
@@ -536,7 +536,7 @@ M0059:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0060:
   model_args: &id011
     boosting_type: gbdt
@@ -552,7 +552,7 @@ M0060:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0061:
   model_args: *id011
   model_type: LGBM
@@ -560,7 +560,7 @@ M0061:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0062:
   model_args: *id011
   model_type: LGBM
@@ -568,7 +568,7 @@ M0062:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0063:
   model_args: *id011
   model_type: LGBM
@@ -576,7 +576,7 @@ M0063:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0064:
   model_args: *id011
   model_type: LGBM
@@ -584,7 +584,7 @@ M0064:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0065:
   model_args: *id011
   model_type: LGBM
@@ -592,7 +592,7 @@ M0065:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0066:
   model_args: &id012
     boosting_type: gbdt
@@ -608,7 +608,7 @@ M0066:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0067:
   model_args: *id012
   model_type: LGBM
@@ -616,7 +616,7 @@ M0067:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0068:
   model_args: *id012
   model_type: LGBM
@@ -624,7 +624,7 @@ M0068:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0069:
   model_args: *id012
   model_type: LGBM
@@ -632,7 +632,7 @@ M0069:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0070:
   model_args: *id012
   model_type: LGBM
@@ -640,7 +640,7 @@ M0070:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0071:
   model_args: *id012
   model_type: LGBM
@@ -648,7 +648,7 @@ M0071:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 60
 M0072:
   model_args: &id013
     alpha: 1.0
@@ -657,7 +657,7 @@ M0072:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0073:
   model_args: *id013
   model_type: Ridge
@@ -665,7 +665,7 @@ M0073:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0074:
   model_args: *id013
   model_type: Ridge
@@ -673,7 +673,7 @@ M0074:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0075:
   model_args: *id013
   model_type: Ridge
@@ -681,7 +681,7 @@ M0075:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0076:
   model_args: *id013
   model_type: Ridge
@@ -689,7 +689,7 @@ M0076:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0077:
   model_args: *id013
   model_type: Ridge
@@ -697,7 +697,7 @@ M0077:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0078:
   model_args: &id014
     alpha: 10.0
@@ -706,7 +706,7 @@ M0078:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0079:
   model_args: *id014
   model_type: Ridge
@@ -714,7 +714,7 @@ M0079:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0080:
   model_args: *id014
   model_type: Ridge
@@ -722,7 +722,7 @@ M0080:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0081:
   model_args: *id014
   model_type: Ridge
@@ -730,7 +730,7 @@ M0081:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0082:
   model_args: *id014
   model_type: Ridge
@@ -738,7 +738,7 @@ M0082:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0083:
   model_args: *id014
   model_type: Ridge
@@ -746,7 +746,7 @@ M0083:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0084:
   model_args: &id015
     alpha: 100.0
@@ -755,7 +755,7 @@ M0084:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0085:
   model_args: *id015
   model_type: Ridge
@@ -763,7 +763,7 @@ M0085:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0086:
   model_args: *id015
   model_type: Ridge
@@ -771,7 +771,7 @@ M0086:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0087:
   model_args: *id015
   model_type: Ridge
@@ -779,7 +779,7 @@ M0087:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0088:
   model_args: *id015
   model_type: Ridge
@@ -787,7 +787,7 @@ M0088:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0089:
   model_args: *id015
   model_type: Ridge
@@ -795,7 +795,7 @@ M0089:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0090:
   model_args: &id016
     boosting_type: gbdt
@@ -811,7 +811,7 @@ M0090:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0091:
   model_args: *id016
   model_type: LGBM
@@ -819,7 +819,7 @@ M0091:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0092:
   model_args: *id016
   model_type: LGBM
@@ -827,7 +827,7 @@ M0092:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0093:
   model_args: *id016
   model_type: LGBM
@@ -835,7 +835,7 @@ M0093:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0094:
   model_args: *id016
   model_type: LGBM
@@ -843,7 +843,7 @@ M0094:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0095:
   model_args: *id016
   model_type: LGBM
@@ -851,7 +851,7 @@ M0095:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0096:
   model_args: &id017
     boosting_type: gbdt
@@ -867,7 +867,7 @@ M0096:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0097:
   model_args: *id017
   model_type: LGBM
@@ -875,7 +875,7 @@ M0097:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0098:
   model_args: *id017
   model_type: LGBM
@@ -883,7 +883,7 @@ M0098:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0099:
   model_args: *id017
   model_type: LGBM
@@ -891,7 +891,7 @@ M0099:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0100:
   model_args: *id017
   model_type: LGBM
@@ -899,7 +899,7 @@ M0100:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0101:
   model_args: *id017
   model_type: LGBM
@@ -907,7 +907,7 @@ M0101:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0102:
   model_args: &id018
     boosting_type: gbdt
@@ -923,7 +923,7 @@ M0102:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0103:
   model_args: *id018
   model_type: LGBM
@@ -931,7 +931,7 @@ M0103:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0104:
   model_args: *id018
   model_type: LGBM
@@ -939,7 +939,7 @@ M0104:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0105:
   model_args: *id018
   model_type: LGBM
@@ -947,7 +947,7 @@ M0105:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0106:
   model_args: *id018
   model_type: LGBM
@@ -955,7 +955,7 @@ M0106:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0107:
   model_args: *id018
   model_type: LGBM
@@ -963,7 +963,7 @@ M0107:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0108:
   model_args: &id019
     boosting_type: gbdt
@@ -979,7 +979,7 @@ M0108:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0109:
   model_args: *id019
   model_type: LGBM
@@ -987,7 +987,7 @@ M0109:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0110:
   model_args: *id019
   model_type: LGBM
@@ -995,7 +995,7 @@ M0110:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0111:
   model_args: *id019
   model_type: LGBM
@@ -1003,7 +1003,7 @@ M0111:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0112:
   model_args: *id019
   model_type: LGBM
@@ -1011,7 +1011,7 @@ M0112:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0113:
   model_args: *id019
   model_type: LGBM
@@ -1019,7 +1019,7 @@ M0113:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0114:
   model_args: &id020
     boosting_type: gbdt
@@ -1035,7 +1035,7 @@ M0114:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0115:
   model_args: *id020
   model_type: LGBM
@@ -1043,7 +1043,7 @@ M0115:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0116:
   model_args: *id020
   model_type: LGBM
@@ -1051,7 +1051,7 @@ M0116:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0117:
   model_args: *id020
   model_type: LGBM
@@ -1059,7 +1059,7 @@ M0117:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0118:
   model_args: *id020
   model_type: LGBM
@@ -1067,7 +1067,7 @@ M0118:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0119:
   model_args: *id020
   model_type: LGBM
@@ -1075,7 +1075,7 @@ M0119:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0120:
   model_args: &id021
     boosting_type: gbdt
@@ -1091,7 +1091,7 @@ M0120:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0121:
   model_args: *id021
   model_type: LGBM
@@ -1099,7 +1099,7 @@ M0121:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0122:
   model_args: *id021
   model_type: LGBM
@@ -1107,7 +1107,7 @@ M0122:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0123:
   model_args: *id021
   model_type: LGBM
@@ -1115,7 +1115,7 @@ M0123:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0124:
   model_args: *id021
   model_type: LGBM
@@ -1123,7 +1123,7 @@ M0124:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0125:
   model_args: *id021
   model_type: LGBM
@@ -1131,7 +1131,7 @@ M0125:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0126:
   model_args: &id022
     boosting_type: gbdt
@@ -1147,7 +1147,7 @@ M0126:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0127:
   model_args: *id022
   model_type: LGBM
@@ -1155,7 +1155,7 @@ M0127:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0128:
   model_args: *id022
   model_type: LGBM
@@ -1163,7 +1163,7 @@ M0128:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0129:
   model_args: *id022
   model_type: LGBM
@@ -1171,7 +1171,7 @@ M0129:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0130:
   model_args: *id022
   model_type: LGBM
@@ -1179,7 +1179,7 @@ M0130:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0131:
   model_args: *id022
   model_type: LGBM
@@ -1187,7 +1187,7 @@ M0131:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0132:
   model_args: &id023
     boosting_type: gbdt
@@ -1203,7 +1203,7 @@ M0132:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0133:
   model_args: *id023
   model_type: LGBM
@@ -1211,7 +1211,7 @@ M0133:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0134:
   model_args: *id023
   model_type: LGBM
@@ -1219,7 +1219,7 @@ M0134:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0135:
   model_args: *id023
   model_type: LGBM
@@ -1227,7 +1227,7 @@ M0135:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0136:
   model_args: *id023
   model_type: LGBM
@@ -1235,7 +1235,7 @@ M0136:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0137:
   model_args: *id023
   model_type: LGBM
@@ -1243,7 +1243,7 @@ M0137:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0138:
   model_args: &id024
     boosting_type: gbdt
@@ -1259,7 +1259,7 @@ M0138:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0139:
   model_args: *id024
   model_type: LGBM
@@ -1267,7 +1267,7 @@ M0139:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0140:
   model_args: *id024
   model_type: LGBM
@@ -1275,7 +1275,7 @@ M0140:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0141:
   model_args: *id024
   model_type: LGBM
@@ -1283,7 +1283,7 @@ M0141:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0142:
   model_args: *id024
   model_type: LGBM
@@ -1291,7 +1291,7 @@ M0142:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0143:
   model_args: *id024
   model_type: LGBM
@@ -1299,7 +1299,7 @@ M0143:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 120
 M0144:
   model_args: &id025
     alpha: 1.0
@@ -1308,7 +1308,7 @@ M0144:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0145:
   model_args: *id025
   model_type: Ridge
@@ -1316,7 +1316,7 @@ M0145:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0146:
   model_args: *id025
   model_type: Ridge
@@ -1324,7 +1324,7 @@ M0146:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0147:
   model_args: *id025
   model_type: Ridge
@@ -1332,7 +1332,7 @@ M0147:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0148:
   model_args: *id025
   model_type: Ridge
@@ -1340,7 +1340,7 @@ M0148:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0149:
   model_args: *id025
   model_type: Ridge
@@ -1348,7 +1348,7 @@ M0149:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0150:
   model_args: &id026
     alpha: 10.0
@@ -1357,7 +1357,7 @@ M0150:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0151:
   model_args: *id026
   model_type: Ridge
@@ -1365,7 +1365,7 @@ M0151:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0152:
   model_args: *id026
   model_type: Ridge
@@ -1373,7 +1373,7 @@ M0152:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0153:
   model_args: *id026
   model_type: Ridge
@@ -1381,7 +1381,7 @@ M0153:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0154:
   model_args: *id026
   model_type: Ridge
@@ -1389,7 +1389,7 @@ M0154:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0155:
   model_args: *id026
   model_type: Ridge
@@ -1397,7 +1397,7 @@ M0155:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0156:
   model_args: &id027
     alpha: 100.0
@@ -1406,7 +1406,7 @@ M0156:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0157:
   model_args: *id027
   model_type: Ridge
@@ -1414,7 +1414,7 @@ M0157:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0158:
   model_args: *id027
   model_type: Ridge
@@ -1422,7 +1422,7 @@ M0158:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0159:
   model_args: *id027
   model_type: Ridge
@@ -1430,7 +1430,7 @@ M0159:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0160:
   model_args: *id027
   model_type: Ridge
@@ -1438,7 +1438,7 @@ M0160:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0161:
   model_args: *id027
   model_type: Ridge
@@ -1446,7 +1446,7 @@ M0161:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0162:
   model_args: &id028
     boosting_type: gbdt
@@ -1462,7 +1462,7 @@ M0162:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0163:
   model_args: *id028
   model_type: LGBM
@@ -1470,7 +1470,7 @@ M0163:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0164:
   model_args: *id028
   model_type: LGBM
@@ -1478,7 +1478,7 @@ M0164:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0165:
   model_args: *id028
   model_type: LGBM
@@ -1486,7 +1486,7 @@ M0165:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0166:
   model_args: *id028
   model_type: LGBM
@@ -1494,7 +1494,7 @@ M0166:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0167:
   model_args: *id028
   model_type: LGBM
@@ -1502,7 +1502,7 @@ M0167:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0168:
   model_args: &id029
     boosting_type: gbdt
@@ -1518,7 +1518,7 @@ M0168:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0169:
   model_args: *id029
   model_type: LGBM
@@ -1526,7 +1526,7 @@ M0169:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0170:
   model_args: *id029
   model_type: LGBM
@@ -1534,7 +1534,7 @@ M0170:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0171:
   model_args: *id029
   model_type: LGBM
@@ -1542,7 +1542,7 @@ M0171:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0172:
   model_args: *id029
   model_type: LGBM
@@ -1550,7 +1550,7 @@ M0172:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0173:
   model_args: *id029
   model_type: LGBM
@@ -1558,7 +1558,7 @@ M0173:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0174:
   model_args: &id030
     boosting_type: gbdt
@@ -1574,7 +1574,7 @@ M0174:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0175:
   model_args: *id030
   model_type: LGBM
@@ -1582,7 +1582,7 @@ M0175:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0176:
   model_args: *id030
   model_type: LGBM
@@ -1590,7 +1590,7 @@ M0176:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0177:
   model_args: *id030
   model_type: LGBM
@@ -1598,7 +1598,7 @@ M0177:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0178:
   model_args: *id030
   model_type: LGBM
@@ -1606,7 +1606,7 @@ M0178:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0179:
   model_args: *id030
   model_type: LGBM
@@ -1614,7 +1614,7 @@ M0179:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0180:
   model_args: &id031
     boosting_type: gbdt
@@ -1630,7 +1630,7 @@ M0180:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0181:
   model_args: *id031
   model_type: LGBM
@@ -1638,7 +1638,7 @@ M0181:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0182:
   model_args: *id031
   model_type: LGBM
@@ -1646,7 +1646,7 @@ M0182:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0183:
   model_args: *id031
   model_type: LGBM
@@ -1654,7 +1654,7 @@ M0183:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0184:
   model_args: *id031
   model_type: LGBM
@@ -1662,7 +1662,7 @@ M0184:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0185:
   model_args: *id031
   model_type: LGBM
@@ -1670,7 +1670,7 @@ M0185:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0186:
   model_args: &id032
     boosting_type: gbdt
@@ -1686,7 +1686,7 @@ M0186:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0187:
   model_args: *id032
   model_type: LGBM
@@ -1694,7 +1694,7 @@ M0187:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0188:
   model_args: *id032
   model_type: LGBM
@@ -1702,7 +1702,7 @@ M0188:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0189:
   model_args: *id032
   model_type: LGBM
@@ -1710,7 +1710,7 @@ M0189:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0190:
   model_args: *id032
   model_type: LGBM
@@ -1718,7 +1718,7 @@ M0190:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0191:
   model_args: *id032
   model_type: LGBM
@@ -1726,7 +1726,7 @@ M0191:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0192:
   model_args: &id033
     boosting_type: gbdt
@@ -1742,7 +1742,7 @@ M0192:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0193:
   model_args: *id033
   model_type: LGBM
@@ -1750,7 +1750,7 @@ M0193:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0194:
   model_args: *id033
   model_type: LGBM
@@ -1758,7 +1758,7 @@ M0194:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0195:
   model_args: *id033
   model_type: LGBM
@@ -1766,7 +1766,7 @@ M0195:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0196:
   model_args: *id033
   model_type: LGBM
@@ -1774,7 +1774,7 @@ M0196:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0197:
   model_args: *id033
   model_type: LGBM
@@ -1782,7 +1782,7 @@ M0197:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0198:
   model_args: &id034
     boosting_type: gbdt
@@ -1798,7 +1798,7 @@ M0198:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0199:
   model_args: *id034
   model_type: LGBM
@@ -1806,7 +1806,7 @@ M0199:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0200:
   model_args: *id034
   model_type: LGBM
@@ -1814,7 +1814,7 @@ M0200:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0201:
   model_args: *id034
   model_type: LGBM
@@ -1822,7 +1822,7 @@ M0201:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0202:
   model_args: *id034
   model_type: LGBM
@@ -1830,7 +1830,7 @@ M0202:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0203:
   model_args: *id034
   model_type: LGBM
@@ -1838,7 +1838,7 @@ M0203:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0204:
   model_args: &id035
     boosting_type: gbdt
@@ -1854,7 +1854,7 @@ M0204:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0205:
   model_args: *id035
   model_type: LGBM
@@ -1862,7 +1862,7 @@ M0205:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0206:
   model_args: *id035
   model_type: LGBM
@@ -1870,7 +1870,7 @@ M0206:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0207:
   model_args: *id035
   model_type: LGBM
@@ -1878,7 +1878,7 @@ M0207:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0208:
   model_args: *id035
   model_type: LGBM
@@ -1886,7 +1886,7 @@ M0208:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0209:
   model_args: *id035
   model_type: LGBM
@@ -1894,7 +1894,7 @@ M0209:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0210:
   model_args: &id036
     boosting_type: gbdt
@@ -1910,7 +1910,7 @@ M0210:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0211:
   model_args: *id036
   model_type: LGBM
@@ -1918,7 +1918,7 @@ M0211:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0212:
   model_args: *id036
   model_type: LGBM
@@ -1926,7 +1926,7 @@ M0212:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0213:
   model_args: *id036
   model_type: LGBM
@@ -1934,7 +1934,7 @@ M0213:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0214:
   model_args: *id036
   model_type: LGBM
@@ -1942,7 +1942,7 @@ M0214:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0215:
   model_args: *id036
   model_type: LGBM
@@ -1950,7 +1950,7 @@ M0215:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 240
 M0216:
   model_args: &id037
     alpha: 1.0
@@ -1959,7 +1959,7 @@ M0216:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0217:
   model_args: *id037
   model_type: Ridge
@@ -1967,7 +1967,7 @@ M0217:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0218:
   model_args: *id037
   model_type: Ridge
@@ -1975,7 +1975,7 @@ M0218:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0219:
   model_args: *id037
   model_type: Ridge
@@ -1983,7 +1983,7 @@ M0219:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0220:
   model_args: *id037
   model_type: Ridge
@@ -1991,7 +1991,7 @@ M0220:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0221:
   model_args: *id037
   model_type: Ridge
@@ -1999,7 +1999,7 @@ M0221:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0222:
   model_args: &id038
     alpha: 10.0
@@ -2008,7 +2008,7 @@ M0222:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0223:
   model_args: *id038
   model_type: Ridge
@@ -2016,7 +2016,7 @@ M0223:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0224:
   model_args: *id038
   model_type: Ridge
@@ -2024,7 +2024,7 @@ M0224:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0225:
   model_args: *id038
   model_type: Ridge
@@ -2032,7 +2032,7 @@ M0225:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0226:
   model_args: *id038
   model_type: Ridge
@@ -2040,7 +2040,7 @@ M0226:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0227:
   model_args: *id038
   model_type: Ridge
@@ -2048,7 +2048,7 @@ M0227:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0228:
   model_args: &id039
     alpha: 100.0
@@ -2057,7 +2057,7 @@ M0228:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0229:
   model_args: *id039
   model_type: Ridge
@@ -2065,7 +2065,7 @@ M0229:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0230:
   model_args: *id039
   model_type: Ridge
@@ -2073,7 +2073,7 @@ M0230:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0231:
   model_args: *id039
   model_type: Ridge
@@ -2081,7 +2081,7 @@ M0231:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0232:
   model_args: *id039
   model_type: Ridge
@@ -2089,7 +2089,7 @@ M0232:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0233:
   model_args: *id039
   model_type: Ridge
@@ -2097,7 +2097,7 @@ M0233:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0234:
   model_args: &id040
     boosting_type: gbdt
@@ -2113,7 +2113,7 @@ M0234:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0235:
   model_args: *id040
   model_type: LGBM
@@ -2121,7 +2121,7 @@ M0235:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0236:
   model_args: *id040
   model_type: LGBM
@@ -2129,7 +2129,7 @@ M0236:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0237:
   model_args: *id040
   model_type: LGBM
@@ -2137,7 +2137,7 @@ M0237:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0238:
   model_args: *id040
   model_type: LGBM
@@ -2145,7 +2145,7 @@ M0238:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0239:
   model_args: *id040
   model_type: LGBM
@@ -2153,7 +2153,7 @@ M0239:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0240:
   model_args: &id041
     boosting_type: gbdt
@@ -2169,7 +2169,7 @@ M0240:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0241:
   model_args: *id041
   model_type: LGBM
@@ -2177,7 +2177,7 @@ M0241:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0242:
   model_args: *id041
   model_type: LGBM
@@ -2185,7 +2185,7 @@ M0242:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0243:
   model_args: *id041
   model_type: LGBM
@@ -2193,7 +2193,7 @@ M0243:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0244:
   model_args: *id041
   model_type: LGBM
@@ -2201,7 +2201,7 @@ M0244:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0245:
   model_args: *id041
   model_type: LGBM
@@ -2209,7 +2209,7 @@ M0245:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0246:
   model_args: &id042
     boosting_type: gbdt
@@ -2225,7 +2225,7 @@ M0246:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0247:
   model_args: *id042
   model_type: LGBM
@@ -2233,7 +2233,7 @@ M0247:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0248:
   model_args: *id042
   model_type: LGBM
@@ -2241,7 +2241,7 @@ M0248:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0249:
   model_args: *id042
   model_type: LGBM
@@ -2249,7 +2249,7 @@ M0249:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0250:
   model_args: *id042
   model_type: LGBM
@@ -2257,7 +2257,7 @@ M0250:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0251:
   model_args: *id042
   model_type: LGBM
@@ -2265,7 +2265,7 @@ M0251:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0252:
   model_args: &id043
     boosting_type: gbdt
@@ -2281,7 +2281,7 @@ M0252:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0253:
   model_args: *id043
   model_type: LGBM
@@ -2289,7 +2289,7 @@ M0253:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0254:
   model_args: *id043
   model_type: LGBM
@@ -2297,7 +2297,7 @@ M0254:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0255:
   model_args: *id043
   model_type: LGBM
@@ -2305,7 +2305,7 @@ M0255:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0256:
   model_args: *id043
   model_type: LGBM
@@ -2313,7 +2313,7 @@ M0256:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0257:
   model_args: *id043
   model_type: LGBM
@@ -2321,7 +2321,7 @@ M0257:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0258:
   model_args: &id044
     boosting_type: gbdt
@@ -2337,7 +2337,7 @@ M0258:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0259:
   model_args: *id044
   model_type: LGBM
@@ -2345,7 +2345,7 @@ M0259:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0260:
   model_args: *id044
   model_type: LGBM
@@ -2353,7 +2353,7 @@ M0260:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0261:
   model_args: *id044
   model_type: LGBM
@@ -2361,7 +2361,7 @@ M0261:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0262:
   model_args: *id044
   model_type: LGBM
@@ -2369,7 +2369,7 @@ M0262:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0263:
   model_args: *id044
   model_type: LGBM
@@ -2377,7 +2377,7 @@ M0263:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0264:
   model_args: &id045
     boosting_type: gbdt
@@ -2393,7 +2393,7 @@ M0264:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0265:
   model_args: *id045
   model_type: LGBM
@@ -2401,7 +2401,7 @@ M0265:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0266:
   model_args: *id045
   model_type: LGBM
@@ -2409,7 +2409,7 @@ M0266:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0267:
   model_args: *id045
   model_type: LGBM
@@ -2417,7 +2417,7 @@ M0267:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0268:
   model_args: *id045
   model_type: LGBM
@@ -2425,7 +2425,7 @@ M0268:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0269:
   model_args: *id045
   model_type: LGBM
@@ -2433,7 +2433,7 @@ M0269:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0270:
   model_args: &id046
     boosting_type: gbdt
@@ -2449,7 +2449,7 @@ M0270:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0271:
   model_args: *id046
   model_type: LGBM
@@ -2457,7 +2457,7 @@ M0271:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0272:
   model_args: *id046
   model_type: LGBM
@@ -2465,7 +2465,7 @@ M0272:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0273:
   model_args: *id046
   model_type: LGBM
@@ -2473,7 +2473,7 @@ M0273:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0274:
   model_args: *id046
   model_type: LGBM
@@ -2481,7 +2481,7 @@ M0274:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0275:
   model_args: *id046
   model_type: LGBM
@@ -2489,7 +2489,7 @@ M0275:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0276:
   model_args: &id047
     boosting_type: gbdt
@@ -2505,7 +2505,7 @@ M0276:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0277:
   model_args: *id047
   model_type: LGBM
@@ -2513,7 +2513,7 @@ M0277:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0278:
   model_args: *id047
   model_type: LGBM
@@ -2521,7 +2521,7 @@ M0278:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0279:
   model_args: *id047
   model_type: LGBM
@@ -2529,7 +2529,7 @@ M0279:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0280:
   model_args: *id047
   model_type: LGBM
@@ -2537,7 +2537,7 @@ M0280:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0281:
   model_args: *id047
   model_type: LGBM
@@ -2545,7 +2545,7 @@ M0281:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0282:
   model_args: &id048
     boosting_type: gbdt
@@ -2561,7 +2561,7 @@ M0282:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0283:
   model_args: *id048
   model_type: LGBM
@@ -2569,7 +2569,7 @@ M0283:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0284:
   model_args: *id048
   model_type: LGBM
@@ -2577,7 +2577,7 @@ M0284:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0285:
   model_args: *id048
   model_type: LGBM
@@ -2585,7 +2585,7 @@ M0285:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0286:
   model_args: *id048
   model_type: LGBM
@@ -2593,7 +2593,7 @@ M0286:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0287:
   model_args: *id048
   model_type: LGBM
@@ -2601,7 +2601,7 @@ M0287:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 480
 M0288:
   model_args: &id049
     alpha: 1.0
@@ -2610,7 +2610,7 @@ M0288:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0289:
   model_args: *id049
   model_type: Ridge
@@ -2618,7 +2618,7 @@ M0289:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0290:
   model_args: *id049
   model_type: Ridge
@@ -2626,7 +2626,7 @@ M0290:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0291:
   model_args: *id049
   model_type: Ridge
@@ -2634,7 +2634,7 @@ M0291:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0292:
   model_args: *id049
   model_type: Ridge
@@ -2642,7 +2642,7 @@ M0292:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0293:
   model_args: *id049
   model_type: Ridge
@@ -2650,7 +2650,7 @@ M0293:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0294:
   model_args: &id050
     alpha: 10.0
@@ -2659,7 +2659,7 @@ M0294:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0295:
   model_args: *id050
   model_type: Ridge
@@ -2667,7 +2667,7 @@ M0295:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0296:
   model_args: *id050
   model_type: Ridge
@@ -2675,7 +2675,7 @@ M0296:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0297:
   model_args: *id050
   model_type: Ridge
@@ -2683,7 +2683,7 @@ M0297:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0298:
   model_args: *id050
   model_type: Ridge
@@ -2691,7 +2691,7 @@ M0298:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0299:
   model_args: *id050
   model_type: Ridge
@@ -2699,7 +2699,7 @@ M0299:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0300:
   model_args: &id051
     alpha: 100.0
@@ -2708,7 +2708,7 @@ M0300:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0301:
   model_args: *id051
   model_type: Ridge
@@ -2716,7 +2716,7 @@ M0301:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0302:
   model_args: *id051
   model_type: Ridge
@@ -2724,7 +2724,7 @@ M0302:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0303:
   model_args: *id051
   model_type: Ridge
@@ -2732,7 +2732,7 @@ M0303:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0304:
   model_args: *id051
   model_type: Ridge
@@ -2740,7 +2740,7 @@ M0304:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0305:
   model_args: *id051
   model_type: Ridge
@@ -2748,7 +2748,7 @@ M0305:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0306:
   model_args: &id052
     boosting_type: gbdt
@@ -2764,7 +2764,7 @@ M0306:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0307:
   model_args: *id052
   model_type: LGBM
@@ -2772,7 +2772,7 @@ M0307:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0308:
   model_args: *id052
   model_type: LGBM
@@ -2780,7 +2780,7 @@ M0308:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0309:
   model_args: *id052
   model_type: LGBM
@@ -2788,7 +2788,7 @@ M0309:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0310:
   model_args: *id052
   model_type: LGBM
@@ -2796,7 +2796,7 @@ M0310:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0311:
   model_args: *id052
   model_type: LGBM
@@ -2804,7 +2804,7 @@ M0311:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0312:
   model_args: &id053
     boosting_type: gbdt
@@ -2820,7 +2820,7 @@ M0312:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0313:
   model_args: *id053
   model_type: LGBM
@@ -2828,7 +2828,7 @@ M0313:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0314:
   model_args: *id053
   model_type: LGBM
@@ -2836,7 +2836,7 @@ M0314:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0315:
   model_args: *id053
   model_type: LGBM
@@ -2844,7 +2844,7 @@ M0315:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0316:
   model_args: *id053
   model_type: LGBM
@@ -2852,7 +2852,7 @@ M0316:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0317:
   model_args: *id053
   model_type: LGBM
@@ -2860,7 +2860,7 @@ M0317:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0318:
   model_args: &id054
     boosting_type: gbdt
@@ -2876,7 +2876,7 @@ M0318:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0319:
   model_args: *id054
   model_type: LGBM
@@ -2884,7 +2884,7 @@ M0319:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0320:
   model_args: *id054
   model_type: LGBM
@@ -2892,7 +2892,7 @@ M0320:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0321:
   model_args: *id054
   model_type: LGBM
@@ -2900,7 +2900,7 @@ M0321:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0322:
   model_args: *id054
   model_type: LGBM
@@ -2908,7 +2908,7 @@ M0322:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0323:
   model_args: *id054
   model_type: LGBM
@@ -2916,7 +2916,7 @@ M0323:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0324:
   model_args: &id055
     boosting_type: gbdt
@@ -2932,7 +2932,7 @@ M0324:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0325:
   model_args: *id055
   model_type: LGBM
@@ -2940,7 +2940,7 @@ M0325:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0326:
   model_args: *id055
   model_type: LGBM
@@ -2948,7 +2948,7 @@ M0326:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0327:
   model_args: *id055
   model_type: LGBM
@@ -2956,7 +2956,7 @@ M0327:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0328:
   model_args: *id055
   model_type: LGBM
@@ -2964,7 +2964,7 @@ M0328:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0329:
   model_args: *id055
   model_type: LGBM
@@ -2972,7 +2972,7 @@ M0329:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0330:
   model_args: &id056
     boosting_type: gbdt
@@ -2988,7 +2988,7 @@ M0330:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0331:
   model_args: *id056
   model_type: LGBM
@@ -2996,7 +2996,7 @@ M0331:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0332:
   model_args: *id056
   model_type: LGBM
@@ -3004,7 +3004,7 @@ M0332:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0333:
   model_args: *id056
   model_type: LGBM
@@ -3012,7 +3012,7 @@ M0333:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0334:
   model_args: *id056
   model_type: LGBM
@@ -3020,7 +3020,7 @@ M0334:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0335:
   model_args: *id056
   model_type: LGBM
@@ -3028,7 +3028,7 @@ M0335:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0336:
   model_args: &id057
     boosting_type: gbdt
@@ -3044,7 +3044,7 @@ M0336:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0337:
   model_args: *id057
   model_type: LGBM
@@ -3052,7 +3052,7 @@ M0337:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0338:
   model_args: *id057
   model_type: LGBM
@@ -3060,7 +3060,7 @@ M0338:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0339:
   model_args: *id057
   model_type: LGBM
@@ -3068,7 +3068,7 @@ M0339:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0340:
   model_args: *id057
   model_type: LGBM
@@ -3076,7 +3076,7 @@ M0340:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0341:
   model_args: *id057
   model_type: LGBM
@@ -3084,7 +3084,7 @@ M0341:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0342:
   model_args: &id058
     boosting_type: gbdt
@@ -3100,7 +3100,7 @@ M0342:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0343:
   model_args: *id058
   model_type: LGBM
@@ -3108,7 +3108,7 @@ M0343:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0344:
   model_args: *id058
   model_type: LGBM
@@ -3116,7 +3116,7 @@ M0344:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0345:
   model_args: *id058
   model_type: LGBM
@@ -3124,7 +3124,7 @@ M0345:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0346:
   model_args: *id058
   model_type: LGBM
@@ -3132,7 +3132,7 @@ M0346:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0347:
   model_args: *id058
   model_type: LGBM
@@ -3140,7 +3140,7 @@ M0347:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0348:
   model_args: &id059
     boosting_type: gbdt
@@ -3156,7 +3156,7 @@ M0348:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0349:
   model_args: *id059
   model_type: LGBM
@@ -3164,7 +3164,7 @@ M0349:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0350:
   model_args: *id059
   model_type: LGBM
@@ -3172,7 +3172,7 @@ M0350:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0351:
   model_args: *id059
   model_type: LGBM
@@ -3180,7 +3180,7 @@ M0351:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0352:
   model_args: *id059
   model_type: LGBM
@@ -3188,7 +3188,7 @@ M0352:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0353:
   model_args: *id059
   model_type: LGBM
@@ -3196,7 +3196,7 @@ M0353:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0354:
   model_args: &id060
     boosting_type: gbdt
@@ -3212,7 +3212,7 @@ M0354:
   ret_name: CloseRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0355:
   model_args: *id060
   model_type: LGBM
@@ -3220,7 +3220,7 @@ M0355:
   ret_name: CloseRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0356:
   model_args: *id060
   model_type: LGBM
@@ -3228,7 +3228,7 @@ M0356:
   ret_name: CloseRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0357:
   model_args: *id060
   model_type: LGBM
@@ -3236,7 +3236,7 @@ M0357:
   ret_name: CloseRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0358:
   model_args: *id060
   model_type: LGBM
@@ -3244,7 +3244,7 @@ M0358:
   ret_name: CloseRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0359:
   model_args: *id060
   model_type: LGBM
@@ -3252,154 +3252,154 @@ M0359:
   ret_name: CloseRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 480
+  trn_win: 720
 M0360:
   model_args: &id061
     alpha: 1.0
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0361:
   model_args: *id061
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0362:
   model_args: *id061
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0363:
   model_args: *id061
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0364:
   model_args: *id061
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0365:
   model_args: *id061
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0366:
   model_args: &id062
     alpha: 10.0
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0367:
   model_args: *id062
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0368:
   model_args: *id062
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0369:
   model_args: *id062
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0370:
   model_args: *id062
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0371:
   model_args: *id062
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0372:
   model_args: &id063
     alpha: 100.0
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0373:
   model_args: *id063
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0374:
   model_args: *id063
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0375:
   model_args: *id063
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0376:
   model_args: *id063
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0377:
   model_args: *id063
   model_type: Ridge
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0378:
   model_args: &id064
     boosting_type: gbdt
@@ -3412,50 +3412,50 @@ M0378:
     num_leaves: 2
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0379:
   model_args: *id064
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0380:
   model_args: *id064
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0381:
   model_args: *id064
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0382:
   model_args: *id064
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0383:
   model_args: *id064
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0384:
   model_args: &id065
     boosting_type: gbdt
@@ -3468,50 +3468,50 @@ M0384:
     num_leaves: 2
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0385:
   model_args: *id065
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0386:
   model_args: *id065
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0387:
   model_args: *id065
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0388:
   model_args: *id065
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0389:
   model_args: *id065
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0390:
   model_args: &id066
     boosting_type: gbdt
@@ -3524,50 +3524,50 @@ M0390:
     num_leaves: 2
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0391:
   model_args: *id066
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0392:
   model_args: *id066
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0393:
   model_args: *id066
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0394:
   model_args: *id066
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0395:
   model_args: *id066
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0396:
   model_args: &id067
     boosting_type: gbdt
@@ -3580,50 +3580,50 @@ M0396:
     num_leaves: 4
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0397:
   model_args: *id067
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0398:
   model_args: *id067
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0399:
   model_args: *id067
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0400:
   model_args: *id067
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0401:
   model_args: *id067
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0402:
   model_args: &id068
     boosting_type: gbdt
@@ -3636,50 +3636,50 @@ M0402:
     num_leaves: 4
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0403:
   model_args: *id068
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0404:
   model_args: *id068
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0405:
   model_args: *id068
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0406:
   model_args: *id068
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0407:
   model_args: *id068
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0408:
   model_args: &id069
     boosting_type: gbdt
@@ -3692,50 +3692,50 @@ M0408:
     num_leaves: 4
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0409:
   model_args: *id069
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0410:
   model_args: *id069
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0411:
   model_args: *id069
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0412:
   model_args: *id069
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0413:
   model_args: *id069
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0414:
   model_args: &id070
     boosting_type: gbdt
@@ -3748,50 +3748,50 @@ M0414:
     num_leaves: 8
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0415:
   model_args: *id070
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0416:
   model_args: *id070
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0417:
   model_args: *id070
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0418:
   model_args: *id070
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0419:
   model_args: *id070
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0420:
   model_args: &id071
     boosting_type: gbdt
@@ -3804,50 +3804,50 @@ M0420:
     num_leaves: 8
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0421:
   model_args: *id071
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0422:
   model_args: *id071
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0423:
   model_args: *id071
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0424:
   model_args: *id071
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0425:
   model_args: *id071
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0426:
   model_args: &id072
     boosting_type: gbdt
@@ -3860,50 +3860,50 @@ M0426:
     num_leaves: 8
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0427:
   model_args: *id072
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0428:
   model_args: *id072
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0429:
   model_args: *id072
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0430:
   model_args: *id072
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0431:
   model_args: *id072
   model_type: LGBM
   ret_class: 010L1-NEU
-  ret_name: CloseRtn010L1-NEU
+  ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 720
+  trn_win: 60
 M0432:
   model_args: &id073
     alpha: 1.0
@@ -3912,7 +3912,7 @@ M0432:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0433:
   model_args: *id073
   model_type: Ridge
@@ -3920,7 +3920,7 @@ M0433:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0434:
   model_args: *id073
   model_type: Ridge
@@ -3928,7 +3928,7 @@ M0434:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0435:
   model_args: *id073
   model_type: Ridge
@@ -3936,7 +3936,7 @@ M0435:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0436:
   model_args: *id073
   model_type: Ridge
@@ -3944,7 +3944,7 @@ M0436:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0437:
   model_args: *id073
   model_type: Ridge
@@ -3952,7 +3952,7 @@ M0437:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0438:
   model_args: &id074
     alpha: 10.0
@@ -3961,7 +3961,7 @@ M0438:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0439:
   model_args: *id074
   model_type: Ridge
@@ -3969,7 +3969,7 @@ M0439:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0440:
   model_args: *id074
   model_type: Ridge
@@ -3977,7 +3977,7 @@ M0440:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0441:
   model_args: *id074
   model_type: Ridge
@@ -3985,7 +3985,7 @@ M0441:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0442:
   model_args: *id074
   model_type: Ridge
@@ -3993,7 +3993,7 @@ M0442:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0443:
   model_args: *id074
   model_type: Ridge
@@ -4001,7 +4001,7 @@ M0443:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0444:
   model_args: &id075
     alpha: 100.0
@@ -4010,7 +4010,7 @@ M0444:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0445:
   model_args: *id075
   model_type: Ridge
@@ -4018,7 +4018,7 @@ M0445:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0446:
   model_args: *id075
   model_type: Ridge
@@ -4026,7 +4026,7 @@ M0446:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0447:
   model_args: *id075
   model_type: Ridge
@@ -4034,7 +4034,7 @@ M0447:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0448:
   model_args: *id075
   model_type: Ridge
@@ -4042,7 +4042,7 @@ M0448:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0449:
   model_args: *id075
   model_type: Ridge
@@ -4050,7 +4050,7 @@ M0449:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0450:
   model_args: &id076
     boosting_type: gbdt
@@ -4066,7 +4066,7 @@ M0450:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0451:
   model_args: *id076
   model_type: LGBM
@@ -4074,7 +4074,7 @@ M0451:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0452:
   model_args: *id076
   model_type: LGBM
@@ -4082,7 +4082,7 @@ M0452:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0453:
   model_args: *id076
   model_type: LGBM
@@ -4090,7 +4090,7 @@ M0453:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0454:
   model_args: *id076
   model_type: LGBM
@@ -4098,7 +4098,7 @@ M0454:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0455:
   model_args: *id076
   model_type: LGBM
@@ -4106,7 +4106,7 @@ M0455:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0456:
   model_args: &id077
     boosting_type: gbdt
@@ -4122,7 +4122,7 @@ M0456:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0457:
   model_args: *id077
   model_type: LGBM
@@ -4130,7 +4130,7 @@ M0457:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0458:
   model_args: *id077
   model_type: LGBM
@@ -4138,7 +4138,7 @@ M0458:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0459:
   model_args: *id077
   model_type: LGBM
@@ -4146,7 +4146,7 @@ M0459:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0460:
   model_args: *id077
   model_type: LGBM
@@ -4154,7 +4154,7 @@ M0460:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0461:
   model_args: *id077
   model_type: LGBM
@@ -4162,7 +4162,7 @@ M0461:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0462:
   model_args: &id078
     boosting_type: gbdt
@@ -4178,7 +4178,7 @@ M0462:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0463:
   model_args: *id078
   model_type: LGBM
@@ -4186,7 +4186,7 @@ M0463:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0464:
   model_args: *id078
   model_type: LGBM
@@ -4194,7 +4194,7 @@ M0464:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0465:
   model_args: *id078
   model_type: LGBM
@@ -4202,7 +4202,7 @@ M0465:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0466:
   model_args: *id078
   model_type: LGBM
@@ -4210,7 +4210,7 @@ M0466:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0467:
   model_args: *id078
   model_type: LGBM
@@ -4218,7 +4218,7 @@ M0467:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0468:
   model_args: &id079
     boosting_type: gbdt
@@ -4234,7 +4234,7 @@ M0468:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0469:
   model_args: *id079
   model_type: LGBM
@@ -4242,7 +4242,7 @@ M0469:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0470:
   model_args: *id079
   model_type: LGBM
@@ -4250,7 +4250,7 @@ M0470:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0471:
   model_args: *id079
   model_type: LGBM
@@ -4258,7 +4258,7 @@ M0471:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0472:
   model_args: *id079
   model_type: LGBM
@@ -4266,7 +4266,7 @@ M0472:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0473:
   model_args: *id079
   model_type: LGBM
@@ -4274,7 +4274,7 @@ M0473:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0474:
   model_args: &id080
     boosting_type: gbdt
@@ -4290,7 +4290,7 @@ M0474:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0475:
   model_args: *id080
   model_type: LGBM
@@ -4298,7 +4298,7 @@ M0475:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0476:
   model_args: *id080
   model_type: LGBM
@@ -4306,7 +4306,7 @@ M0476:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0477:
   model_args: *id080
   model_type: LGBM
@@ -4314,7 +4314,7 @@ M0477:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0478:
   model_args: *id080
   model_type: LGBM
@@ -4322,7 +4322,7 @@ M0478:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0479:
   model_args: *id080
   model_type: LGBM
@@ -4330,7 +4330,7 @@ M0479:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0480:
   model_args: &id081
     boosting_type: gbdt
@@ -4346,7 +4346,7 @@ M0480:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0481:
   model_args: *id081
   model_type: LGBM
@@ -4354,7 +4354,7 @@ M0481:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0482:
   model_args: *id081
   model_type: LGBM
@@ -4362,7 +4362,7 @@ M0482:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0483:
   model_args: *id081
   model_type: LGBM
@@ -4370,7 +4370,7 @@ M0483:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0484:
   model_args: *id081
   model_type: LGBM
@@ -4378,7 +4378,7 @@ M0484:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0485:
   model_args: *id081
   model_type: LGBM
@@ -4386,7 +4386,7 @@ M0485:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0486:
   model_args: &id082
     boosting_type: gbdt
@@ -4402,7 +4402,7 @@ M0486:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0487:
   model_args: *id082
   model_type: LGBM
@@ -4410,7 +4410,7 @@ M0487:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0488:
   model_args: *id082
   model_type: LGBM
@@ -4418,7 +4418,7 @@ M0488:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0489:
   model_args: *id082
   model_type: LGBM
@@ -4426,7 +4426,7 @@ M0489:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0490:
   model_args: *id082
   model_type: LGBM
@@ -4434,7 +4434,7 @@ M0490:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0491:
   model_args: *id082
   model_type: LGBM
@@ -4442,7 +4442,7 @@ M0491:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0492:
   model_args: &id083
     boosting_type: gbdt
@@ -4458,7 +4458,7 @@ M0492:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0493:
   model_args: *id083
   model_type: LGBM
@@ -4466,7 +4466,7 @@ M0493:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0494:
   model_args: *id083
   model_type: LGBM
@@ -4474,7 +4474,7 @@ M0494:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0495:
   model_args: *id083
   model_type: LGBM
@@ -4482,7 +4482,7 @@ M0495:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0496:
   model_args: *id083
   model_type: LGBM
@@ -4490,7 +4490,7 @@ M0496:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0497:
   model_args: *id083
   model_type: LGBM
@@ -4498,7 +4498,7 @@ M0497:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0498:
   model_args: &id084
     boosting_type: gbdt
@@ -4514,7 +4514,7 @@ M0498:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0499:
   model_args: *id084
   model_type: LGBM
@@ -4522,7 +4522,7 @@ M0499:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0500:
   model_args: *id084
   model_type: LGBM
@@ -4530,7 +4530,7 @@ M0500:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0501:
   model_args: *id084
   model_type: LGBM
@@ -4538,7 +4538,7 @@ M0501:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0502:
   model_args: *id084
   model_type: LGBM
@@ -4546,7 +4546,7 @@ M0502:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0503:
   model_args: *id084
   model_type: LGBM
@@ -4554,7 +4554,7 @@ M0503:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 30
+  trn_win: 120
 M0504:
   model_args: &id085
     alpha: 1.0
@@ -4563,7 +4563,7 @@ M0504:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0505:
   model_args: *id085
   model_type: Ridge
@@ -4571,7 +4571,7 @@ M0505:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0506:
   model_args: *id085
   model_type: Ridge
@@ -4579,7 +4579,7 @@ M0506:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0507:
   model_args: *id085
   model_type: Ridge
@@ -4587,7 +4587,7 @@ M0507:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0508:
   model_args: *id085
   model_type: Ridge
@@ -4595,7 +4595,7 @@ M0508:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0509:
   model_args: *id085
   model_type: Ridge
@@ -4603,7 +4603,7 @@ M0509:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0510:
   model_args: &id086
     alpha: 10.0
@@ -4612,7 +4612,7 @@ M0510:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0511:
   model_args: *id086
   model_type: Ridge
@@ -4620,7 +4620,7 @@ M0511:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0512:
   model_args: *id086
   model_type: Ridge
@@ -4628,7 +4628,7 @@ M0512:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0513:
   model_args: *id086
   model_type: Ridge
@@ -4636,7 +4636,7 @@ M0513:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0514:
   model_args: *id086
   model_type: Ridge
@@ -4644,7 +4644,7 @@ M0514:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0515:
   model_args: *id086
   model_type: Ridge
@@ -4652,7 +4652,7 @@ M0515:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0516:
   model_args: &id087
     alpha: 100.0
@@ -4661,7 +4661,7 @@ M0516:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0517:
   model_args: *id087
   model_type: Ridge
@@ -4669,7 +4669,7 @@ M0517:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0518:
   model_args: *id087
   model_type: Ridge
@@ -4677,7 +4677,7 @@ M0518:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0519:
   model_args: *id087
   model_type: Ridge
@@ -4685,7 +4685,7 @@ M0519:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0520:
   model_args: *id087
   model_type: Ridge
@@ -4693,7 +4693,7 @@ M0520:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0521:
   model_args: *id087
   model_type: Ridge
@@ -4701,7 +4701,7 @@ M0521:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0522:
   model_args: &id088
     boosting_type: gbdt
@@ -4717,7 +4717,7 @@ M0522:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0523:
   model_args: *id088
   model_type: LGBM
@@ -4725,7 +4725,7 @@ M0523:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0524:
   model_args: *id088
   model_type: LGBM
@@ -4733,7 +4733,7 @@ M0524:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0525:
   model_args: *id088
   model_type: LGBM
@@ -4741,7 +4741,7 @@ M0525:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0526:
   model_args: *id088
   model_type: LGBM
@@ -4749,7 +4749,7 @@ M0526:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0527:
   model_args: *id088
   model_type: LGBM
@@ -4757,7 +4757,7 @@ M0527:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0528:
   model_args: &id089
     boosting_type: gbdt
@@ -4773,7 +4773,7 @@ M0528:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0529:
   model_args: *id089
   model_type: LGBM
@@ -4781,7 +4781,7 @@ M0529:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0530:
   model_args: *id089
   model_type: LGBM
@@ -4789,7 +4789,7 @@ M0530:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0531:
   model_args: *id089
   model_type: LGBM
@@ -4797,7 +4797,7 @@ M0531:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0532:
   model_args: *id089
   model_type: LGBM
@@ -4805,7 +4805,7 @@ M0532:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0533:
   model_args: *id089
   model_type: LGBM
@@ -4813,7 +4813,7 @@ M0533:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0534:
   model_args: &id090
     boosting_type: gbdt
@@ -4829,7 +4829,7 @@ M0534:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0535:
   model_args: *id090
   model_type: LGBM
@@ -4837,7 +4837,7 @@ M0535:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0536:
   model_args: *id090
   model_type: LGBM
@@ -4845,7 +4845,7 @@ M0536:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0537:
   model_args: *id090
   model_type: LGBM
@@ -4853,7 +4853,7 @@ M0537:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0538:
   model_args: *id090
   model_type: LGBM
@@ -4861,7 +4861,7 @@ M0538:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0539:
   model_args: *id090
   model_type: LGBM
@@ -4869,7 +4869,7 @@ M0539:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0540:
   model_args: &id091
     boosting_type: gbdt
@@ -4885,7 +4885,7 @@ M0540:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0541:
   model_args: *id091
   model_type: LGBM
@@ -4893,7 +4893,7 @@ M0541:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0542:
   model_args: *id091
   model_type: LGBM
@@ -4901,7 +4901,7 @@ M0542:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0543:
   model_args: *id091
   model_type: LGBM
@@ -4909,7 +4909,7 @@ M0543:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0544:
   model_args: *id091
   model_type: LGBM
@@ -4917,7 +4917,7 @@ M0544:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0545:
   model_args: *id091
   model_type: LGBM
@@ -4925,7 +4925,7 @@ M0545:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0546:
   model_args: &id092
     boosting_type: gbdt
@@ -4941,7 +4941,7 @@ M0546:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0547:
   model_args: *id092
   model_type: LGBM
@@ -4949,7 +4949,7 @@ M0547:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0548:
   model_args: *id092
   model_type: LGBM
@@ -4957,7 +4957,7 @@ M0548:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0549:
   model_args: *id092
   model_type: LGBM
@@ -4965,7 +4965,7 @@ M0549:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0550:
   model_args: *id092
   model_type: LGBM
@@ -4973,7 +4973,7 @@ M0550:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0551:
   model_args: *id092
   model_type: LGBM
@@ -4981,7 +4981,7 @@ M0551:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0552:
   model_args: &id093
     boosting_type: gbdt
@@ -4997,7 +4997,7 @@ M0552:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0553:
   model_args: *id093
   model_type: LGBM
@@ -5005,7 +5005,7 @@ M0553:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0554:
   model_args: *id093
   model_type: LGBM
@@ -5013,7 +5013,7 @@ M0554:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0555:
   model_args: *id093
   model_type: LGBM
@@ -5021,7 +5021,7 @@ M0555:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0556:
   model_args: *id093
   model_type: LGBM
@@ -5029,7 +5029,7 @@ M0556:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0557:
   model_args: *id093
   model_type: LGBM
@@ -5037,7 +5037,7 @@ M0557:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0558:
   model_args: &id094
     boosting_type: gbdt
@@ -5053,7 +5053,7 @@ M0558:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0559:
   model_args: *id094
   model_type: LGBM
@@ -5061,7 +5061,7 @@ M0559:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0560:
   model_args: *id094
   model_type: LGBM
@@ -5069,7 +5069,7 @@ M0560:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0561:
   model_args: *id094
   model_type: LGBM
@@ -5077,7 +5077,7 @@ M0561:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0562:
   model_args: *id094
   model_type: LGBM
@@ -5085,7 +5085,7 @@ M0562:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0563:
   model_args: *id094
   model_type: LGBM
@@ -5093,7 +5093,7 @@ M0563:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0564:
   model_args: &id095
     boosting_type: gbdt
@@ -5109,7 +5109,7 @@ M0564:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0565:
   model_args: *id095
   model_type: LGBM
@@ -5117,7 +5117,7 @@ M0565:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0566:
   model_args: *id095
   model_type: LGBM
@@ -5125,7 +5125,7 @@ M0566:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0567:
   model_args: *id095
   model_type: LGBM
@@ -5133,7 +5133,7 @@ M0567:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0568:
   model_args: *id095
   model_type: LGBM
@@ -5141,7 +5141,7 @@ M0568:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0569:
   model_args: *id095
   model_type: LGBM
@@ -5149,7 +5149,7 @@ M0569:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0570:
   model_args: &id096
     boosting_type: gbdt
@@ -5165,7 +5165,7 @@ M0570:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0571:
   model_args: *id096
   model_type: LGBM
@@ -5173,7 +5173,7 @@ M0571:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0572:
   model_args: *id096
   model_type: LGBM
@@ -5181,7 +5181,7 @@ M0572:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0573:
   model_args: *id096
   model_type: LGBM
@@ -5189,7 +5189,7 @@ M0573:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0574:
   model_args: *id096
   model_type: LGBM
@@ -5197,7 +5197,7 @@ M0574:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0575:
   model_args: *id096
   model_type: LGBM
@@ -5205,7 +5205,7 @@ M0575:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 60
+  trn_win: 240
 M0576:
   model_args: &id097
     alpha: 1.0
@@ -5214,7 +5214,7 @@ M0576:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0577:
   model_args: *id097
   model_type: Ridge
@@ -5222,7 +5222,7 @@ M0577:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0578:
   model_args: *id097
   model_type: Ridge
@@ -5230,7 +5230,7 @@ M0578:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0579:
   model_args: *id097
   model_type: Ridge
@@ -5238,7 +5238,7 @@ M0579:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0580:
   model_args: *id097
   model_type: Ridge
@@ -5246,7 +5246,7 @@ M0580:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0581:
   model_args: *id097
   model_type: Ridge
@@ -5254,7 +5254,7 @@ M0581:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0582:
   model_args: &id098
     alpha: 10.0
@@ -5263,7 +5263,7 @@ M0582:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0583:
   model_args: *id098
   model_type: Ridge
@@ -5271,7 +5271,7 @@ M0583:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0584:
   model_args: *id098
   model_type: Ridge
@@ -5279,7 +5279,7 @@ M0584:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0585:
   model_args: *id098
   model_type: Ridge
@@ -5287,7 +5287,7 @@ M0585:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0586:
   model_args: *id098
   model_type: Ridge
@@ -5295,7 +5295,7 @@ M0586:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0587:
   model_args: *id098
   model_type: Ridge
@@ -5303,7 +5303,7 @@ M0587:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0588:
   model_args: &id099
     alpha: 100.0
@@ -5312,7 +5312,7 @@ M0588:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0589:
   model_args: *id099
   model_type: Ridge
@@ -5320,7 +5320,7 @@ M0589:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0590:
   model_args: *id099
   model_type: Ridge
@@ -5328,7 +5328,7 @@ M0590:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0591:
   model_args: *id099
   model_type: Ridge
@@ -5336,7 +5336,7 @@ M0591:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0592:
   model_args: *id099
   model_type: Ridge
@@ -5344,7 +5344,7 @@ M0592:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0593:
   model_args: *id099
   model_type: Ridge
@@ -5352,7 +5352,7 @@ M0593:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0594:
   model_args: &id100
     boosting_type: gbdt
@@ -5368,7 +5368,7 @@ M0594:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0595:
   model_args: *id100
   model_type: LGBM
@@ -5376,7 +5376,7 @@ M0595:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0596:
   model_args: *id100
   model_type: LGBM
@@ -5384,7 +5384,7 @@ M0596:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0597:
   model_args: *id100
   model_type: LGBM
@@ -5392,7 +5392,7 @@ M0597:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0598:
   model_args: *id100
   model_type: LGBM
@@ -5400,7 +5400,7 @@ M0598:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0599:
   model_args: *id100
   model_type: LGBM
@@ -5408,7 +5408,7 @@ M0599:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0600:
   model_args: &id101
     boosting_type: gbdt
@@ -5424,7 +5424,7 @@ M0600:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0601:
   model_args: *id101
   model_type: LGBM
@@ -5432,7 +5432,7 @@ M0601:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0602:
   model_args: *id101
   model_type: LGBM
@@ -5440,7 +5440,7 @@ M0602:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0603:
   model_args: *id101
   model_type: LGBM
@@ -5448,7 +5448,7 @@ M0603:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0604:
   model_args: *id101
   model_type: LGBM
@@ -5456,7 +5456,7 @@ M0604:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0605:
   model_args: *id101
   model_type: LGBM
@@ -5464,7 +5464,7 @@ M0605:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0606:
   model_args: &id102
     boosting_type: gbdt
@@ -5480,7 +5480,7 @@ M0606:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0607:
   model_args: *id102
   model_type: LGBM
@@ -5488,7 +5488,7 @@ M0607:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0608:
   model_args: *id102
   model_type: LGBM
@@ -5496,7 +5496,7 @@ M0608:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0609:
   model_args: *id102
   model_type: LGBM
@@ -5504,7 +5504,7 @@ M0609:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0610:
   model_args: *id102
   model_type: LGBM
@@ -5512,7 +5512,7 @@ M0610:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0611:
   model_args: *id102
   model_type: LGBM
@@ -5520,7 +5520,7 @@ M0611:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0612:
   model_args: &id103
     boosting_type: gbdt
@@ -5536,7 +5536,7 @@ M0612:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0613:
   model_args: *id103
   model_type: LGBM
@@ -5544,7 +5544,7 @@ M0613:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0614:
   model_args: *id103
   model_type: LGBM
@@ -5552,7 +5552,7 @@ M0614:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0615:
   model_args: *id103
   model_type: LGBM
@@ -5560,7 +5560,7 @@ M0615:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0616:
   model_args: *id103
   model_type: LGBM
@@ -5568,7 +5568,7 @@ M0616:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0617:
   model_args: *id103
   model_type: LGBM
@@ -5576,7 +5576,7 @@ M0617:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0618:
   model_args: &id104
     boosting_type: gbdt
@@ -5592,7 +5592,7 @@ M0618:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0619:
   model_args: *id104
   model_type: LGBM
@@ -5600,7 +5600,7 @@ M0619:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0620:
   model_args: *id104
   model_type: LGBM
@@ -5608,7 +5608,7 @@ M0620:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0621:
   model_args: *id104
   model_type: LGBM
@@ -5616,7 +5616,7 @@ M0621:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0622:
   model_args: *id104
   model_type: LGBM
@@ -5624,7 +5624,7 @@ M0622:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0623:
   model_args: *id104
   model_type: LGBM
@@ -5632,7 +5632,7 @@ M0623:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0624:
   model_args: &id105
     boosting_type: gbdt
@@ -5648,7 +5648,7 @@ M0624:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0625:
   model_args: *id105
   model_type: LGBM
@@ -5656,7 +5656,7 @@ M0625:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0626:
   model_args: *id105
   model_type: LGBM
@@ -5664,7 +5664,7 @@ M0626:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0627:
   model_args: *id105
   model_type: LGBM
@@ -5672,7 +5672,7 @@ M0627:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0628:
   model_args: *id105
   model_type: LGBM
@@ -5680,7 +5680,7 @@ M0628:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0629:
   model_args: *id105
   model_type: LGBM
@@ -5688,7 +5688,7 @@ M0629:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0630:
   model_args: &id106
     boosting_type: gbdt
@@ -5704,7 +5704,7 @@ M0630:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0631:
   model_args: *id106
   model_type: LGBM
@@ -5712,7 +5712,7 @@ M0631:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0632:
   model_args: *id106
   model_type: LGBM
@@ -5720,7 +5720,7 @@ M0632:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0633:
   model_args: *id106
   model_type: LGBM
@@ -5728,7 +5728,7 @@ M0633:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0634:
   model_args: *id106
   model_type: LGBM
@@ -5736,7 +5736,7 @@ M0634:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0635:
   model_args: *id106
   model_type: LGBM
@@ -5744,7 +5744,7 @@ M0635:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0636:
   model_args: &id107
     boosting_type: gbdt
@@ -5760,7 +5760,7 @@ M0636:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0637:
   model_args: *id107
   model_type: LGBM
@@ -5768,7 +5768,7 @@ M0637:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0638:
   model_args: *id107
   model_type: LGBM
@@ -5776,7 +5776,7 @@ M0638:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0639:
   model_args: *id107
   model_type: LGBM
@@ -5784,7 +5784,7 @@ M0639:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0640:
   model_args: *id107
   model_type: LGBM
@@ -5792,7 +5792,7 @@ M0640:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0641:
   model_args: *id107
   model_type: LGBM
@@ -5800,7 +5800,7 @@ M0641:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0642:
   model_args: &id108
     boosting_type: gbdt
@@ -5816,7 +5816,7 @@ M0642:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0643:
   model_args: *id108
   model_type: LGBM
@@ -5824,7 +5824,7 @@ M0643:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0644:
   model_args: *id108
   model_type: LGBM
@@ -5832,7 +5832,7 @@ M0644:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0645:
   model_args: *id108
   model_type: LGBM
@@ -5840,7 +5840,7 @@ M0645:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0646:
   model_args: *id108
   model_type: LGBM
@@ -5848,7 +5848,7 @@ M0646:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0647:
   model_args: *id108
   model_type: LGBM
@@ -5856,7 +5856,7 @@ M0647:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 120
+  trn_win: 480
 M0648:
   model_args: &id109
     alpha: 1.0
@@ -5865,7 +5865,7 @@ M0648:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0649:
   model_args: *id109
   model_type: Ridge
@@ -5873,7 +5873,7 @@ M0649:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0650:
   model_args: *id109
   model_type: Ridge
@@ -5881,7 +5881,7 @@ M0650:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0651:
   model_args: *id109
   model_type: Ridge
@@ -5889,7 +5889,7 @@ M0651:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0652:
   model_args: *id109
   model_type: Ridge
@@ -5897,7 +5897,7 @@ M0652:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0653:
   model_args: *id109
   model_type: Ridge
@@ -5905,7 +5905,7 @@ M0653:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0654:
   model_args: &id110
     alpha: 10.0
@@ -5914,7 +5914,7 @@ M0654:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0655:
   model_args: *id110
   model_type: Ridge
@@ -5922,7 +5922,7 @@ M0655:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0656:
   model_args: *id110
   model_type: Ridge
@@ -5930,7 +5930,7 @@ M0656:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0657:
   model_args: *id110
   model_type: Ridge
@@ -5938,7 +5938,7 @@ M0657:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0658:
   model_args: *id110
   model_type: Ridge
@@ -5946,7 +5946,7 @@ M0658:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0659:
   model_args: *id110
   model_type: Ridge
@@ -5954,7 +5954,7 @@ M0659:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0660:
   model_args: &id111
     alpha: 100.0
@@ -5963,7 +5963,7 @@ M0660:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0661:
   model_args: *id111
   model_type: Ridge
@@ -5971,7 +5971,7 @@ M0661:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0662:
   model_args: *id111
   model_type: Ridge
@@ -5979,7 +5979,7 @@ M0662:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0663:
   model_args: *id111
   model_type: Ridge
@@ -5987,7 +5987,7 @@ M0663:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0664:
   model_args: *id111
   model_type: Ridge
@@ -5995,7 +5995,7 @@ M0664:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0665:
   model_args: *id111
   model_type: Ridge
@@ -6003,7 +6003,7 @@ M0665:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0666:
   model_args: &id112
     boosting_type: gbdt
@@ -6019,7 +6019,7 @@ M0666:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0667:
   model_args: *id112
   model_type: LGBM
@@ -6027,7 +6027,7 @@ M0667:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0668:
   model_args: *id112
   model_type: LGBM
@@ -6035,7 +6035,7 @@ M0668:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0669:
   model_args: *id112
   model_type: LGBM
@@ -6043,7 +6043,7 @@ M0669:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0670:
   model_args: *id112
   model_type: LGBM
@@ -6051,7 +6051,7 @@ M0670:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0671:
   model_args: *id112
   model_type: LGBM
@@ -6059,7 +6059,7 @@ M0671:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0672:
   model_args: &id113
     boosting_type: gbdt
@@ -6075,7 +6075,7 @@ M0672:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0673:
   model_args: *id113
   model_type: LGBM
@@ -6083,7 +6083,7 @@ M0673:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0674:
   model_args: *id113
   model_type: LGBM
@@ -6091,7 +6091,7 @@ M0674:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0675:
   model_args: *id113
   model_type: LGBM
@@ -6099,7 +6099,7 @@ M0675:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0676:
   model_args: *id113
   model_type: LGBM
@@ -6107,7 +6107,7 @@ M0676:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0677:
   model_args: *id113
   model_type: LGBM
@@ -6115,7 +6115,7 @@ M0677:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0678:
   model_args: &id114
     boosting_type: gbdt
@@ -6131,7 +6131,7 @@ M0678:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0679:
   model_args: *id114
   model_type: LGBM
@@ -6139,7 +6139,7 @@ M0679:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0680:
   model_args: *id114
   model_type: LGBM
@@ -6147,7 +6147,7 @@ M0680:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0681:
   model_args: *id114
   model_type: LGBM
@@ -6155,7 +6155,7 @@ M0681:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0682:
   model_args: *id114
   model_type: LGBM
@@ -6163,7 +6163,7 @@ M0682:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0683:
   model_args: *id114
   model_type: LGBM
@@ -6171,7 +6171,7 @@ M0683:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0684:
   model_args: &id115
     boosting_type: gbdt
@@ -6187,7 +6187,7 @@ M0684:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0685:
   model_args: *id115
   model_type: LGBM
@@ -6195,7 +6195,7 @@ M0685:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0686:
   model_args: *id115
   model_type: LGBM
@@ -6203,7 +6203,7 @@ M0686:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0687:
   model_args: *id115
   model_type: LGBM
@@ -6211,7 +6211,7 @@ M0687:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0688:
   model_args: *id115
   model_type: LGBM
@@ -6219,7 +6219,7 @@ M0688:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0689:
   model_args: *id115
   model_type: LGBM
@@ -6227,7 +6227,7 @@ M0689:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0690:
   model_args: &id116
     boosting_type: gbdt
@@ -6243,7 +6243,7 @@ M0690:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0691:
   model_args: *id116
   model_type: LGBM
@@ -6251,7 +6251,7 @@ M0691:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0692:
   model_args: *id116
   model_type: LGBM
@@ -6259,7 +6259,7 @@ M0692:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0693:
   model_args: *id116
   model_type: LGBM
@@ -6267,7 +6267,7 @@ M0693:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0694:
   model_args: *id116
   model_type: LGBM
@@ -6275,7 +6275,7 @@ M0694:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0695:
   model_args: *id116
   model_type: LGBM
@@ -6283,7 +6283,7 @@ M0695:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0696:
   model_args: &id117
     boosting_type: gbdt
@@ -6299,7 +6299,7 @@ M0696:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0697:
   model_args: *id117
   model_type: LGBM
@@ -6307,7 +6307,7 @@ M0697:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0698:
   model_args: *id117
   model_type: LGBM
@@ -6315,7 +6315,7 @@ M0698:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0699:
   model_args: *id117
   model_type: LGBM
@@ -6323,7 +6323,7 @@ M0699:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0700:
   model_args: *id117
   model_type: LGBM
@@ -6331,7 +6331,7 @@ M0700:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0701:
   model_args: *id117
   model_type: LGBM
@@ -6339,7 +6339,7 @@ M0701:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0702:
   model_args: &id118
     boosting_type: gbdt
@@ -6355,7 +6355,7 @@ M0702:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0703:
   model_args: *id118
   model_type: LGBM
@@ -6363,7 +6363,7 @@ M0703:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0704:
   model_args: *id118
   model_type: LGBM
@@ -6371,7 +6371,7 @@ M0704:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0705:
   model_args: *id118
   model_type: LGBM
@@ -6379,7 +6379,7 @@ M0705:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0706:
   model_args: *id118
   model_type: LGBM
@@ -6387,7 +6387,7 @@ M0706:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0707:
   model_args: *id118
   model_type: LGBM
@@ -6395,7 +6395,7 @@ M0707:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0708:
   model_args: &id119
     boosting_type: gbdt
@@ -6411,7 +6411,7 @@ M0708:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0709:
   model_args: *id119
   model_type: LGBM
@@ -6419,7 +6419,7 @@ M0709:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0710:
   model_args: *id119
   model_type: LGBM
@@ -6427,7 +6427,7 @@ M0710:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0711:
   model_args: *id119
   model_type: LGBM
@@ -6435,7 +6435,7 @@ M0711:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0712:
   model_args: *id119
   model_type: LGBM
@@ -6443,7 +6443,7 @@ M0712:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0713:
   model_args: *id119
   model_type: LGBM
@@ -6451,7 +6451,7 @@ M0713:
   ret_name: OpenRtn010L1-NEU
   sector: EQT
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0714:
   model_args: &id120
     boosting_type: gbdt
@@ -6467,7 +6467,7 @@ M0714:
   ret_name: OpenRtn010L1-NEU
   sector: MTL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0715:
   model_args: *id120
   model_type: LGBM
@@ -6475,7 +6475,7 @@ M0715:
   ret_name: OpenRtn010L1-NEU
   sector: BLK
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0716:
   model_args: *id120
   model_type: LGBM
@@ -6483,7 +6483,7 @@ M0716:
   ret_name: OpenRtn010L1-NEU
   sector: OIL
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0717:
   model_args: *id120
   model_type: LGBM
@@ -6491,7 +6491,7 @@ M0717:
   ret_name: OpenRtn010L1-NEU
   sector: CHM
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0718:
   model_args: *id120
   model_type: LGBM
@@ -6499,1311 +6499,9 @@ M0718:
   ret_name: OpenRtn010L1-NEU
   sector: AGR
   shift: 11
-  trn_win: 240
+  trn_win: 720
 M0719:
   model_args: *id120
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 240
-M0720:
-  model_args: &id121
-    alpha: 1.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 480
-M0721:
-  model_args: *id121
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 480
-M0722:
-  model_args: *id121
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 480
-M0723:
-  model_args: *id121
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 480
-M0724:
-  model_args: *id121
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 480
-M0725:
-  model_args: *id121
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 480
-M0726:
-  model_args: &id122
-    alpha: 10.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 480
-M0727:
-  model_args: *id122
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 480
-M0728:
-  model_args: *id122
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 480
-M0729:
-  model_args: *id122
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 480
-M0730:
-  model_args: *id122
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 480
-M0731:
-  model_args: *id122
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 480
-M0732:
-  model_args: &id123
-    alpha: 100.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 480
-M0733:
-  model_args: *id123
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 480
-M0734:
-  model_args: *id123
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 480
-M0735:
-  model_args: *id123
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 480
-M0736:
-  model_args: *id123
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 480
-M0737:
-  model_args: *id123
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 480
-M0738:
-  model_args: &id124
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 5
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 480
-M0739:
-  model_args: *id124
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 480
-M0740:
-  model_args: *id124
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 480
-M0741:
-  model_args: *id124
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 480
-M0742:
-  model_args: *id124
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 480
-M0743:
-  model_args: *id124
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 480
-M0744:
-  model_args: &id125
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 480
-M0745:
-  model_args: *id125
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 480
-M0746:
-  model_args: *id125
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 480
-M0747:
-  model_args: *id125
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 480
-M0748:
-  model_args: *id125
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 480
-M0749:
-  model_args: *id125
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 480
-M0750:
-  model_args: &id126
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 20
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 480
-M0751:
-  model_args: *id126
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 480
-M0752:
-  model_args: *id126
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 480
-M0753:
-  model_args: *id126
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 480
-M0754:
-  model_args: *id126
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 480
-M0755:
-  model_args: *id126
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 480
-M0756:
-  model_args: &id127
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 5
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 480
-M0757:
-  model_args: *id127
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 480
-M0758:
-  model_args: *id127
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 480
-M0759:
-  model_args: *id127
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 480
-M0760:
-  model_args: *id127
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 480
-M0761:
-  model_args: *id127
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 480
-M0762:
-  model_args: &id128
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 480
-M0763:
-  model_args: *id128
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 480
-M0764:
-  model_args: *id128
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 480
-M0765:
-  model_args: *id128
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 480
-M0766:
-  model_args: *id128
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 480
-M0767:
-  model_args: *id128
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 480
-M0768:
-  model_args: &id129
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 20
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 480
-M0769:
-  model_args: *id129
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 480
-M0770:
-  model_args: *id129
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 480
-M0771:
-  model_args: *id129
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 480
-M0772:
-  model_args: *id129
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 480
-M0773:
-  model_args: *id129
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 480
-M0774:
-  model_args: &id130
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 5
-    num_leaves: 8
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 480
-M0775:
-  model_args: *id130
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 480
-M0776:
-  model_args: *id130
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 480
-M0777:
-  model_args: *id130
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 480
-M0778:
-  model_args: *id130
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 480
-M0779:
-  model_args: *id130
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 480
-M0780:
-  model_args: &id131
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 10
-    num_leaves: 8
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 480
-M0781:
-  model_args: *id131
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 480
-M0782:
-  model_args: *id131
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 480
-M0783:
-  model_args: *id131
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 480
-M0784:
-  model_args: *id131
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 480
-M0785:
-  model_args: *id131
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 480
-M0786:
-  model_args: &id132
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 20
-    num_leaves: 8
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 480
-M0787:
-  model_args: *id132
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 480
-M0788:
-  model_args: *id132
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 480
-M0789:
-  model_args: *id132
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 480
-M0790:
-  model_args: *id132
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 480
-M0791:
-  model_args: *id132
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 480
-M0792:
-  model_args: &id133
-    alpha: 1.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 720
-M0793:
-  model_args: *id133
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 720
-M0794:
-  model_args: *id133
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 720
-M0795:
-  model_args: *id133
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 720
-M0796:
-  model_args: *id133
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 720
-M0797:
-  model_args: *id133
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 720
-M0798:
-  model_args: &id134
-    alpha: 10.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 720
-M0799:
-  model_args: *id134
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 720
-M0800:
-  model_args: *id134
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 720
-M0801:
-  model_args: *id134
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 720
-M0802:
-  model_args: *id134
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 720
-M0803:
-  model_args: *id134
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 720
-M0804:
-  model_args: &id135
-    alpha: 100.0
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 720
-M0805:
-  model_args: *id135
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 720
-M0806:
-  model_args: *id135
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 720
-M0807:
-  model_args: *id135
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 720
-M0808:
-  model_args: *id135
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 720
-M0809:
-  model_args: *id135
-  model_type: Ridge
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 720
-M0810:
-  model_args: &id136
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 5
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 720
-M0811:
-  model_args: *id136
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 720
-M0812:
-  model_args: *id136
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 720
-M0813:
-  model_args: *id136
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 720
-M0814:
-  model_args: *id136
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 720
-M0815:
-  model_args: *id136
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 720
-M0816:
-  model_args: &id137
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 10
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 720
-M0817:
-  model_args: *id137
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 720
-M0818:
-  model_args: *id137
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 720
-M0819:
-  model_args: *id137
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 720
-M0820:
-  model_args: *id137
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 720
-M0821:
-  model_args: *id137
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 720
-M0822:
-  model_args: &id138
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 20
-    num_leaves: 2
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 720
-M0823:
-  model_args: *id138
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 720
-M0824:
-  model_args: *id138
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 720
-M0825:
-  model_args: *id138
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 720
-M0826:
-  model_args: *id138
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 720
-M0827:
-  model_args: *id138
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 720
-M0828:
-  model_args: &id139
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 5
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 720
-M0829:
-  model_args: *id139
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 720
-M0830:
-  model_args: *id139
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 720
-M0831:
-  model_args: *id139
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 720
-M0832:
-  model_args: *id139
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 720
-M0833:
-  model_args: *id139
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 720
-M0834:
-  model_args: &id140
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 10
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 720
-M0835:
-  model_args: *id140
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 720
-M0836:
-  model_args: *id140
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 720
-M0837:
-  model_args: *id140
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 720
-M0838:
-  model_args: *id140
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 720
-M0839:
-  model_args: *id140
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 720
-M0840:
-  model_args: &id141
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 20
-    num_leaves: 4
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 720
-M0841:
-  model_args: *id141
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 720
-M0842:
-  model_args: *id141
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 720
-M0843:
-  model_args: *id141
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 720
-M0844:
-  model_args: *id141
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 720
-M0845:
-  model_args: *id141
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 720
-M0846:
-  model_args: &id142
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 5
-    num_leaves: 8
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 720
-M0847:
-  model_args: *id142
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 720
-M0848:
-  model_args: *id142
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 720
-M0849:
-  model_args: *id142
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 720
-M0850:
-  model_args: *id142
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 720
-M0851:
-  model_args: *id142
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 720
-M0852:
-  model_args: &id143
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 10
-    num_leaves: 8
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 720
-M0853:
-  model_args: *id143
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 720
-M0854:
-  model_args: *id143
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 720
-M0855:
-  model_args: *id143
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 720
-M0856:
-  model_args: *id143
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 720
-M0857:
-  model_args: *id143
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: EQT
-  shift: 11
-  trn_win: 720
-M0858:
-  model_args: &id144
-    boosting_type: gbdt
-    learning_rate: 0.1
-    max_bin: 15
-    max_depth: -1
-    metric: l2
-    min_child_samples: 15
-    n_estimators: 20
-    num_leaves: 8
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: MTL
-  shift: 11
-  trn_win: 720
-M0859:
-  model_args: *id144
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: BLK
-  shift: 11
-  trn_win: 720
-M0860:
-  model_args: *id144
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: OIL
-  shift: 11
-  trn_win: 720
-M0861:
-  model_args: *id144
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: CHM
-  shift: 11
-  trn_win: 720
-M0862:
-  model_args: *id144
-  model_type: LGBM
-  ret_class: 010L1-NEU
-  ret_name: OpenRtn010L1-NEU
-  sector: AGR
-  shift: 11
-  trn_win: 720
-M0863:
-  model_args: *id144
   model_type: LGBM
   ret_class: 010L1-NEU
   ret_name: OpenRtn010L1-NEU

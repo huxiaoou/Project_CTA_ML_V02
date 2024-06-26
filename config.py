@@ -55,6 +55,7 @@ class ConfigStrategy:
 
 with open(PATH_CONFIG, "r") as f:
     from hSolutions.sFactorAlg import (
+        CCfgFactors,
         CCfgFactorMTM,
         CCfgFactorSKEW,
         CCfgFactorRS,
@@ -66,8 +67,11 @@ with open(PATH_CONFIG, "r") as f:
         CCfgFactorIBETA,
         CCfgFactorPBETA,
         CCfgFactorCTP,
+        CCfgFactorCTR,
         CCfgFactorCVP,
+        CCfgFactorCVR,
         CCfgFactorCSP,
+        CCfgFactorCSR,
         CCfgFactorNOI,
         CCfgFactorNDOI,
         CCfgFactorWNOI,
@@ -80,29 +84,32 @@ with open(PATH_CONFIG, "r") as f:
 
     __cfg_path_data, __cfg_strategy_data = yaml.safe_load_all(f)
     cfg_path, cfg_strategy = ConfigPath(**__cfg_path_data), ConfigStrategy(**__cfg_strategy_data)
-    cfg_factors: dict = {
-        "MTM": CCfgFactorMTM(**cfg_strategy.factors["MTM"]),
-        "SKEW": CCfgFactorSKEW(**cfg_strategy.factors["SKEW"]),
-        "RS": CCfgFactorRS(**cfg_strategy.factors["RS"]),
-        "BASIS": CCfgFactorBASIS(**cfg_strategy.factors["BASIS"]),
-        "TS": CCfgFactorTS(**cfg_strategy.factors["TS"]),
-        "S0BETA": CCfgFactorS0BETA(**cfg_strategy.factors["S0BETA"]),
-        "S1BETA": CCfgFactorS1BETA(**cfg_strategy.factors["S1BETA"]),
-        "CBETA": CCfgFactorCBETA(**cfg_strategy.factors["CBETA"]),
-        "IBETA": CCfgFactorIBETA(**cfg_strategy.factors["IBETA"]),
-        "PBETA": CCfgFactorPBETA(**cfg_strategy.factors["PBETA"]),
-        "CTP": CCfgFactorCTP(**cfg_strategy.factors["CTP"]),
-        "CVP": CCfgFactorCVP(**cfg_strategy.factors["CVP"]),
-        "CSP": CCfgFactorCSP(**cfg_strategy.factors["CSP"]),
-        "NOI": CCfgFactorNOI(**cfg_strategy.factors["NOI"]),
-        "NDOI": CCfgFactorNDOI(**cfg_strategy.factors["NDOI"]),
-        # "WNOI": CCfgFactorWNOI(**cfg_strategy.factors["WNOI"]),
-        # "WNDOI": CCfgFactorWNDOI(**cfg_strategy.factors["WNDOI"]),
-        "AMP": CCfgFactorAMP(**cfg_strategy.factors["AMP"]),
-        "EXR": CCfgFactorEXR(**cfg_strategy.factors["EXR"]),
-        "SMT": CCfgFactorSMT(**cfg_strategy.factors["SMT"]),
-        "RWTC": CCfgFactorRWTC(**cfg_strategy.factors["RWTC"]),
-    }
+    cfg_factors = CCfgFactors(
+        MTM=CCfgFactorMTM(**cfg_strategy.factors["MTM"]),
+        SKEW=CCfgFactorSKEW(**cfg_strategy.factors["SKEW"]),
+        RS=CCfgFactorRS(**cfg_strategy.factors["RS"]),
+        BASIS=CCfgFactorBASIS(**cfg_strategy.factors["BASIS"]),
+        TS=CCfgFactorTS(**cfg_strategy.factors["TS"]),
+        S0BETA=CCfgFactorS0BETA(**cfg_strategy.factors["S0BETA"]),
+        S1BETA=CCfgFactorS1BETA(**cfg_strategy.factors["S1BETA"]),
+        CBETA=CCfgFactorCBETA(**cfg_strategy.factors["CBETA"]),
+        IBETA=CCfgFactorIBETA(**cfg_strategy.factors["IBETA"]),
+        PBETA=CCfgFactorPBETA(**cfg_strategy.factors["PBETA"]),
+        CTP=CCfgFactorCTP(**cfg_strategy.factors["CTP"]),
+        CTR=CCfgFactorCTR(**cfg_strategy.factors["CTR"]),
+        CVP=CCfgFactorCVP(**cfg_strategy.factors["CVP"]),
+        CVR=CCfgFactorCVR(**cfg_strategy.factors["CVR"]),
+        CSP=CCfgFactorCSP(**cfg_strategy.factors["CSP"]),
+        CSR=CCfgFactorCSR(**cfg_strategy.factors["CSR"]),
+        NOI=CCfgFactorNOI(**cfg_strategy.factors["NOI"]),
+        NDOI=CCfgFactorNDOI(**cfg_strategy.factors["NDOI"]),
+        WNOI=None, # CCfgFactorWNOI(**cfg_strategy.factors["WNOI"]),
+        WNDOI=None, # CCfgFactorWNDOI(**cfg_strategy.factors["WNDOI"]),
+        AMP=CCfgFactorAMP(**cfg_strategy.factors["AMP"]),
+        EXR=CCfgFactorEXR(**cfg_strategy.factors["EXR"]),
+        SMT=CCfgFactorSMT(**cfg_strategy.factors["SMT"]),
+        RWTC=CCfgFactorRWTC(**cfg_strategy.factors["RWTC"]),
+    )
 
     factors_pool_raw, factors_pool_neu = [], []
     for cfg_factor in cfg_factors.values():
