@@ -99,7 +99,7 @@ graph TB
         ]
         ```
 
-    + CPI和M2数据 `/var/data/StackData/futures/team/huxo/alternative/macro.ss`
+    + CPI, PPI和M2数据 `/var/data/StackData/futures/team/huxo/alternative/macro.ss`
 
         ```python
         [
@@ -404,7 +404,7 @@ graph TB
 
       ```python
       ["VOL", "RVOL", "SKEW", "CV", "CTP", "CVP", "CSP", "RS"]
-      ["CBETA", "MBETA", "SBETA" "IBETA", "VAL"]
+      ["CBETA", "S0BETA", "S1BETA", "IBETA", "PBETA", "VAL"]
       ["MTM", "HR", "SR", "SIZE", "LIQUID", "BASIS", "TS", "NOI", "NDOI", "WNOI", "WNDOI"]
       ```
 
