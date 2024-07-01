@@ -283,7 +283,7 @@ class CFeatSlcMutInf(CFeatSlc):
         if i > 0:
             print(
                 f"[INF] After {SFY(i)} times iteration {SFY(f'{len(selected_feats):>2d}')} features are selected, "
-                f"{SFY(self.test.sector)}-{SFY(self.test.trn_win)}-{SFY(trading_day)}"
+                f"{SFY(self.test.sector)}-{SFY(self.test.trn_win)}-{SFY(trading_day)}-{SFY(self.test.ret.desc)}"
             )
         return [TFactorName(z) for z in selected_feats.index]
 

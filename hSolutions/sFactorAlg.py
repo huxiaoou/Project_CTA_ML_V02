@@ -180,6 +180,8 @@ class CCfgFactorS0BETA(CCfgFactor):
     def factor_names(self) -> TFactorNames:
         n0 = [TFactorName(f"{self.factor_class}{w:03d}") for w in self.wins]
         n1 = [TFactorName(f"{self.factor_class}{self.wins[0]:03d}D{w:03d}") for w in self.wins[1:]]
+        # n2 = [TFactorName(f"{self.factor_class}{w:03d}RES") for w in self.wins]
+        # n3 = [TFactorName(f"{self.factor_class}{w:03d}RESSTD") for w in self.wins]
         return TFactorNames(n0 + n1)
 
 
@@ -195,6 +197,8 @@ class CCfgFactorS1BETA(CCfgFactor):
     def factor_names(self) -> TFactorNames:
         n0 = [TFactorName(f"{self.factor_class}{w:03d}") for w in self.wins]
         n1 = [TFactorName(f"{self.factor_class}{self.wins[0]:03d}D{w:03d}") for w in self.wins[1:]]
+        # n2 = [TFactorName(f"{self.factor_class}{w:03d}RES") for w in self.wins]
+        # n3 = [TFactorName(f"{self.factor_class}{w:03d}RESSTD") for w in self.wins]
         return TFactorNames(n0 + n1)
 
 
@@ -210,6 +214,8 @@ class CCfgFactorCBETA(CCfgFactor):
     def factor_names(self) -> TFactorNames:
         n0 = [TFactorName(f"{self.factor_class}{w:03d}") for w in self.wins]
         n1 = [TFactorName(f"{self.factor_class}{self.wins[0]:03d}D{w:03d}") for w in self.wins[1:]]
+        # n2 = [TFactorName(f"{self.factor_class}{w:03d}RES") for w in self.wins]
+        # n3 = [TFactorName(f"{self.factor_class}{w:03d}RESSTD") for w in self.wins]
         return TFactorNames(n0 + n1)
 
 
@@ -225,6 +231,8 @@ class CCfgFactorIBETA(CCfgFactor):
     def factor_names(self) -> TFactorNames:
         n0 = [TFactorName(f"{self.factor_class}{w:03d}") for w in self.wins]
         n1 = [TFactorName(f"{self.factor_class}{self.wins[0]:03d}D{w:03d}") for w in self.wins[1:]]
+        # n2 = [TFactorName(f"{self.factor_class}{w:03d}RES") for w in self.wins]
+        # n3 = [TFactorName(f"{self.factor_class}{w:03d}RESSTD") for w in self.wins]
         return TFactorNames(n0 + n1)
 
 
@@ -240,6 +248,8 @@ class CCfgFactorPBETA(CCfgFactor):
     def factor_names(self) -> TFactorNames:
         n0 = [TFactorName(f"{self.factor_class}{w:03d}") for w in self.wins]
         n1 = [TFactorName(f"{self.factor_class}{self.wins[0]:03d}D{w:03d}") for w in self.wins[1:]]
+        # n2 = [TFactorName(f"{self.factor_class}{w:03d}RES") for w in self.wins]
+        # n3 = [TFactorName(f"{self.factor_class}{w:03d}RESSTD") for w in self.wins]
         return TFactorNames(n0 + n1)
 
 
@@ -678,6 +688,18 @@ class __CFactorBETA(CFactor):
                 input_data[fid] = input_data[f0] - input_data[fi]
         return 0
 
+    def res_from_wins(self, wins: list[int], input_data: pd.DataFrame, x: str, y: str):
+        for i, win in enumerate(wins):
+            b, fi = f"{self.factor_class}{win:03d}", f"{self.factor_class}{win:03d}RES"
+            input_data[fi] = input_data[y] - input_data[x] * input_data[b]
+        return 0
+
+    def res_std_from_wins(self, wins: list[int], input_data: pd.DataFrame):
+        for i, win in enumerate(wins):
+            res, fi = f"{self.factor_class}{win:03d}RES", f"{self.factor_class}{win:03d}RESSTD"
+            input_data[fi] = input_data[res].rolling(window=win, min_periods=int(win * 0.6)).std()
+        return 0
+
 
 class CFactorS0BETA(__CFactorBETA):
     def __init__(self, cfg: CCfgFactorS0BETA, **kwargs):
@@ -694,6 +716,8 @@ class CFactorS0BETA(__CFactorBETA):
         adj_market_data = self.get_adj_market_data(win_start_date, end_date)
         adj_data = self.merge_xy(x_data=adj_major_data[["tp", "ticker", __y_ret]], y_data=adj_market_data[[__x_ret]])
         self.betas_from_wins(self.cfg.wins, adj_data, __x_ret, __y_ret)
+        self.res_from_wins(self.cfg.wins, adj_data, __x_ret, __y_ret)
+        self.res_std_from_wins(self.cfg.wins, adj_data)
         factor_data = self.get_factor_data(adj_data, bgn_date)
         return factor_data
 
@@ -712,6 +736,8 @@ class CFactorS1BETA(__CFactorBETA):
         adj_market_data = self.get_adj_market_data(win_start_date, end_date)
         adj_data = self.merge_xy(x_data=adj_major_data[["tp", "ticker", __y_ret]], y_data=adj_market_data[[__x_ret]])
         self.betas_from_wins(self.cfg.wins, adj_data, __x_ret, __y_ret)
+        self.res_from_wins(self.cfg.wins, adj_data, __x_ret, __y_ret)
+        self.res_std_from_wins(self.cfg.wins, adj_data)
         factor_data = self.get_factor_data(adj_data, bgn_date)
         return factor_data
 
@@ -730,6 +756,8 @@ class CFactorCBETA(__CFactorBETA):
         adj_forex_data = self.get_adj_forex_data(win_start_date, end_date)
         adj_data = self.merge_xy(x_data=adj_major_data[["tp", "ticker", __y_ret]], y_data=adj_forex_data[[__x_ret]])
         self.betas_from_wins(self.cfg.wins, adj_data, __x_ret, __y_ret)
+        self.res_from_wins(self.cfg.wins, adj_data, __x_ret, __y_ret)
+        self.res_std_from_wins(self.cfg.wins, adj_data)
         factor_data = self.get_factor_data(adj_data, bgn_date)
         return factor_data
 
@@ -748,6 +776,8 @@ class CFactorIBETA(__CFactorBETA):
         adj_macro_data = self.get_adj_macro_data(win_start_date, end_date)
         adj_data = self.merge_xy(x_data=adj_major_data[["tp", "ticker", __y_ret]], y_data=adj_macro_data[[__x_ret]])
         self.betas_from_wins(self.cfg.wins, adj_data, __x_ret, __y_ret)
+        self.res_from_wins(self.cfg.wins, adj_data, __x_ret, __y_ret)
+        self.res_std_from_wins(self.cfg.wins, adj_data)
         factor_data = self.get_factor_data(adj_data, bgn_date)
         return factor_data
 
@@ -766,6 +796,8 @@ class CFactorPBETA(__CFactorBETA):
         adj_macro_data = self.get_adj_macro_data(win_start_date, end_date)
         adj_data = self.merge_xy(x_data=adj_major_data[["tp", "ticker", __y_ret]], y_data=adj_macro_data[[__x_ret]])
         self.betas_from_wins(self.cfg.wins, adj_data, __x_ret, __y_ret)
+        self.res_from_wins(self.cfg.wins, adj_data, __x_ret, __y_ret)
+        self.res_std_from_wins(self.cfg.wins, adj_data)
         factor_data = self.get_factor_data(adj_data, bgn_date)
         return factor_data
 

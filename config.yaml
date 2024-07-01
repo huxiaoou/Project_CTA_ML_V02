@@ -325,6 +325,7 @@ portfolios:
       # M0677: 3 # EQT Sharpe = 0.494, Calmar = 0.323, W720, LGBM
       # M0666: 3 # MTL Sharpe = 0.283, Calmar = 0.143, W720, LGBM
       M0554: 3 # OIL Sharpe = 0.576, Calmar = 0.316, W240, LGBM
+
 CONST:
   COST: 0.0003
   FREQ: "d01e"
