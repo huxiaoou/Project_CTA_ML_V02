@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import skops.io as sio
 import lightgbm as lgb
+import xgboost as xgb
 from rich.progress import track, Progress
 from sklearn.linear_model import Ridge
 from hUtils.tools import qtimer, SFG, SFY, SFR, check_and_mkdir, error_handler
@@ -360,6 +361,34 @@ class CMclrnLGBM(CMclrnFromFeatureSelection):
         )
 
 
+class CMclrnXGB(CMclrnFromFeatureSelection):
+    def __init__(
+        self,
+        booster: str,
+        n_estimators: int,
+        max_depth: int,
+        max_leaves: int,
+        grow_policy: str,
+        learning_rate: float,
+        objective: str,
+        **kwargs,
+    ):
+        super().__init__(using_instru=False, **kwargs)
+        self.prototype = xgb.XGBRegressor(
+            booster=booster,
+            n_estimators=n_estimators,
+            max_depth=max_depth,
+            max_leaves=max_leaves,
+            grow_policy=grow_policy,
+            learning_rate=learning_rate,
+            objective=objective,
+            # other fixed parameters
+            verbosity=0,
+            random_state=self.RANDOM_STATE,
+            # nthread=6,
+        )
+
+
 """
 Part III: Wrapper for CMclrn
 
@@ -381,9 +410,10 @@ def process_for_cMclrn(
     calendar: CCalendar,
     verbose: bool,
 ):
-    x: dict[str, type[CMclrnRidge] | type[CMclrnLGBM]] = {
+    x: dict[str, type[CMclrnRidge] | type[CMclrnLGBM] | type[CMclrnXGB]] = {
         "Ridge": CMclrnRidge,
         "LGBM": CMclrnLGBM,
+        "XGB": CMclrnXGB,
     }
     if not (mclrn_type := x.get(test.model.model_type)):
         raise ValueError(f"model type = {test.model.model_type} is wrong")
@@ -400,6 +430,9 @@ def process_for_cMclrn(
         universe=universe,
         **test.model.model_args,
     )
+    if isinstance(mclrn, CMclrnXGB):
+        os.environ['OMP_NUM_THREADS'] = "16"
+
     mclrn.main_mclrn_model(bgn_date=bgn_date, end_date=end_date, calendar=calendar, verbose=verbose)
     return 0
 

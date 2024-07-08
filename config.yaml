@@ -295,36 +295,44 @@ feature_selection:
   min_feats: 5
 mclrns:
   models:
-    Ridge:
-      alpha: [1.0, 10.0, 100.0] # [1.0, 10.0, 100.0, 200.0, 500.0]
-    LGBM:
-      boosting_type: ["gbdt"]
-      metric: ["l2"]
-      max_depth: [-1]
-      num_leaves: [2, 4, 8]
-      learning_rate: [0.1] # [0.01, 0.1, 1.0]
-      n_estimators: [5, 10, 20] # [50, 100, 200]
-      min_child_samples: [15] # min_data_in_leaf
-      max_bin: [15]
+    # Ridge:
+    #   alpha: [1.0, 10.0, 100.0] # [1.0, 10.0, 100.0, 200.0, 500.0]
+    # LGBM:
+    #   boosting_type: ["gbdt"]
+    #   metric: ["l2"]
+    #   max_depth: [-1]
+    #   num_leaves: [2, 4, 8]
+    #   learning_rate: [0.1] # [0.01, 0.1, 1.0]
+    #   n_estimators: [5, 10, 20] # [50, 100, 200]
+    #   min_child_samples: [15] # min_data_in_leaf
+    #   max_bin: [15]
+    XGB:
+      booster: ["gbtree", "gblinear", "dart"]
+      n_estimators: [50, 100]
+      max_depth: [2, 4]
+      max_leaves: [4, 16]
+      grow_policy: ["depthwise", "lossguide"]
+      learning_rate: [0.01, 0.1]
+      objective: ["reg:squarederror"]
 portfolios:
   P00:
     target: CloseRtn010L1-NEU # Be consistent with Wins and Lags in CONST
     weights:
-      M0244: 3 # AGR Sharpe = 0.780, Calmar = 0.700, W480, LGBM
-      M0313: 5 # BLK Sharpe = 1.237, Calmar = 0.875, W720, LGBM
-      M0231: 5 # CHM Sharpe = 1.150, Calmar = 1.139, W480, Ridge
-      # M0083: 3 # EQT Sharpe = 0.474, Calmar = 0.327, W120, Ridge
-      # M0006: 3 # MTL Sharpe = 0.350, Calmar = 0.237, W060, Ridge
-      M0086: 3 # OIL Sharpe = 0.586, Calmar = 0.420, W120, Ridge
+      M2104: 3 # AGR Sharpe = 0.743, Calmar = 0.697, W480, XGB
+      M2365: 5 # BLK Sharpe = 1.031, Calmar = 0.425, W720, XGB
+      M1941: 5 # CHM Sharpe = 1.167, Calmar = 1.122, W480, XGB
+      # M0857: 3 # EQT Sharpe = 0.488, Calmar = 0.221, W120, XGB
+      # M2736: 3 # MTL Sharpe = 0.327, Calmar = 0.170, W720, XGB
+      M0950: 3 # OIL Sharpe = 0.640, Calmar = 0.352, W120, XGB
   P01:
     target: OpenRtn010L1-NEU # Be consistent with Wins and Lags in CONST
     weights:
-      M0604: 3 # AGR Sharpe = 0.836, Calmar = 0.617, W480, LGBM
-      M0667: 5 # BLK Sharpe = 0.849, Calmar = 0.749, W720, LGBM
-      M0585: 5 # CHM Sharpe = 1.022, Calmar = 0.990, W480, Ridge
-      # M0677: 3 # EQT Sharpe = 0.494, Calmar = 0.323, W720, LGBM
-      # M0666: 3 # MTL Sharpe = 0.283, Calmar = 0.143, W720, LGBM
-      M0554: 3 # OIL Sharpe = 0.576, Calmar = 0.316, W240, LGBM
+      M5572: 3 # AGR Sharpe = 0.838, Calmar = 0.578, W720, XGB
+      M5347: 5 # BLK Sharpe = 0.714, Calmar = 0.413, W720, XGB
+      M5709: 5 # CHM Sharpe = 1.151, Calmar = 0.710, W720, XGB
+      # M5249: 3 # EQT Sharpe = 0.319, Calmar = 0.223, W720, XGB
+      # M5616: 3 # MTL Sharpe = 0.325, Calmar = 0.213, W720, XGB
+      M4190: 3 # OIL Sharpe = 0.593, Calmar = 0.268, W240, XGB
 
 CONST:
   COST: 0.0003
