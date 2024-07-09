@@ -307,32 +307,32 @@ mclrns:
     #   min_child_samples: [15] # min_data_in_leaf
     #   max_bin: [15]
     XGB:
-      booster: ["gbtree", "gblinear", "dart"]
-      n_estimators: [50, 100]
-      max_depth: [2, 4]
-      max_leaves: [4, 16]
-      grow_policy: ["depthwise", "lossguide"]
-      learning_rate: [0.01, 0.1]
+      booster: ["dart"] # ["gbtree", "gblinear", "dart"]
+      n_estimators: [20, 50, 100]
+      max_depth: [2]
+      max_leaves: [4]
+      grow_policy: ["lossguide"] # ["depthwise", "lossguide"]
+      learning_rate: [0.01, 0.1, 0.5]
       objective: ["reg:squarederror"]
 portfolios:
   P00:
     target: CloseRtn010L1-NEU # Be consistent with Wins and Lags in CONST
     weights:
-      M2104: 3 # AGR Sharpe = 0.743, Calmar = 0.697, W480, XGB
-      M2365: 5 # BLK Sharpe = 1.031, Calmar = 0.425, W720, XGB
-      M1941: 5 # CHM Sharpe = 1.167, Calmar = 1.122, W480, XGB
-      # M0857: 3 # EQT Sharpe = 0.488, Calmar = 0.221, W120, XGB
-      # M2736: 3 # MTL Sharpe = 0.327, Calmar = 0.170, W720, XGB
-      M0950: 3 # OIL Sharpe = 0.640, Calmar = 0.352, W120, XGB
+      M0214: 3 # AGR Sharpe = 0.801, Calmar = 0.805, W480, XGB
+      M0253: 5 # BLK Sharpe = 1.014, Calmar = 0.494, W720, XGB
+      M0213: 5 # CHM Sharpe = 1.155, Calmar = 0.724, W480, XGB
+      # M0191: 3 # EQT Sharpe = 0.036, Calmar = 0.014, W480, XGB
+      # M0234: 3 # MTL Sharpe = 0.327, Calmar = 0.170, W720, XGB
+      M0098: 3 # OIL Sharpe = 0.492, Calmar = 0.248, W120, XGB
   P01:
     target: OpenRtn010L1-NEU # Be consistent with Wins and Lags in CONST
     weights:
-      M5572: 3 # AGR Sharpe = 0.838, Calmar = 0.578, W720, XGB
-      M5347: 5 # BLK Sharpe = 0.714, Calmar = 0.413, W720, XGB
-      M5709: 5 # CHM Sharpe = 1.151, Calmar = 0.710, W720, XGB
-      # M5249: 3 # EQT Sharpe = 0.319, Calmar = 0.223, W720, XGB
-      # M5616: 3 # MTL Sharpe = 0.325, Calmar = 0.213, W720, XGB
-      M4190: 3 # OIL Sharpe = 0.593, Calmar = 0.268, W240, XGB
+      M0436: 3 # AGR Sharpe = 0.846, Calmar = 0.527, W480, XGB
+      M0433: 5 # BLK Sharpe = 0.757, Calmar = 0.501, W480, XGB
+      M0531: 5 # CHM Sharpe = 1.151, Calmar = 0.710, W720, XGB
+      # M0491: 3 # EQT Sharpe = 0.265, Calmar = 0.150, W720, XGB
+      # M0504: 3 # MTL Sharpe = 0.325, Calmar = 0.213, W720, XGB
+      M0386: 3 # OIL Sharpe = 0.538, Calmar = 0.283, W240, XGB
 
 CONST:
   COST: 0.0003

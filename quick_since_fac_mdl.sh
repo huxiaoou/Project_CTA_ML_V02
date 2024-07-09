@@ -8,7 +8,7 @@ end_date="20240131"     # TSDB Futhot may wrong after this date
 rm -r /var/data/StackData/futures/team/huxo/mclrn/*
 rm -r /var/data/StackData/futures/team/huxo/prediction/*
 python main.mclrn.manage_models.py
-python main.mclrn.py --bgn $bgn_date_ml --end $end_date
+python main.mclrn.py --bgn $bgn_date_ml --end $end_date --processes 3
 
 # signals
 rm -r /var/data/StackData/futures/team/huxo/signals/*
