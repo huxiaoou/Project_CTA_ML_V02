@@ -430,9 +430,8 @@ def process_for_cMclrn(
         universe=universe,
         **test.model.model_args,
     )
-    if isinstance(mclrn, CMclrnXGB):
-        os.environ['OMP_NUM_THREADS'] = "8"
 
+    os.environ["OMP_NUM_THREADS"] = "8"
     mclrn.main_mclrn_model(bgn_date=bgn_date, end_date=end_date, calendar=calendar, verbose=verbose)
     return 0
 
